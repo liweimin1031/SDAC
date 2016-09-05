@@ -20,7 +20,7 @@ test = dbUnit()
 # print comment
 
 text = test.getContent()
-with open('orgine.txt', 'w')as f:
+with open('original.txt', 'w')as f:
     for s in text:
         for w in s:
             f.write(w.encode('utf-8'))
@@ -36,14 +36,14 @@ with open('dict.txt.big','a')as f,open('hkexDict_update.txt','r')as f1,open('ora
 '''
 # --load dict--#
 print'loading dict......'
-jieba.load_userdict('dict.txt.big')
+jieba.load_userdict('./dict/dict.txt.big')
 
 print'loading hkexDict......'
-jieba.load_userdict('hkexDict_update.txt')
+jieba.load_userdict('./dict/hkexDict_update.txt')
 print'loading oralDict......'
-jieba.load_userdict('oralDict.txt')
+jieba.load_userdict('./dict/oralDict.txt')
 print'loading userDict......'
-jieba.load_userdict('userDict.txt')
+jieba.load_userdict('./dict/userDict.txt')
 
 '''
 #--set stop words--#
@@ -58,7 +58,7 @@ pseg_list = pseg.cut(cText)
 
 # --set stop words--#
 stopList = []
-with open('oralDict.txt') as f1, open('stop_words_ch.txt')as f2, open('stop_words_custom.txt')as f3, open('stop_words_eng.txt')as f4:
+with open('./dict/oralDict.txt') as f1, open('./dict/stop_words_ch.txt')as f2, open('./dict/stop_words_custom.txt')as f3, open('./dict/stop_words_eng.txt')as f4:
     for word in f1.readlines():
         stopList.append(word.strip().decode('utf-8'))
     for word in f2.readlines():
@@ -69,7 +69,7 @@ with open('oralDict.txt') as f1, open('stop_words_ch.txt')as f2, open('stop_word
         stopList.append(word.strip().decode('utf-8'))
 
 # --set synonym dict--#
-with open('hkexSynonym_update.txt') as f:
+with open('./dict/hkexSynonym_update.txt') as f:
     data_list = f.readlines()
     synonymDict = {}
     for line in data_list:
@@ -82,9 +82,9 @@ def strQ2B(ustring):
     rstring = ''
     for uchar in ustring:  
         inside_code = ord(uchar)  
-        if inside_code == 12288:  # şı¨èşıç©ºæ ¼şı´æ¥è½¬æ¢              
+        if inside_code == 12288:   
             inside_code = 32   
-        elif (inside_code >= 65281 and inside_code <= 65374):  # şı¨èşıå­—ç¬¦ï¼ˆé™¤ç©ºæ ¼ï¼‰æ ¹şı®å…³ç³»è½¬şışı 
+        elif (inside_code >= 65281 and inside_code <= 65374):
             inside_code -= 65248  
   
         rstring += unichr(inside_code)  
@@ -166,8 +166,8 @@ for bigram in bigram_finder.score_ngrams(bigram_measures.raw_freq)[:10]:
 print('-' * 40)
 print(' LDA model ')
 print('-' * 40)
-word_dict = corpora.Dictionary(words_list)  # şıŸæşışı‡æ¡£şı„èşışı¸ïşıæ¯ä¸ªè¯äşıä¸şı¸ªşı´åşıç´¢åşışı¼å¯¹åºşı 
-corpus_list = [word_dict.doc2bow(texts) for texts in words_list]  # è¯éşıç»Ÿè®¡ï¼Œè½¬şı–æşıç©ºé—´şı‘éşışı¼åşı  
+word_dict = corpora.Dictionary(words_list)  # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ¡£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ¯ä¸ªè¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç´¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å¯¹ï¿½ï¿½ï¿½ 
+corpus_list = [word_dict.doc2bow(texts) for texts in words_list]  # è¯ï¿½ï¿½ï¿½ç»Ÿè®¡ï¼Œè½¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç©ºé—´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
 tfidf = models.TfidfModel(corpus_list)
 corpus_tfidf = tfidf[corpus_list]
 lda = models.ldamodel.LdaModel(corpus=corpus_list, id2word=word_dict, num_topics=5, alpha='auto')  
@@ -194,7 +194,7 @@ for word in keywords:
     print word
 
 # --set re_synonym dict--#
-with open('hkexSynonym_update.txt') as f:
+with open('./dict/hkexSynonym_update.txt') as f:
     data_list = f.readlines()
     re_synonymDict = {}
     for line in data_list:
@@ -225,15 +225,16 @@ json_data = {
                    }
            }
 
+#compare data to web json format
 with open('dbData.json', 'w')as f:
     for i, keywords in enumerate(topic_words):
-        result_list = test.select_keywords(keywords)
+        result_list = test.select_keywords(keywords) #get data from db
         for keyword in keywords:
             topic = ''.join(keyword.encode('utf-8'))
-            
+
         json_data['topic'] = topic
         
-        f.write('topic %s \n' % (topic))
+        #f.write('topic %s \n' % (topic))
         post_create_time = {}
         for result in result_list:
             for text in result['content']['text']:
