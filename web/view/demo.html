@@ -15,6 +15,15 @@
 <body>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
     <div id="main" style="width: 600px;height:400px;margin: 0 auto;"></div>
+	<label style="font-size:20px;width:600px;" >Hot Topic</label><br/> 
+	<table class="table table-hover"> 
+		<tbody id="topic_table"> 
+	</table> 
+
+	
+	
+	
+	
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('main'));
@@ -64,171 +73,161 @@ post_create_time: 2016-07-31 , title: 牛熊小鮮肉即市牛熊指引（五）
 		
 
 //content_data[k]='<p>'+v+'</p>'
-		function setTable(trLineNumber,tdData){ 
+
+		// draw table
+		function setTable(tableData){
+		var trLineNumber=tableData.length;
 		var _table = document.getElementById("topic_table"); 
 		var _row; 
 		var _cell; 
 		for (var i = 0; i < trLineNumber; i++) { 
 			_row = document.createElement("tr"); 
-			console.log(_row)
-			
-				for(var j = 0; j < tdData.length; j++) { 
-					_cell = document.createElement("td"); 
-					_cell.onclick= function(){getColumnDetail(this)}; //为每个单元格增加单击事件 
-					_cell.innerText = tdData[j]; 
-					_row.appendChild(_cell); 
-					document.getElementById("topic_table").appendChild(_row); 
-				} 
+			var td_topic=tableData[i].topic;
+			var td_data=tableData[i].data;
+			_row.onclick= function(){myChart.setOption(setOption(this))}; //为每行增加单击事件 
+			_cell = document.createElement("td");
+			_cell.innerText = td_topic; 
+			_row.appendChild(_cell); 
+			document.getElementById("topic_table").appendChild(_row); 
+
 		} 
 	} 
 
-	
-		//read file
+
+		//read file and get json data
 		$.get('dbData.json',function(data){
 			console.log('readfile');
-			var json = eval('(' + data + ')');
+			topic_obj = eval('(' + data + ')');
+			console.log(topic_obj[0].data[0].date)
+			setTable(topic_obj)
+			
+			/*
 			$.each(json,function(i,value){
-				alert(this['topic'])
-			
+				var topic=this['topic']
+				var data=this['data']
 			});
-			
+			*/
 		});
 
 		var start='2016-07-01';
 		var end='2016-08-01';
-		var topic='中國人壽' 
+		var topic_obj;
+		
 		var oneDay = 24 * 3600 * 1000;
 		var start_date = Date.parse(start);
 		var end_date= Date.parse(end);
 		var dates=(end_date-start_date)/oneDay;
 		var date=[];
-		var data=[];
-		var value=[];
+
+		
 		for (var i = 0; i <= dates; i++) {
 			var now = new Date(start_date+ i*oneDay);
 			var str_date=[now.getFullYear(), now.getMonth()+1 , now.getDate()].join('-');
 			date.push(str_date);
 		};
-
+/*
 		 var content_data=[
 			{'date':'2016-7-10','content': ['2628 中國人壽'],'reply':116},
 			{'date':'2016-7-11','content': ['估值明顯偏低, 買入1萬股中國人壽, 目標$20元'],'reply':41},
 			{'date':'2016-7-15','content': ['2628 中人壽首目標先看22蚊'],'reply':18}
 		];
 		
-		for (var i =0,j=0, len_date=date.length,len_content_data=content_data.length; i<len_date; i++){
-			//console.log(date[i])
-			data[i]='';
-			value[i]='';
-			for( ;j<len_content_data;){
+*/
 
-				if (date[i]==content_data[j].date){
-					console.log(date[i])
-					data[i]=content_data[j].content;
-					value[i]=content_data[j].reply;
-					j++
-					break;
-				}else{
-					break;
+
+
+		function setOption(obj){
+			var data_index=obj.rowIndex;
+			var topic_json=topic_obj[data_index];
+			var topic= topic_json.topic;
+			var content_data=topic_json.data;
+			var data=[];
+			var value=[];
+			for (var i =0,j=0, len_date=date.length,len_content_data=content_data.length; i<len_date; i++){
+				//console.log(date[i])
+				data[i]='';
+				value[i]='';
+				for( ;j<len_content_data;){
+					//console.log(content_data[j].date)
+					if (date[i]==content_data[j].date){
+						console.log(date[i])
+						data[i]=content_data[j].content;
+						value[i]=content_data[j].reply;
+						j++
+						break;
+					}else{
+						break;
+					}
 				}
 			}
 			
-		}
-		console.log(data.length);
+			
+			option = {
+				title:{
+					text:topic
+					},
+				color: ['#3398DB'],
+				tooltip : {
+					trigger: 'axis',
+					axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+						type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+					},
+					formatter:function(params, ticket, callback){
+						// $.get('detail?name=' + params.name, function (content) {
+						//    callback(ticket, toHTML(content));
+						//});
+						html_content=''
+						if(params[0].value){
+							content=data[params[0].dataIndex]
+							html_content='<p>'+params[0].value+' times'+'</p>'
+							for (var i =0,len_cotent=content.length;i<len_cotent;i++){
+								html_content+='<p>'+content[i]+'</p>'
+							}
+						}
+						 return html_content;
 
-
-
-		option = {
-			title:{
-				text:topic
+					}
 				},
-			color: ['#3398DB'],
-			tooltip : {
-				trigger: 'axis',
-				axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-					type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+				grid: {
+					left: '3%',
+					right: '4%',
+					bottom: '3%',
+					containLabel: true
 				},
-				formatter:function(params, ticket, callback){
-					// $.get('detail?name=' + params.name, function (content) {
-					//    callback(ticket, toHTML(content));
-					//});
-					html_content=''
-					if(params[0].value){
-						content=data[params[0].dataIndex]
-						html_content='<p>'+params[0].value+' times'+'</p>'
-						for (var i =0,len_cotent=content.length;i<len_cotent;i++){
-							html_content+='<p>'+content[i]+'</p>'
+				xAxis : [
+					{
+						type : 'category',
+						data :date
+			,
+						axisTick: {
+							alignWithLabel: true
 						}
 					}
-					 return html_content;
-
-				}
-			},
-			grid: {
-				left: '3%',
-				right: '4%',
-				bottom: '3%',
-				containLabel: true
-			},
-			xAxis : [
-				{
-					type : 'category',
-					data :date
-		,
-					axisTick: {
-						alignWithLabel: true
+				],
+				yAxis : [
+					{
+						type : 'value'
 					}
-				}
-			],
-			yAxis : [
-				{
-					type : 'value'
-				}
-			],
-			series : [
-				{
-					title:topic,
-					name:'直接访问',
-					type:'bar',
-					barWidth: '60%',
-					data:value
-				}
-			]
-		};
+				],
+				series : [
+					{
+						title:topic,
+						name:'直接访问',
+						type:'bar',
+						barWidth: '60%',
+						data:value
+					}
+				]
+			};
+			return option;
+		}
+
 
 
         // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
+        //myChart.setOption(option);
     </script>
-<label style="font-size:20px;width:600px;" >动态表格：</label><br/> 
-<table border="1"> 
-	<tbody id="topic_table"> 
-</table> 
-<table id='topic',class="table table-hover"> 
-    <caption>Hot Topic</caption> 
-    <tbody> 
-        <tr> 
-            <td id='topic1'>Tanmay</td> 
-        </tr> 
-        <tr> 
-            <td id='topic2'>Tanmay</td> 
-        </tr>  
-        <tr> 
-            <td id='topic3'>Tanmay</td> 
-        </tr> 
-		<tr> 
-            <td id='topic4'>Tanmay</td> 
-        </tr> 
-		<tr> 
-            <td id='topic5'>Tanmay</td> 
-        </tr> 
-    </tbody> 
-</table>
-<script>
 
-
-setTable(2,[11,22,33])
-</script>
 
 </body>
 
