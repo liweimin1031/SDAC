@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.min.js"></script>
+	<script type="text/javascript" src="jquery-3.1.0.js"></script>
+	
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 600px;height:400px;margin: 0 auto;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+		
+/*
+topic 中國人壽 
+post_create_time: 2016-07-10 , title: 2628 中國人壽 , reply: 116
+post_create_time: 2016-07-11 , title: 估值明顯偏低, 買入1萬股中國人壽, 目標$20元 , reply: 41
+post_create_time: 2016-07-15 , title: 2628 中人壽首目標先看22蚊 , reply: 18
+topic 希望 
+post_create_time: 2016-07-20 , title: 510準備起飛 , reply: 30
+post_create_time: 2016-07-21 , title: 《 有緣相聚 》 純交流討論 22 , reply: 2783
+topic 1 
+post_create_time: 2016-07-04 , title: 期指期權第十回。。。返樸歸真，買盈富基金，上望27.5, 2016年7月4日預告 , reply: 769
+post_create_time: 2016-07-06 , title: 8195 (8386) 做乜野 , reply: 610
+post_create_time: 2016-07-06 , title: 261....一格者，都升唔到 , reply: 40
+post_create_time: 2016-07-08 , title: 2016 橫行無忌∼∼∼∼∼！！！！！！！！！！！！！！！！！！ , reply: 1689
+post_create_time: 2016-07-09 , title: ☆技術圖表 & 指標/倉位★ 互動分享區  (3) , reply: 337
+post_create_time: 2016-07-09 , title: 中國銀行(3988)~~還看今朝🍀 , reply: 597
+post_create_time: 2016-07-10 , title: 2628 中國人壽 , reply: 116
+post_create_time: 2016-07-11 , title: 估值明顯偏低, 買入1萬股中國人壽, 目標$20元 , reply: 41
+post_create_time: 2016-07-13 , title: $180 買入 一球 qq 等 $200。。。 , reply: 50
+post_create_time: 2016-07-15 , title: 平保2318無得輸 , reply: 13
+post_create_time: 2016-07-16 , title: 券商目標價2318中國平安保險冇得豬！！！！！！ , reply: 24
+post_create_time: 2016-07-20 , title: 510準備起飛 , reply: 30
+post_create_time: 2016-07-21 , title: 大生農業金融(1103.HK) , reply: 4
+post_create_time: 2016-07-24 , title: 我係mc,想和朋友分享! , reply: 392
+post_create_time: 2016-07-26 , title: *271* 打氣支持區 (66) , reply: 20
+post_create_time: 2016-07-27 , title: 431待爆---下隻2012，204 , reply: 29
+post_create_time: 2016-07-27 , title: 超正投資組合之十一 - 細水長流笑到最後 (附成員展望及#3更新7月結各成員強弱情況) , reply: 1745
+post_create_time: 2016-07-29 , title: 1421年高位3.55,一折左右入了.京與意外,也有點神奇與開心 , reply: 123
+post_create_time: 2016-07-30 , title: --------------------------即日-08-16-期指-------------------------- , reply: 1692
+post_create_time: 2016-08-01 , title: 強入1288 , reply: 114
+post_create_time: 2016-08-01 , title: 582重貨主席分享區😎第三幕 , reply: 470
+topic 插 
+post_create_time: 2016-07-07 , title: 最後溫馨提示:明天有貨好走 , reply: 41
+post_create_time: 2016-07-09 , title: ☆技術圖表 & 指標/倉位★ 互動分享區  (3) , reply: 337
+post_create_time: 2016-07-10 , title: 溫馨提示:聽日有貨一定要離場!! , reply: 15
+topic 牛熊 
+post_create_time: 2016-07-07 , title: 味話唔提你， 搶牛過夜 , reply: 344
+post_create_time: 2016-07-09 , title: ☆技術圖表 & 指標/倉位★ 互動分享區  (3) , reply: 337
+post_create_time: 2016-07-15 , title: 熊市未完 , reply: 421
+post_create_time: 2016-07-20 , title: 我係新手……最近睇報紙話爆上2萬5，我有一筆300萬資產 , reply: 44
+post_create_time: 2016-07-31 , title: 牛熊小鮮肉即市牛熊指引（五） , reply: 3001
+
+*/
+		
+
+//content_data[k]='<p>'+v+'</p>'
+		function setTable(trLineNumber,tdData){ 
+		var _table = document.getElementById("topic_table"); 
+		var _row; 
+		var _cell; 
+		for (var i = 0; i < trLineNumber; i++) { 
+			_row = document.createElement("tr"); 
+			console.log(_row)
+			
+				for(var j = 0; j < tdData.length; j++) { 
+					_cell = document.createElement("td"); 
+					_cell.onclick= function(){getColumnDetail(this)}; //为每个单元格增加单击事件 
+					_cell.innerText = tdData[j]; 
+					_row.appendChild(_cell); 
+					document.getElementById("topic_table").appendChild(_row); 
+				} 
+		} 
+	} 
+
+	
+		//read file
+		$.get('dbData.json',function(data){
+			console.log('readfile');
+			var json = eval('(' + data + ')');
+			$.each(json,function(i,value){
+				alert(this['topic'])
+			
+			});
+			
+		});
+
+		var start='2016-07-01';
+		var end='2016-08-01';
+		var topic='中國人壽' 
+		var oneDay = 24 * 3600 * 1000;
+		var start_date = Date.parse(start);
+		var end_date= Date.parse(end);
+		var dates=(end_date-start_date)/oneDay;
+		var date=[];
+		var data=[];
+		var value=[];
+		for (var i = 0; i <= dates; i++) {
+			var now = new Date(start_date+ i*oneDay);
+			var str_date=[now.getFullYear(), now.getMonth()+1 , now.getDate()].join('-');
+			date.push(str_date);
+		};
+
+		 var content_data=[
+			{'date':'2016-7-10','content': ['2628 中國人壽'],'reply':116},
+			{'date':'2016-7-11','content': ['估值明顯偏低, 買入1萬股中國人壽, 目標$20元'],'reply':41},
+			{'date':'2016-7-15','content': ['2628 中人壽首目標先看22蚊'],'reply':18}
+		];
+		
+		for (var i =0,j=0, len_date=date.length,len_content_data=content_data.length; i<len_date; i++){
+			//console.log(date[i])
+			data[i]='';
+			value[i]='';
+			for( ;j<len_content_data;){
+
+				if (date[i]==content_data[j].date){
+					console.log(date[i])
+					data[i]=content_data[j].content;
+					value[i]=content_data[j].reply;
+					j++
+					break;
+				}else{
+					break;
+				}
+			}
+			
+		}
+		console.log(data.length);
+
+
+
+		option = {
+			title:{
+				text:topic
+				},
+			color: ['#3398DB'],
+			tooltip : {
+				trigger: 'axis',
+				axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+					type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+				},
+				formatter:function(params, ticket, callback){
+					// $.get('detail?name=' + params.name, function (content) {
+					//    callback(ticket, toHTML(content));
+					//});
+					html_content=''
+					if(params[0].value){
+						content=data[params[0].dataIndex]
+						html_content='<p>'+params[0].value+' times'+'</p>'
+						for (var i =0,len_cotent=content.length;i<len_cotent;i++){
+							html_content+='<p>'+content[i]+'</p>'
+						}
+					}
+					 return html_content;
+
+				}
+			},
+			grid: {
+				left: '3%',
+				right: '4%',
+				bottom: '3%',
+				containLabel: true
+			},
+			xAxis : [
+				{
+					type : 'category',
+					data :date
+		,
+					axisTick: {
+						alignWithLabel: true
+					}
+				}
+			],
+			yAxis : [
+				{
+					type : 'value'
+				}
+			],
+			series : [
+				{
+					title:topic,
+					name:'直接访问',
+					type:'bar',
+					barWidth: '60%',
+					data:value
+				}
+			]
+		};
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+<label style="font-size:20px;width:600px;" >动态表格：</label><br/> 
+<table border="1"> 
+	<tbody id="topic_table"> 
+</table> 
+<table id='topic',class="table table-hover"> 
+    <caption>Hot Topic</caption> 
+    <tbody> 
+        <tr> 
+            <td id='topic1'>Tanmay</td> 
+        </tr> 
+        <tr> 
+            <td id='topic2'>Tanmay</td> 
+        </tr>  
+        <tr> 
+            <td id='topic3'>Tanmay</td> 
+        </tr> 
+		<tr> 
+            <td id='topic4'>Tanmay</td> 
+        </tr> 
+		<tr> 
+            <td id='topic5'>Tanmay</td> 
+        </tr> 
+    </tbody> 
+</table>
+<script>
+
+
+setTable(2,[11,22,33])
+</script>
+
+</body>
+
+</html> 	
