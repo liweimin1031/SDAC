@@ -7,6 +7,7 @@ import jieba.analyse
 from datetime import datetime
 import jieba.posseg as pseg
 from collections import OrderedDict
+import json
 # spark lib
 
 
@@ -175,16 +176,15 @@ lda = models.ldamodel.LdaModel(corpus=corpus_list, id2word=word_dict, num_topics
 patterns = lda.print_topics()
 # --get keywords--#
 keywords = []
-
 for pattern in patterns:
     print  pattern[1]
-    words_bag = pattern[1].split('+')
+    words_bag = pattern[1].split(' + ')
     words_list = []
     for words in words_bag:
         value_word = words.split('*')
         word = value_word[1]
         words_list.append(word)
-        
+
     for w in words_list:    
         if w not in keywords:
             keywords.append(w.strip())
@@ -216,86 +216,62 @@ for word in keywords:
     else:
         topic_words.append([word])
 print 'topic words db data'
-posts = []
-topic_json = {
-           'topic':string,
-           'data':{
-                   'date':string,
-                   'content':arrayString,
-                   'times':int
-                   }
-           }
+
+#set date format as 2016-7-1
+def dateFormat(date):
+    temp=date.split('-')
+    return temp[0] + '-' + str(int(temp[1])) + '-' + str(int(temp[2]));  
 
 #compare data to web json format
-with open('dbData.json', 'w')as f:
+with open('../web/view/dbData.json', 'w')as f:
+    topic_list=[]
     for i, keywords in enumerate(topic_words):
         result_list = test.select_keywords(keywords) #get data from db
         for keyword in keywords:
             _topic = ''.join(keyword.encode('utf-8'))
         #f.write('topic %s \n' % (topic))
-		date_list=[]
-		temp_data=OrderedDict()
+        topic_json={}
+        data_list=[]
+        temp_data=OrderedDict()
         for result in result_list:
-			#one date obj
+            #one date obj
             for text in result['content']['text']:
                 content = ''.join(text.strip().encode('utf-8'))
             # content=''.join(result['content']['text']).encode('utf-8')
-			title = result['title'].encode('utf-8')
-			link = result['link'].encode('utf-8')
-            post_create_date = result['post_create_date'].date()
-			last_status = result['last_status'].encode('utf-8')
-			
-			#temp_data={'date':post_create_date,'content':title,'reply':last_status}
-			if temp_data.has_key(post_create_date):
-				#update temp_data
-				temp_data[post_create_date]['content'].append(title)
-				old_reply=temp_data[post_create_date]['reply']
-				new_reply=str(int(old_reply)+int(last_status))  #only for content=title, if use comment use len directy
-				temp_data[post_create_date]['reply']=new_reply
-			else:
-				#add temp_data
-				temp_data[post_create_date]={'content':[title],'reply':last_status}
-
-		
-		#set temp_data to data_list
-		for k,v in temp_data.items():
-			_data['date']=k
-			_data['content']=v['content']
-			_data['reply']=v['reply']
-			data_list.append(_data)
-		#set topic data compare with dataformat
-		topic_json['topic'] = _topic
-        topic_json['data']=_data
-		#save topic_json 
-		str_json=json.dumps(topic_json,f)
-
-		
-		
-			'''
-			if post_create_time['date'] in date_list:
-				#update temp_data ????how??
-				_data[i]
-				pass
-			else:
-				#add temp_data
-				date_list.append(post_create_time['date'])
-				_data.append(temp_data)
-			'''
-			
-			'''
-            if post_create_time.has_key(date):
-                post_create_time[date]['title'].append(result['title'].encode('utf-8'))
-            else:
-                pass
-            post_create_time = result['post_create_date'].date()
             title = result['title'].encode('utf-8')
             link = result['link'].encode('utf-8')
+            post_create_date = result['post_create_date'].date().strftime('%Y-%m-%d')
+            post_create_date=dateFormat(post_create_date)
+            print post_create_date
             last_status = result['last_status'].encode('utf-8')
-            f.write('post_create_time: %s , title: %s , reply: %s\n' % (post_create_time, title, last_status,))
-            topic_json['data']['date'] = post_create_time
-            topic_json['data']['content'] = title
-            topic_json['data']['times'] = int(last_status)
-'''
+            #temp_data={'date':post_create_date,'content':title,'reply':last_status}
+            if temp_data.has_key(post_create_date):
+                #update temp_data
+                temp_data[post_create_date]['content'].append(title)
+                old_reply=temp_data[post_create_date]['reply']
+                new_reply=str(int(old_reply)+int(last_status))  #only for content=title, if use comment use len directy
+                temp_data[post_create_date]['reply']=new_reply
+            else:
+                #add temp_data
+                temp_data[post_create_date]={'content':[title],'reply':last_status}
+
+
+        #set temp_data to data_list
+        for k,v in temp_data.items():
+            _data={}
+            _data['date']=k
+            _data['content']=v['content']
+            _data['reply']=v['reply']
+
+            data_list.append(_data)
+        #set topic data compare with data format
+        topic_json['topic'] = _topic
+        topic_json['data']=data_list
+        #print topic_json
+        #save topic_json
+        topic_list.append(topic_json)
+    f.write(json.dumps(topic_list))   
+    
 
 # --TF-IDF--#
 print('-' * 40)
