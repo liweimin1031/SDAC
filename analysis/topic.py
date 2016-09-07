@@ -239,7 +239,7 @@ with open('../web/view/dbData.json', 'w')as f:
                 content = ''.join(text.strip().encode('utf-8'))
             # content=''.join(result['content']['text']).encode('utf-8')
             title = result['title'].encode('utf-8')
-            link = result['link'].encode('utf-8')
+            
             post_create_date = result['post_create_date'].date().strftime('%Y-%m-%d')
             post_create_date=dateFormat(post_create_date)
             print post_create_date

@@ -5,6 +5,9 @@ from pymongo import MongoClient
 from __builtin__ import list
 import re
 from scrapy.http.request.form import _select_value
+from django.template.defaultfilters import title
+from nltk.ccg.lexicon import COMMENTS_RE
+from twisted.web.test.test_xml import CommentTests
 
 class dbUnit(object):
 	def __init__(self):
@@ -57,29 +60,52 @@ class dbUnit(object):
 			post = [post.strip() for post in post_content]
 			seg.append(title.strip())
 			seg.append(''.join(post))
-			'''
+			#add comment date
 			for comment_list in comment:
 				comment_text_list=[comment_text.strip() for comment_text in comment_list['content']['text']]
 				comment_content=''.join(comment_text_list)
 				if len(comment_text)>=10:
 					seg.append(comment_content)
-			'''
+			
 			contents.append(''.join(seg))
 		return contents
 
 	def select_keywords(self, keywords):
 		# keywords must be unicode list
 		reList = []
+		for w in keywords:
+			word = re.compile(w)
+			reList.append(word)
+		result_list = []
 		start_date = '2016-7-1'
 		end_date = '2016-8-2'
 		start_date = datetime.strptime(start_date, '%Y-%m-%d')
 		end_date = datetime.strptime(end_date, '%Y-%m-%d')
-		dbReturn = {'post_create_date':1, 'title':1, 'content.text':1, 'link':1, 'last_status':1, '_id':0}
+		
+		titleReturn = {'post_create_date':1, 'title':1, 'last_status':1, '_id':0}
+		commentReturn = {'comments.create_time':1, 'comments.content.text':1, '_id':0}
+		postReturn = {'post_create_date':1, 'content.text':1, '_id':0}
+		
+		sort_title_term=[('post_create_date', pymongo.ASCENDING)]
+		sort_comment_term=[('create_time', pymongo.ASCENDING)]
+		sort_post_term=[('post_create_date', pymongo.ASCENDING)]
+		
 		select_date = {'$gte':start_date, '$lte':end_date}
-		for w in keywords:
-			word = re.compile(w)
-			reList.append(word)
-		result_list = self.post.find({'post_create_date':select_date, '$or':[{'title':{'$in':reList}}, {'content.text':{'$in':reList}}]}, dbReturn).sort([('post_create_date', pymongo.ASCENDING), ('last_status', pymongo.DESCENDING)])
+		select_title_term={'post_create_date':select_date, 'title':{'$in':reList}}
+		select_comment_term={'comments.create_time':select_date, 'comments.content.text':{'$in':reList}}
+		select_post_term={'post_create_date':select_date, 'content.text':{'$in':reList}}
+
+		title=self.post.find(select_title_term,titleReturn).sort(sort_title_term)
+		post=self.post.find(select_post_term, postReturn).sort(sort_post_term)
+		comment=self.post.find(select_comment_term, commentReturn).sort(sort_comment_term)
+		
+		result_list=self.post.aggregate([{'$match':{'comments.create_time':select_date}},
+										{'$project':{'comments.create_time':1, 'comments.content.text':1, '_id':0}},
+                                         {'$unwind':'$comments'},{'$match':{'comments.content.text':{'$in':reList}}},
+                                         {'$group': {_id:null,'date': '$comments.create_time', 'content': {'$push': '$comments.content.text'}}},
+                                         {'$sort':{'date':1}}])
+		
+		
 		return result_list
 	
 
