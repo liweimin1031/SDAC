@@ -235,25 +235,35 @@ with open('../web/view/dbData.json', 'w')as f:
         temp_data=OrderedDict()
         for result in result_list:
             #one date obj
-            for text in result['content']['text']:
-                content = ''.join(text.strip().encode('utf-8'))
+            contents = result['content']
+            texts=[]
+            for content in contents:  #get one content
+                text = ''.join([text.strip().encode('utf-8') for text in content)] #join text list in one content
+                texts.append(text)
             # content=''.join(result['content']['text']).encode('utf-8')
-            title = result['title'].encode('utf-8')
-            
-            post_create_date = result['post_create_date'].date().strftime('%Y-%m-%d')
+            #title = result['title'].encode('utf-8')
+            #post_create_date = result['post_create_date'].date().strftime('%Y-%m-%d')
+            post_create_date = result['_id'].date().strftime('%Y-%m-%d')
             post_create_date=dateFormat(post_create_date)
             print post_create_date
-            last_status = result['last_status'].encode('utf-8')
+            #last_status = result['last_status'].encode('utf-8')
+            
             #temp_data={'date':post_create_date,'content':title,'reply':last_status}
             if temp_data.has_key(post_create_date):
                 #update temp_data
-                temp_data[post_create_date]['content'].append(title)
+                #temp_data[post_create_date]['content'].append(title)
+                temp_data[post_create_date]['content']=temp_data[post_create_date]['content']+texts
+                '''
                 old_reply=temp_data[post_create_date]['reply']
                 new_reply=str(int(old_reply)+int(last_status))  #only for content=title, if use comment use len directy
                 temp_data[post_create_date]['reply']=new_reply
+                '''
             else:
+                temp_data[post_create_date]={'content':texts}
+            
                 #add temp_data
-                temp_data[post_create_date]={'content':[title],'reply':last_status}
+                #temp_data[post_create_date]={'content':[title],'reply':last_status}
+                #temp_data[post_create_date]={'content':[content]}
 
 
         #set temp_data to data_list
