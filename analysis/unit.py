@@ -102,7 +102,7 @@ class dbUnit(object):
 		result_list=self.post.aggregate([{'$match':{'comments.create_time':select_date}},
 										{'$project':{'comments.create_time':1, 'comments.content.text':1, '_id':0}},
                                          {'$unwind':'$comments'},{'$match':{'comments.content.text':{'$in':reList}}},
-                                         {'$group': {_id:null,'date': '$comments.create_time', 'content': {'$push': '$comments.content.text'}}},
+                                         {'$group': {'_id': '$comments.create_time'}, 'content': {'$push': '$comments.content.text'}}},
                                          {'$sort':{'date':1}}])
 		
 		
