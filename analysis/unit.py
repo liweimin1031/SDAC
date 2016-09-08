@@ -7,7 +7,7 @@ import re
 from scrapy.http.request.form import _select_value
 from django.template.defaultfilters import title
 from nltk.ccg.lexicon import COMMENTS_RE
-from twisted.web.test.test_xml import CommentTests
+
 
 class dbUnit(object):
 	def __init__(self):
@@ -19,8 +19,7 @@ class dbUnit(object):
 	def conDB(self):
 		client = MongoClient('localhost', 27017)
 		db = client['financial']
-		post = db['post']
-		return post
+		return db
 	
 	def getGraph(self):
 
@@ -99,11 +98,11 @@ class dbUnit(object):
 		post=self.post.find(select_post_term, postReturn).sort(sort_post_term)
 		comment=self.post.find(select_comment_term, commentReturn).sort(sort_comment_term)
 		
-		result_list=self.post.aggregate([{'$match':{'comments.create_time':select_date}},
+		result_list=self.post.aggregate([
 										{'$project':{'comments.create_time':1, 'comments.content.text':1, '_id':0}},
-                                         {'$unwind':'$comments'},{'$match':{'comments.content.text':{'$in':reList}}},
-                                         {'$group': {'_id': '$comments.create_time'}, 'content': {'$push': '$comments.content.text'}}},
-                                         {'$sort':{'date':1}}])
+										{'$unwind':'$comments'},{'$match':{'comments.create_time':select_date,'comments.content.text':{'$in':reList}}},
+										{'$group': {'_id': '$comments.create_time', 'content': {'$push': '$comments.content.text'}}},
+										{'$sort':{'_id':1}}])
 		
 		
 		return result_list

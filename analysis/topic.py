@@ -184,13 +184,13 @@ for pattern in patterns:
         value_word = words.split('*')
         word = value_word[1]
         words_list.append(word)
-
+    print words_list
     for w in words_list:    
         if w not in keywords:
             keywords.append(w.strip())
             break
         else:
-            break
+            continue
 for word in keywords:           
     print word
 
@@ -238,14 +238,14 @@ with open('../web/view/dbData.json', 'w')as f:
             contents = result['content']
             texts=[]
             for content in contents:  #get one content
-                text = ''.join([text.strip().encode('utf-8') for text in content)] #join text list in one content
+                text = ''.join([text.strip().encode('utf-8') for text in content]) #join text list in one content
                 texts.append(text)
             # content=''.join(result['content']['text']).encode('utf-8')
             #title = result['title'].encode('utf-8')
             #post_create_date = result['post_create_date'].date().strftime('%Y-%m-%d')
             post_create_date = result['_id'].date().strftime('%Y-%m-%d')
             post_create_date=dateFormat(post_create_date)
-            print post_create_date
+            
             #last_status = result['last_status'].encode('utf-8')
             
             #temp_data={'date':post_create_date,'content':title,'reply':last_status}
@@ -271,7 +271,7 @@ with open('../web/view/dbData.json', 'w')as f:
             _data={}
             _data['date']=k
             _data['content']=v['content']
-            _data['reply']=v['reply']
+            #_data['reply']=v['reply']
 
             data_list.append(_data)
         #set topic data compare with data format
