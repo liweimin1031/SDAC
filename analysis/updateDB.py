@@ -78,7 +78,7 @@ def conDB(collection):
     return curs
 
 start_date = '2016-7-1'
-end_date = '2016-8-2'
+end_date = '2016-8-1'
 start_date = datetime.strptime(start_date, '%Y-%m-%d')
 end_date = datetime.strptime(end_date, '%Y-%m-%d')
 post=conDB('post')
@@ -93,7 +93,7 @@ def conLAS(collection):
     curs=db[collection]
     return curs
 num=1
-discuss=conLAS('discusshk')
+discuss=conLAS('discuss')
 for obj in objs:
     comments=obj['comments']
     for i,comment in enumerate(comments):
