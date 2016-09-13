@@ -48,17 +48,20 @@ def strQ2B(ustring):
             inside_code -= 65248  
   
         rstring += unichr(inside_code)  
-    return rstring  
-# --replace synonym--#
-def reSynonym(sDict, sentence):
-    r_seg = []
-    sum_replace = 0
-    for seg in sentence:
-        if sDict.has_key(seg):
-            seg = sDict[seg]
-            sum_replace += 1
-            r_seg.append(seg)
-   
+    return rstring
+    
+def reReplace(sen):
+    sen=re.sub(r'\.{2,}','',sen)
+    while 1:
+        mm = re.search("\d,\d", sen)
+        if mm:
+            mm = mm.group()
+            sen = sen.replace(mm, mm.replace(",", ""))
+            print sen
+        else:
+            break
+    return sen
+    
 # --delete stop words and replace synonym--#
 def cleanWords(seg_list):
     c_seg = []
@@ -99,6 +102,7 @@ for obj in objs:
     for i,comment in enumerate(comments):
         text=''.join([text_list.strip() for text_list in comment['content']['text']])
         text=strQ2B(text)
+        text=reReplace(text)
         obj['comments'][i]['text']=text
         pseg_list = pseg.cut(text)
         word_flag=[]
