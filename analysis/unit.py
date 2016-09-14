@@ -46,7 +46,7 @@ class dbUnit(object):
 	def getContent(self):
 		# title=self.post.find({'post_create_date':{'$gte':datetime(2016,7,1),'$lte':datetime(2016,8,2)}},{'title':1,'_id':0})
 		start_date = '2016-7-1'
-		end_date = '2016-8-2'
+		end_date = '2016-8-1'
 		start_date = datetime.strptime(start_date, '%Y-%m-%d')
 		end_date = datetime.strptime(end_date, '%Y-%m-%d')
 		db_contents = self.post.find({'post_create_date':{'$gte':start_date, '$lte':end_date}}, {'title':1, 'content.text':1, 'comments.content.text':1, '_id':0})
