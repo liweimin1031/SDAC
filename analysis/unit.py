@@ -2,11 +2,8 @@
 from datetime import datetime
 import pymongo
 from pymongo import MongoClient
-from __builtin__ import list
 import re
-from scrapy.http.request.form import _select_value
-from django.template.defaultfilters import title
-from nltk.ccg.lexicon import COMMENTS_RE
+
 
 
 class dbUnit(object):
@@ -16,10 +13,13 @@ class dbUnit(object):
 		self.post = db['post']
 		self.file = open('graph.txt', 'wb')
 	
-	def conDB(self):
-		client = MongoClient('localhost', 27017)
-		db = client['financial']
-		return db
+	def conLAS(self,collection):
+		client = MongoClient('int-db01.elana.org', 27017)
+		db_auth = client['las_dev']
+		db_auth.authenticate("las_dev", "DB41as-1")
+		db = client['las_dev']
+		curs=db[collection]
+		return curs
 	
 	def getGraph(self):
 
