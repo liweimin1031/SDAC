@@ -3,22 +3,20 @@ from datetime import datetime
 import pymongo
 from pymongo import MongoClient
 import jieba
-import jieba.posseg as pseg
 import re
 
 # --load dict--#
 print'loading dict......'
-jieba.load_userdict('./dict/dict.txt.big')
-
+jieba.load_userdict('../dict/dict.txt.big')
 print'loading hkexDict......'
-jieba.load_userdict('./dict/hkexDict_update.txt')
+jieba.load_userdict('../dict/hkexDict_update.txt')
 print'loading oralDict......'
-jieba.load_userdict('./dict/oralDict.txt')
+jieba.load_userdict('../dict/oralDict.txt')
 print'loading userDict......'
-jieba.load_userdict('./dict/userDict.txt')
+jieba.load_userdict('../dict/userDict.txt')
 # --set stop words--#
 stopList = []
-with open('./dict/oralDict.txt') as f1, open('./dict/stop_words_ch.txt')as f2, open('./dict/stop_words_custom.txt')as f3, open('./dict/stop_words_eng.txt')as f4:
+with open('../dict/oralDict.txt') as f1, open('../dict/stop_words_ch.txt')as f2, open('../dict/stop_words_custom.txt')as f3, open('../dict/stop_words_eng.txt')as f4:
     for word in f1.readlines():
         stopList.append(word.strip().decode('utf-8'))
     for word in f2.readlines():
@@ -29,7 +27,7 @@ with open('./dict/oralDict.txt') as f1, open('./dict/stop_words_ch.txt')as f2, o
         stopList.append(word.strip().decode('utf-8'))
 
 # --set synonym dict--#
-with open('./dict/hkexSynonym_update.txt') as f:
+with open('../dict/hkexSynonym_update.txt') as f:
     data_list = f.readlines()
     synonymDict = {}
     for line in data_list:
@@ -57,7 +55,6 @@ def reReplace(sen):
         if mm:
             mm = mm.group()
             sen = sen.replace(mm, mm.replace(",", ""))
-            print sen
         else:
             break
     return sen
@@ -74,38 +71,51 @@ def cleanWords(seg_list):
                     seg = synonymDict[seg]       
                 c_seg.append(seg)
     return  c_seg
-def conDB(collection):
-    client = MongoClient('localhost', 27017)
-    db = client['financial']
-    curs=db[collection]
-    return curs
-
-start_date = '2016-7-1'
-end_date = '2016-8-1'
-start_date = datetime.strptime(start_date, '%Y-%m-%d')
-end_date = datetime.strptime(end_date, '%Y-%m-%d')
-post=conDB('post')
-objs=post.find({'post_create_date':{'$gte':start_date, '$lte':end_date}},{'_id':0}).sort([('post_create_date',1)])
-#objs=post.find({},{'_id':0}).limit(50)
 
 
-num=1
+
 
 def doText(text):
     text=strQ2B(text)
     text=reReplace(text)
     words = jieba.cut(text,cut_all=False)
-    clean_word=cleanWords(words)    
-    return words
+    clean_word=cleanWords(words)
+    clean_word=list(clean_word)    
+    return clean_word
 
-for obj in objs:
-    title=obj['title']
-    title=doText(title)
-    comments=obj['comments']
-    for i,comment in enumerate(comments):
-        comment=''.join([text_list.strip() for text_list in comment['content']['text']])
-        comment=doText(comment)
+def getDB():
+    client = MongoClient('localhost', 27017)
+    db = client['financial']
+    post=db['post']
+    start_date = '2016-7-1'
+    end_date = '2016-8-1'
+    start_date = datetime.strptime(start_date, '%Y-%m-%d')
+    end_date = datetime.strptime(end_date, '%Y-%m-%d')
+    objs=post.find({'post_create_date':{'$gte':start_date, '$lte':end_date}},{'_id':0}).sort([('post_create_date',1)])
+    #objs=post.find({},{'_id':0}).limit(50)
+    return objs
 
-    print num  
-    num+=1
-     
+def dataPrepare():
+    num=1
+    documents=[]
+    objs=getDB()
+    for obj in objs:
+        document=[]
+        title=obj['title']
+        title=doText(title)
+        content=''.join(obj['content']['text'])
+        content=doText(content)
+        document.extend(title)
+        document.extend(content)
+        comments=obj['comments']
+        for comment in comments:
+            comment=''.join([text_list.strip() for text_list in comment['content']['text']])
+            comment=doText(comment)
+            document.extend(comment)
+        documents.append(document)
+        print num  
+        num+=1
+    return documents
+    
+
+
