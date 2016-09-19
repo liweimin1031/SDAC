@@ -76,12 +76,13 @@ def cleanWords(seg_list):
 
 
 def doText(text):
+    #text is a string 
     text=strQ2B(text)
     text=reReplace(text)
-    words = jieba.cut(text,cut_all=False)
+    words = jieba.cut(text,cut_all=False)  #segmentation method use by jieba
     clean_word=cleanWords(words)
     clean_word=list(clean_word)    
-    return clean_word
+    return clean_word   #clean_word is a cut list segmentation 
 
 def getDB():
     client = MongoClient('localhost', 27017)
@@ -96,6 +97,10 @@ def getDB():
     return objs
 
 def dataPrepare():
+    '''
+    documents is an 2array  [ [ ],[ ],[ ]....]
+    
+    '''
     num=1
     documents=[]
     objs=getDB()
