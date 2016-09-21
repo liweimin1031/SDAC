@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//analysis/seg_analyze.py=utf-8
 encoding//analysis/sparklda/PreProcessUtils.py=utf-8
 encoding//analysis/sparklda/lda.py=utf-8
 encoding//analysis/topic.py=utf-8
