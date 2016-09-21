@@ -90,7 +90,11 @@
     <div class="container-fluid text-center">
         <div class="row content">
             <div class="col-sm-2 sidenav">
-                
+                <label for="sel_module">Select Module:</label>
+                <select class="form-control" id="sel_module" onchange='selFunction()'>
+                    <option value="lda">LDA</option>
+                    <option value="textrank">Textrank</option>
+                </select>
                 <table class="table table-hover"> 
                     <tbody id="topic_table"> 
                 </table>
@@ -141,7 +145,22 @@
 		} 
 		//read file and get json data
     //var data_file='dbData.json';
-    var data_file='textrank_dbData_month.json';
+        var data_file='lda_dbData_month.json';
+        function selFunction(){
+            var select_value=$('#sel_module option:selected').val();
+            if (select_value=='lda'){
+                data_file='lda_dbData_month.json';
+            }else if(select_value=='textrank'){
+                data_file='textrank_dbData_month.json';
+            }
+            $.get(data_file,function(data){
+                console.log('readfile');
+                topic_obj = eval('(' + data + ')');
+                console.log(topic_obj[0].data[0].content)
+                setTable(topic_obj)
+		});
+        
+        }
 		$.get(data_file,function(data){
 			console.log('readfile');
 			topic_obj = eval('(' + data + ')');

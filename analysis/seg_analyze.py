@@ -43,12 +43,9 @@ with open('./dict/hkexSynonym_update.txt') as f:
         synonymDict[key] = value
 
 #---set db select date---#
-def setDate(start_date='2016-7-1',end_date='2016-8-1'):
-    date={
-            'start_date':start_date,
-            'end_date': end_date   
-    }
-    return date
+global_start_date='2016-7-1'
+global_end_date='2016-8-1'
+
         
 #---textrank---#
 def textrank(sentence):
@@ -119,11 +116,9 @@ def conDB(collection):
 
 def getDB():
     post=conDB('discusshk')
-    date=setDate()
-    start_date = date['start_date']
-    end_date = date['end_date']
-    start_date = datetime.strptime(start_date, '%Y-%m-%d')
-    end_date = datetime.strptime(end_date, '%Y-%m-%d')
+
+    start_date = datetime.strptime(global_start_date, '%Y-%m-%d')
+    end_date = datetime.strptime(global_start_date, '%Y-%m-%d')
     date_query={'$gte':start_date, '$lte':end_date}
     objs=post.find({'post_create_date':date_query}).sort([('post_create_date',1)])
     #find post_create_date and group comments.create_time
@@ -182,10 +177,9 @@ def selectDB(keywords):
     # keywords must be unicode list
     post=conDB('discusshk')
     result_list = []
-    
-    date=setDate()
-    start_date = date['start_date']
-    end_date = date['end_date']
+
+    start_date = global_start_date
+    end_date = global_start_date
     
     start_date = datetime.strptime(start_date, '%Y-%m-%d')
     end_date = datetime.strptime(end_date, '%Y-%m-%d')
