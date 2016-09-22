@@ -112,7 +112,7 @@
 	</footer>
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('main'));
+    var myChart = echarts.init(document.getElementById('main'));
 		var start='2016-7-1';
 		var end='2016-8-1';
 		var topic_obj;
@@ -140,31 +140,47 @@
 				_cell.innerText = td_topic; 
 				_row.appendChild(_cell); 
 				document.getElementById("topic_table").appendChild(_row); 
-		
 			} 
+      _row1=_table.getElementsByTagName('tr')[0];
+      _row1.click();
 		} 
+    function changeTable(tableData){
+      var trLineNumber=tableData.length;
+      var _table = document.getElementById("topic_table"); 
+			var _row=_table.getElementsByTagName('tr') 
+			var _cell;
+
+			for (var i = 0; i < trLineNumber; i++) { 
+        _cell=_row[i].getElementsByTagName('td')[0]
+				var td_topic=tableData[i].topic;
+				var td_data=tableData[i].data;
+				_row[i].onclick= function(){myChart.setOption(setOption(this))}; //为每行增加单击事件 
+				_cell.innerText = td_topic; 
+			}
+      _row1=_row[0];
+      _row1.click();      
+    };
+    
 		//read file and get json data
     //var data_file='dbData.json';
-        var data_file='lda_dbData_month.json';
-        function selFunction(){
-            var select_value=$('#sel_module option:selected').val();
-            if (select_value=='lda'){
-                data_file='lda_dbData_month.json';
-            }else if(select_value=='textrank'){
-                data_file='textrank_dbData_month.json';
-            }
-            $.get(data_file,function(data){
-                console.log('readfile');
-                topic_obj = eval('(' + data + ')');
-                console.log(topic_obj[0].data[0].content)
-                setTable(topic_obj)
-		});
+    var data_file='./data/lda_dbData_week1.json';
+    function selFunction(){
+      var select_value=$('#sel_module option:selected').val();
+      if (select_value=='lda'){
+          data_file='lda_dbData_month.json';
+      }else if(select_value=='textrank'){
+          data_file='textrank_dbData_month.json';
+      }
+      $.get(data_file,function(data){
+          console.log('readfile');
+          topic_obj = eval('(' + data + ')');
+          changeTable(topic_obj)
+      });
         
         }
 		$.get(data_file,function(data){
 			console.log('readfile');
 			topic_obj = eval('(' + data + ')');
-			console.log(topic_obj[0].data[0].content)
 			setTable(topic_obj)
 		});
 
@@ -190,10 +206,12 @@
 		function setOption(obj){
 			var data_index=obj.rowIndex;
 			var topic_json=topic_obj[data_index];
-			var topic= topic_json.topic;
+
 			var content_data=topic_json.data;
+      
 			var data=[];
 			var value=[];
+      var total_mentioned=0;
 			for (var i =0,j=0, len_date=date.length,len_content_data=content_data.length; i<len_date; i++){
 				//console.log(date[i])
 				data[i]='';
@@ -203,11 +221,11 @@
                     //console.log(Date.parse(date[i]))
                     //console.log(Date.parse(content_data[j].date))
 					if (date[i]==content_data[j].date){
-						console.log(date[i])
-						console.log(content_data[j].content)
+
 						data[i]=content_data[j].content;
 						//value[i]=content_data[j].reply;
-                        value[i]=content_data[j].content.length;
+            value[i]=content_data[j].content.length;
+            total_mentioned=total_mentioned+value[i]
 						j++
 						break;
 					}else{
@@ -215,7 +233,7 @@
 					}
 				}
 			}
-			
+			var topic= topic_json.topic+'('+total_mentioned+')';
 			
 			option = {
 				title:{

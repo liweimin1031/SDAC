@@ -118,8 +118,8 @@ def getDB():
     post=conDB('discusshk')
 
     start_date = datetime.strptime(global_start_date, '%Y-%m-%d')
-    end_date = datetime.strptime(global_start_date, '%Y-%m-%d')
-    date_query={'$gte':start_date, '$lte':end_date}
+    end_date = datetime.strptime(global_end_date, '%Y-%m-%d')
+    date_query={'$gte':start_date, '$lt':end_date}
     objs=post.find({'post_create_date':date_query}).sort([('post_create_date',1)])
     #find post_create_date and group comments.create_time
     
@@ -179,11 +179,11 @@ def selectDB(keywords):
     result_list = []
 
     start_date = global_start_date
-    end_date = global_start_date
+    end_date = global_end_date
     
     start_date = datetime.strptime(start_date, '%Y-%m-%d')
     end_date = datetime.strptime(end_date, '%Y-%m-%d')
-    select_date = {'$gte':start_date, '$lte':end_date}
+    select_date = {'$gte':start_date, '$lt':end_date}
     
     result_list=post.aggregate([
                                     {'$project':{'post_create_date':1,'comments.create_time':1, 'comments.text':1, 'comments.seg':1, '_id':0}},
@@ -257,15 +257,32 @@ def dataFormat(topic_words):
 
     
 if __name__=='__main__':
+    '''
+    #by month
     lda_keywords,textrank_keywords=dataPrepare()
-    
     with open('../web/view/lda_dbData_month.json', 'w')as f1, open('../web/view/textrank_dbData_month.json', 'w')as f2:
         lda_json=dataFormat(lda_keywords)
         f1.write(json.dumps(lda_json))
         
         textrank_json=dataFormat(textrank_keywords)
         f2.write(json.dumps(textrank_json))
-    
+    '''
+    # by week
+    date_week=[('2016-7-4','2016-7-11'),('2016-7-11','2016-7-18'),('2016-7-18','2016-7-25'),('2016-7-25','2016-8-1')]
+    web_path='../web/view/data/'
+    for i,week in enumerate(date_week,1):
+        global_start_date=week[0]
+        global_end_date=week[1]
+        lda_file_name='lda_dbData_week'+str(i)+'.json'
+        textrank_file_name='textrank_dbData_week'+str(i)+'.json'
+        lda_open_file=web_path+lda_file_name
+        textrank_open_file=web_path+textrank_file_name
+        lda_keywords,textrank_keywords=dataPrepare()
+        with open(lda_open_file, 'w')as f1, open(textrank_open_file, 'w')as f2:
+            lda_json=dataFormat(lda_keywords)
+            f1.write(json.dumps(lda_json))
+            textrank_json=dataFormat(textrank_keywords)
+            f2.write(json.dumps(textrank_json))
 
 
 
