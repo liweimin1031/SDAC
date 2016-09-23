@@ -91,9 +91,16 @@
         <div class="row content">
             <div class="col-sm-2 sidenav">
                 <label for="sel_module">Select Module:</label>
-                <select class="form-control" id="sel_module" onchange='selFunction()'>
+                <select class="form-control" id="sel_module" onchange='selModuleFunction()'>
                     <option value="lda">LDA</option>
                     <option value="textrank">Textrank</option>
+                </select>
+                <select class="form-control" id="sel_period" onchange='selPeriodFunction()'>
+                    <option value="july">July</option>
+                    <option value="week1">Week1</option>
+                    <option value="week2">Week2</option>
+                    <option value="week3">Week3</option>
+                    <option value="week4">Week4</option>
                 </select>
                 <table class="table table-hover"> 
                     <tbody id="topic_table"> 
@@ -111,18 +118,48 @@
 	  <p>Hong Kong Applied Science and Technology Research Institute Company Limited (ASTRI)</p>
 	</footer>
     <script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
+    //set global params
     var myChart = echarts.init(document.getElementById('main'));
-		var start='2016-7-1';
-		var end='2016-8-1';
 		var topic_obj;
-		
+		var defaultDate={
+                'july':['2016-7-1','2016-8-1'],
+                'week1':['2016-7-4','2016-7-11'],
+                'week2':['2016-7-11','2016-7-18'],
+                'week3':['2016-7-18','2016-7-25'],
+                'week4':['2016-7-25','2016-8-1']
+    };
 		var oneDay = 24 * 3600 * 1000;
-		var start_date = Date.parse(start);
-		var end_date= Date.parse(end);
-		var dates=(end_date-start_date)/oneDay;
-		var date=[];
-		
+		var date;
+    var data_file;
+    var default_file='./data/lda_dbData_july.json';
+    
+    function init(){
+      setDate('july');
+    	$.get(default_file,function(data){
+        console.log('readfile');
+        topic_obj = eval('(' + data + ')');
+        setTable(topic_obj)
+      });
+    }
+    init()
+    
+    
+    function setDate(select_date){
+      date=[];
+      var start=defaultDate[select_date];
+      var end=defaultDate[select_date];
+      var start_date = Date.parse(start[0]);
+      var end_date= Date.parse(end[1]);
+      var dates=(end_date-start_date)/oneDay;
+      var now;
+      var str_date;
+      for (var i = 0; i <= dates; i++) {
+        now = new Date(start_date+ i*oneDay);
+        str_date=[now.getFullYear(), now.getMonth()+1 , now.getDate()].join('-');
+        date.push(str_date);
+      };
+    }
+
 	   //content_data[k]='<p>'+v+'</p>'
 
 		// draw table
@@ -160,43 +197,39 @@
       _row1=_row[0];
       _row1.click();      
     };
-    
+
 		//read file and get json data
     //var data_file='dbData.json';
-    var data_file='./data/lda_dbData_week1.json';
-    function selFunction(){
-      var select_value=$('#sel_module option:selected').val();
-      if (select_value=='lda'){
-          data_file='lda_dbData_month.json';
-      }else if(select_value=='textrank'){
-          data_file='textrank_dbData_month.json';
+    
+    function selModuleFunction(){
+      var reset_select_period=document.getElementById('sel_period');
+      reset_select_period.options[0].selected=true;
+      selPeriodFunction();
+        
+    }
+    function selPeriodFunction(){
+
+      var select_module_value=$('#sel_module option:selected').val();
+      if (select_module_value=='lda'){
+          data_file='./data/lda_dbData_';
+      }else if(select_module_value=='textrank'){
+          data_file='./data/textrank_dbData_';
       }
-      $.get(data_file,function(data){
+      var select_period_value=$('#sel_period option:selected').val(); 
+      var file_name=data_file+select_period_value+'.json';
+      
+      setDate(select_period_value)
+      
+      $.get(file_name,function(data){
           console.log('readfile');
           topic_obj = eval('(' + data + ')');
           changeTable(topic_obj)
       });
+    
+    }
         
-        }
-		$.get(data_file,function(data){
-			console.log('readfile');
-			topic_obj = eval('(' + data + ')');
-			setTable(topic_obj)
-		});
 
-		for (var i = 0; i <= dates; i++) {
-			var now = new Date(start_date+ i*oneDay);
-			var str_date=[now.getFullYear(), now.getMonth()+1 , now.getDate()].join('-');
-			date.push(str_date);
-		};
-/*
-		 var content_data=[
-			{'date':'2016-7-10','content': ['2628 中國人壽'],'reply':116},
-			{'date':'2016-7-11','content': ['估值明顯偏低, 買入1萬股中國人壽, 目標$20元'],'reply':41},
-			{'date':'2016-7-15','content': ['2628 中人壽首目標先看22蚊'],'reply':18}
-		];
-		
-*/
+
 
 		function dateFormat(date){
 			temp=date.split('-')
