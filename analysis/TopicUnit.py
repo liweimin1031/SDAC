@@ -1,5 +1,5 @@
 from gensim import corpora, models
-
+from collections import OrderedDict
 # --LDA model--#
 def LDA(words_list):
     #input words_list is documents [ [ ] ,[ ], [ ]..... ]
@@ -40,9 +40,13 @@ def LDA(words_list):
         print  pattern[1]
         words_bag = pattern[1].split(' + ')
         words_list = []
+        word_value=OrderedDict()
         for words in words_bag:
             value_word = words.split('*')
             word = value_word[1]
-            words_list.append(word)
-        keywords.append(words_list)
+            value=value_word[0]
+            word_value[word]=value # 'weight1*word1 + weight2*word2...' ===>{'word1':'weight1','word2':'weight2'...} 
+            #words_list.append(word)
+        #keywords.append(words_list)
+        keywords.append(word_value)
     return keywords

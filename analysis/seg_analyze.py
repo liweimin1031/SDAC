@@ -101,6 +101,8 @@ def doText(text):
     text=strQ2B(text)
     text=reReplace(text)
     words = jieba.cut(text,cut_all=False)  #segmentation method use by jieba
+    #words_position=jieba.tokenize(text)  #return words with position ("word %s\t\t start: %d \t\t end:%d" % (tk[0],tk[1],tk[2]))
+    #words=[tk[0] for tk in words_position]
     clean_word=cleanWords(words)
     clean_word=list(clean_word)    
     return clean_word   #clean_word is a cut list segmentation 
@@ -189,10 +191,11 @@ def selectDB(keywords):
                                     {'$project':{'post_create_date':1,'comments.create_time':1, 'comments.text':1, 'comments.seg':1, '_id':0}},
                                     {'$unwind':'$comments'},
                                     {'$match':{'post_create_date':select_date,'comments.create_time':select_date,'comments.seg':{'$in':keywords}}},
-                                    {'$group': {'_id': '$comments.create_time', 'content': {'$push': '$comments.text'}}},
+                                    {'$group': {'_id': '$comments.create_time', 'content': {'$push': {'text':'$comments.text','seg':'$comments.seg'}}}},
                                     {'$sort':{'_id':1}}])
     '''                                
     project={'post_create_date':1,'title_seg':1, 'comments.create_time':1,'comments.content.text':1, '_id':0}
+    result_list=post.aggregate([
     result_list=post.aggregate([
                                     {'$project':project},
                                     {'$unwind':'$comments'},
@@ -205,6 +208,15 @@ def selectDB(keywords):
     '''
     return result_list
 
+#LDA doc topic rate
+def docTopicRate(doc):
+    lda_word_value
+    for word in doc:
+        if lda_word_value.has_key(word):
+            value=lda_word_value[word]
+    
+    return word
+    
 #set date format as 2016-7-1
 def dateFormat(date):
     temp=date.split('-')
