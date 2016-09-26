@@ -209,14 +209,14 @@ def selectDB(keywords):
     return result_list
 
 #LDA doc topic rate
-def docTopicRate(doc):
-    lda_word_value
+def docTopicRate(seg):
+    lda_word_weight
     words=[]
     rate=0
-    for word in doc:
-        if lda_word_value.has_key(word):
-            value=lda_word_value[word]
-            rate+=value
+    for word in seg:
+        if lda_word_weight.has_key(word):
+            weight=lda_word_weight[word]
+            rate+=weight
             words.append(word)
     return words, rate
     
@@ -225,11 +225,11 @@ def dateFormat(date):
     temp=date.split('-')
     return temp[0] + '-' + str(int(temp[1])) + '-' + str(int(temp[2]));  
 
-def dataFormat(topic_words):
+def dataFormat(lda_word_weight):
     #input topic_words format:  [ [k11,k12,...] , [k21,k22,...], [k31,k32,...] .....  ]
     #compare data to web json format
     topic_list=[]
-    
+    topic_words=lda_word_weight.keys()
     for keywords in topic_words:
         db_result_list = selectDB(keywords) #get data from db
         
@@ -244,7 +244,12 @@ def dataFormat(topic_words):
             contents = result['content']
             texts=[]
             for content in contents:  #get one content
-                texts.append(content.encode('utf-8'))
+                seg=content['seg']
+                words,rate=docTopicRate(seg)
+                text=content['text']
+                tag='('+','.join(words)+':'+str(rate)+')'
+                text=(text+tag).encode('utf-8')
+                texts.append(text)
             post_create_date=result['_id'].date().strftime('%Y-%m-%d')
             post_create_date=dateFormat(post_create_date)
             
