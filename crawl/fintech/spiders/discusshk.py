@@ -10,8 +10,11 @@ from pymongo import MongoClient
 class FinTechSpider(Spider):
 	name='discuss'
 	allowed_domains=['discuss.com.hk']
-	start_urls=['http://finance.discuss.com.hk/forumdisplay.php?fid=54']
-		
+	start_urls=['http://news.discuss.com.hk/forumdisplay.php?fid=54',
+					'http://finance.discuss.com.hk/forumdisplay.php?fid=57',
+					'http://www.discuss.com.hk/forumdisplay.php?fid=40'
+					]
+
 	def __init__(self):
 		self.i=1
 		self.bNext=True
@@ -32,7 +35,13 @@ class FinTechSpider(Spider):
 		date=time.strptime(dt, self.tag_timeFormat)
 		s = time.mktime(date)
 		return int(s)
-		
+	'''
+	def start_requests(self):
+		#@Overridden start_requests
+		for url in start_urls:
+			yield scrapy.Request(url=url, callback=self.parse)
+	'''
+
 	def parse(self,response):
 		print 'start'
 		tables=Selector(response).css('tbody[id*=normalthread]')
@@ -55,9 +64,9 @@ class FinTechSpider(Spider):
 			viewed=table.css('td.nums em::text').extract()[0]
 
 			detial_url=response.urljoin(href[0])
-			comments=[]
+			posts=[]
 			graphs=[]
-			meta={'thread_id':thread_id,'title':title,'author':author,'last_status':last_status,'viewed':viewed,'link':detial_url,'comments':comments,'graphs':graphs,'new_post':True}
+			meta={'thread_id':thread_id,'title':title,'author':author,'last_status':last_status,'viewed':viewed,'link':detial_url,'posts':posts,'graphs':graphs,'new_post':True}
 			
 			status=self.post.find_one({'thread_id':thread_id},{'last_status':1})
 			if status:
@@ -85,7 +94,7 @@ class FinTechSpider(Spider):
 
 	def detial_parse(self,response):
 		tables=Selector(response).css('div.mainbox.viewthread')
-		comments=response.meta['comments']
+		posts=response.meta['posts']
 		graphs=response.meta['graphs']
 		thread_id=response.meta['thread_id']
 		title=response.meta['title']
@@ -102,19 +111,19 @@ class FinTechSpider(Spider):
 			text=table.css('div.postmessage.defaultpost div.t_msgfont span::text').extract()
 			#image=table.css('div.postmessage.defaultpost div.t_msgfont span img::attr(src)').extract()
 			reply=table.css('div.postmessage.defaultpost div.t_msgfont span div.quote ').xpath('.//text()').extract()
-			comment={'user':user, 'create_time':create_time, 'text':text}
+			post={'user':user, 'create_time':create_time, 'text':text}
 			userA=user
 			if reply:
-				comment['reply']=reply
+				post['reply']=reply
 				userB=reply[2]
 			else:
 				userB=author
 			if userA!=userB:
 				graph={'src':userA,'dst':userB}
 				graphs.append(graph)
-			comments.append(comment)
+			posts.append(post)
 
-		meta={'thread_id':thread_id,'title':title,'author':author,'last_status':last_status,'viewed':viewed,'link':link,'comments':comments,'new_post':new_post,'graphs':graphs}
+		meta={'thread_id':thread_id,'title':title,'author':author,'last_status':last_status,'viewed':viewed,'link':link,'posts':posts,'new_post':new_post,'graphs':graphs}
 		next_href=Selector(response).css('div.pages_btns div.pages a.next::attr(href)').extract()
 		if next_href:
 			#print 'sub_next_url: %s' %next_href
@@ -130,16 +139,16 @@ class FinTechSpider(Spider):
 			item['viewed']=response.meta['viewed']
 			item['link']=response.meta['link']
 			item['graphs']=response.meta['graphs']
-			item['post_create_date']=comments[0]['create_time']
-			item['content']=comments[0]['text']
-			del comments[0]
-			item['comments']=comments
+			item['post_create_date']=posts[0]['create_time']
+			item['content']=posts[0]['text']
+			#del comments[0]
+			#item['comments']=comments
 			
 			#--insert into db--#
 			if new_post:
 				postInfo=dict(item)
 				self.post.insert(postInfo)
 			else:
-				self.post.update({'thread_id':thread_id}, {'$set':{'comments':comments,'last_status':last_status,'viewed':viewed,'graphs':graphs}})
+				self.post.update({'thread_id':thread_id}, {'$set':{'posts':posts,'last_status':last_status,'viewed':viewed,'graphs':graphs}})
 			yield item
 			

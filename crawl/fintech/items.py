@@ -10,15 +10,15 @@ import scrapy
 
 class FintechItem(scrapy.Item):
 	# define the fields for your item here like:
+	category=scrapy.Field()
 	title=scrapy.Field()
-	comments=scrapy.Field()
+	posts=scrapy.Field()
 	author=scrapy.Field()
 	post_create_date=scrapy.Field()
 	last_status=scrapy.Field()
 	viewed=scrapy.Field()
 	link=scrapy.Field()
 	content=scrapy.Field()
-	comments=scrapy.Field()
 	graphs=scrapy.Field()
 	thread_id=scrapy.Field()
 	
