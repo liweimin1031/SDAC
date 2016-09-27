@@ -55,8 +55,11 @@ def textrank(sentence):
     print('-' * 40)
     keywords=[]
     for x, w in jieba.analyse.textrank(sentence, topK=5,withWeight=True):
+        word_weight=dict()
         print('%s %s' % (x, w))
-        keywords.append([x])
+        word_weight[x]=w
+        keywords.append(word_weight)
+    #keywords format [{'word1':'weight1'},{'word2':'weight2'}...]
     return keywords
 
 def strQ2B(ustring):  
@@ -209,13 +212,13 @@ def selectDB(keywords):
     return result_list
 
 #LDA doc topic rate
-def docTopicRate(seg):
-    lda_word_weight
+def docTopicRate(seg,word_weight):
+    word_weight
     words=[]
     rate=0
     for word in seg:
-        if lda_word_weight.has_key(word):
-            weight=lda_word_weight[word]
+        if word_weight.has_key(word):
+            weight=float(word_weight[word])
             rate+=weight
             words.append(word)
     return words, rate
@@ -225,12 +228,15 @@ def dateFormat(date):
     temp=date.split('-')
     return temp[0] + '-' + str(int(temp[1])) + '-' + str(int(temp[2]));  
 
-def dataFormat(lda_word_weight):
+def dataFormat(word_weight_list):
+    #topic_words=[temp.keys() for temp in word_weight]  
     #input topic_words format:  [ [k11,k12,...] , [k21,k22,...], [k31,k32,...] .....  ]
     #compare data to web json format
     topic_list=[]
-    topic_words=lda_word_weight.keys()
-    for keywords in topic_words:
+
+    for word_weight in word_weight_list:
+        
+        keywords=word_weight.keys()
         db_result_list = selectDB(keywords) #get data from db
         
         topic_json={}
@@ -245,7 +251,7 @@ def dataFormat(lda_word_weight):
             texts=[]
             for content in contents:  #get one content
                 seg=content['seg']
-                words,rate=docTopicRate(seg)
+                words,rate=docTopicRate(seg,word_weight)
                 text=content['text']
                 tag='('+','.join(words)+':'+str(rate)+')'
                 text=(text+tag).encode('utf-8')
@@ -277,15 +283,17 @@ def dataFormat(lda_word_weight):
 
     
 if __name__=='__main__':
-    '''
+    
     #by month
     lda_keywords,textrank_keywords=dataPrepare()
-    with open('../web/view/lda_dbData_month.json', 'w')as f1, open('../web/view/textrank_dbData_month.json', 'w')as f2:
+    with open('../web/view/lda_dbData_month_weight.json', 'w')as f1:
+    #with open('../web/view/lda_dbData_month_weight.json', 'w')as f1, open('../web/view/textrank_dbData_month_weight.json', 'w')as f2:
         lda_json=dataFormat(lda_keywords)
         f1.write(json.dumps(lda_json))
-        
+        '''
         textrank_json=dataFormat(textrank_keywords)
         f2.write(json.dumps(textrank_json))
+        '''
     '''
     # by week
     date_week=[('2016-7-4','2016-7-11'),('2016-7-11','2016-7-18'),('2016-7-18','2016-7-25'),('2016-7-25','2016-8-1')]
@@ -293,8 +301,8 @@ if __name__=='__main__':
     for i,week in enumerate(date_week,1):
         global_start_date=week[0]
         global_end_date=week[1]
-        lda_file_name='lda_dbData_week'+str(i)+'.json'
-        textrank_file_name='textrank_dbData_week'+str(i)+'.json'
+        lda_file_name='lda_dbData_week_weight'+str(i)+'.json'
+        textrank_file_name='textrank_dbData_week_weight'+str(i)+'.json'
         lda_open_file=web_path+lda_file_name
         textrank_open_file=web_path+textrank_file_name
         lda_keywords,textrank_keywords=dataPrepare()
@@ -303,7 +311,7 @@ if __name__=='__main__':
             f1.write(json.dumps(lda_json))
             textrank_json=dataFormat(textrank_keywords)
             f2.write(json.dumps(textrank_json))
-
+    '''
 
 
 

@@ -137,7 +137,8 @@
       setDate('july');
     	$.get(default_file,function(data){
         console.log('readfile');
-        topic_obj = eval('(' + data + ')');
+        //topic_obj = eval('(' + data + ')');
+        topic_obj=data
         setTable(topic_obj)
       });
     }
@@ -222,7 +223,8 @@
       
       $.get(file_name,function(data){
           console.log('readfile');
-          topic_obj = eval('(' + data + ')');
+          //topic_obj = eval('(' + data + ')');
+          topic_obj=data
           changeTable(topic_obj)
       });
     
