@@ -44,8 +44,10 @@ class FinTechSpider(Spider):
 
 	def parse(self,response):
 		print 'start'
-		tables=Selector(response).css('tbody[id*=normalthread]')
-
+		selector=Selector(response)
+		tables=selector.css('tbody[id*=normalthread]')
+		category=selector.css('h1 a::text').extract()[0]
+		print category
 		for table in tables:
 			thread_id=table.css('tbody::attr(id)').extract()[0]
 			title=table.css('span.tsubject a::text').extract()[0]
@@ -66,7 +68,7 @@ class FinTechSpider(Spider):
 			detial_url=response.urljoin(href[0])
 			posts=[]
 			graphs=[]
-			meta={'thread_id':thread_id,'title':title,'author':author,'last_status':last_status,'viewed':viewed,'link':detial_url,'posts':posts,'graphs':graphs,'new_post':True}
+			meta={'category':category,'thread_id':thread_id,'title':title,'author':author,'last_status':last_status,'viewed':viewed,'link':detial_url,'posts':posts,'graphs':graphs,'new_post':True}
 			
 			status=self.post.find_one({'thread_id':thread_id},{'last_status':1})
 			if status:
@@ -86,7 +88,7 @@ class FinTechSpider(Spider):
 		next_url=response.urljoin(next_href[0])
 
 		if not self.stop:
-			if self.i <15:
+			if self.i <2:
 				print self.i
 				self.i+=1
 				yield Request(next_url,callback=self.parse)
@@ -96,6 +98,7 @@ class FinTechSpider(Spider):
 		tables=Selector(response).css('div.mainbox.viewthread')
 		posts=response.meta['posts']
 		graphs=response.meta['graphs']
+		category=response.meta['category']
 		thread_id=response.meta['thread_id']
 		title=response.meta['title']
 		author=response.meta['author']
@@ -109,6 +112,8 @@ class FinTechSpider(Spider):
 			create_time= ''.join(create_time).strip().encode('utf-8')
 			create_time=self.datetime_timestamp(create_time)
 			text=table.css('div.postmessage.defaultpost div.t_msgfont span::text').extract()
+			#text=''.join(text)   
+			text='。'.join([temp.strip() for temp in text])
 			#image=table.css('div.postmessage.defaultpost div.t_msgfont span img::attr(src)').extract()
 			reply=table.css('div.postmessage.defaultpost div.t_msgfont span div.quote ').xpath('.//text()').extract()
 			post={'user':user, 'create_time':create_time, 'text':text}
@@ -123,7 +128,7 @@ class FinTechSpider(Spider):
 				graphs.append(graph)
 			posts.append(post)
 
-		meta={'thread_id':thread_id,'title':title,'author':author,'last_status':last_status,'viewed':viewed,'link':link,'posts':posts,'new_post':new_post,'graphs':graphs}
+		meta={'category':category,'thread_id':thread_id,'title':title,'author':author,'last_status':last_status,'viewed':viewed,'link':link,'posts':posts,'new_post':new_post,'graphs':graphs}
 		next_href=Selector(response).css('div.pages_btns div.pages a.next::attr(href)').extract()
 		if next_href:
 			#print 'sub_next_url: %s' %next_href
@@ -132,6 +137,7 @@ class FinTechSpider(Spider):
 			
 		else:
 			item=FintechItem()
+			item['category']=response.meta['category']
 			item['thread_id']=response.meta['thread_id']
 			item['title']=response.meta['title']
 			item['author']=response.meta['author']
@@ -141,6 +147,7 @@ class FinTechSpider(Spider):
 			item['graphs']=response.meta['graphs']
 			item['post_create_date']=posts[0]['create_time']
 			item['content']=posts[0]['text']
+			item['posts']=response.meta['posts']
 			#del comments[0]
 			#item['comments']=comments
 			

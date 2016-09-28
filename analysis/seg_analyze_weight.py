@@ -167,7 +167,7 @@ def dataPrepare():
         
     #---lda ---#
     lda_keywords=TopicUnit.LDA(lda_documents)
-        
+    '''    
     #---textrank---#
     jieba.analyse.set_stop_words('./dict/oralDict.txt')
     jieba.analyse.set_stop_words('./dict/stop_words_ch.txt')
@@ -175,8 +175,8 @@ def dataPrepare():
     jieba.analyse.set_stop_words('./dict/stop_words_eng.txt')
     sentence=''.join(textrank_sentences)
     textrank_keywords=textrank(sentence)
-    
-    return lda_keywords,textrank_keywords
+    '''
+    return lda_keywords
     
 def selectDB(keywords):
     # keywords must be unicode list
@@ -253,8 +253,9 @@ def dataFormat(word_weight_list):
                 seg=content['seg']
                 words,rate=docTopicRate(seg,word_weight)
                 text=content['text']
-                tag='('+','.join(words)+':'+str(rate)+')'
-                text=(text+tag).encode('utf-8')
+                seg_text='['+' '.join(seg)+']' #add seg list for ref
+                tag='('+','.join(words)+':'+str(rate)+')'  #add keywords and weight 
+                text=(text+'<br>'+seg_text+'<br>'+'<B>'+tag+'</B>').encode('utf-8')
                 texts.append(text)
             post_create_date=result['_id'].date().strftime('%Y-%m-%d')
             post_create_date=dateFormat(post_create_date)
@@ -285,8 +286,8 @@ def dataFormat(word_weight_list):
 if __name__=='__main__':
     
     #by month
-    lda_keywords,textrank_keywords=dataPrepare()
-    with open('../web/view/lda_dbData_month_weight.json', 'w')as f1:
+    lda_keywords=dataPrepare()
+    with open('../web/view/lda_dbData_weight_july.json', 'w')as f1:
     #with open('../web/view/lda_dbData_month_weight.json', 'w')as f1, open('../web/view/textrank_dbData_month_weight.json', 'w')as f2:
         lda_json=dataFormat(lda_keywords)
         f1.write(json.dumps(lda_json))
@@ -312,6 +313,7 @@ if __name__=='__main__':
             textrank_json=dataFormat(textrank_keywords)
             f2.write(json.dumps(textrank_json))
     '''
+
 
 
 
