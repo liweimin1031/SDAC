@@ -24,7 +24,7 @@ class FinTechSpider(Spider):
 		db_auth = client['las_dev']
 		db_auth.authenticate("las_dev", "DB41as-1")
 		db = client['las_dev']
-		self.post=db['discuss']
+		self.post=db['test']
 		
 		self.stop=False
 		self.tag_timeFormat='發表於 %Y-%m-%d %I:%M %p'
@@ -44,10 +44,10 @@ class FinTechSpider(Spider):
 
 	def parse(self,response):
 		print 'start'
+		stop=False
 		selector=Selector(response)
 		tables=selector.css('tbody[id*=normalthread]')
 		category=selector.css('h1 a::text').extract()[0]
-		print category
 		for table in tables:
 			thread_id=table.css('tbody::attr(id)').extract()[0]
 			title=table.css('span.tsubject a::text').extract()[0]
@@ -73,9 +73,9 @@ class FinTechSpider(Spider):
 			status=self.post.find_one({'thread_id':thread_id},{'last_status':1})
 			if status:
 				if status['last_status']==last_status:
-					#--post didn't update--#
-					self.stop=True
-					return
+					#--post didn't update. the post is already new--#
+					stop=True
+					break
 				else:
 					#--post had update--#
 					meta['new_post']=False
@@ -84,14 +84,12 @@ class FinTechSpider(Spider):
 				meta['new_post']=True
 				yield Request(detial_url, callback=self.detial_parse, meta=meta)
 			
-		next_href=Selector(response).css('div.pages_btns div.pages a.next::attr(href)').extract()
-		next_url=response.urljoin(next_href[0])
-
-		if not self.stop:
-			if self.i <2:
-				print self.i
-				self.i+=1
-				yield Request(next_url,callback=self.parse)
+		if not stop:
+			next_href=Selector(response).css('div.pages_btns div.pages a.next::attr(href)').extract()
+			next_url=response.urljoin(next_href[0])
+			print self.i
+			self.i+=1
+			yield Request(next_url,callback=self.parse)
 			
 
 	def detial_parse(self,response):
@@ -113,12 +111,12 @@ class FinTechSpider(Spider):
 			create_time=self.datetime_timestamp(create_time)
 			text=table.css('div.postmessage.defaultpost div.t_msgfont span::text').extract()
 			#text=''.join(text)   
-			text='。'.join([temp.strip() for temp in text])
+			text=''.join([temp.strip() for temp in text])
 			#image=table.css('div.postmessage.defaultpost div.t_msgfont span img::attr(src)').extract()
 			reply=table.css('div.postmessage.defaultpost div.t_msgfont span div.quote ').xpath('.//text()').extract()
 			post={'user':user, 'create_time':create_time, 'text':text}
 			userA=user
-			if reply:
+			if len(reply)>=3:
 				post['reply']=reply
 				userB=reply[2]
 			else:

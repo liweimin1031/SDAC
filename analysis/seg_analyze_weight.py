@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from datetime import datetime
+import time
 import pymongo
 from pymongo import MongoClient
 import jieba
@@ -62,6 +62,12 @@ def textrank(sentence):
     #keywords format [{'word1':'weight1'},{'word2':'weight2'}...]
     return keywords
 
+def datetime_timestamp(dt):
+    #dt is string
+    date=time.strptime(dt, '%Y-%m-%d')
+    s = time.mktime(date)
+    return int(s)
+    
 def strQ2B(ustring):  
     rstring = ''
     for uchar in ustring:  
@@ -74,13 +80,13 @@ def strQ2B(ustring):
         rstring += unichr(inside_code)  
     return rstring
     
-def reReplace(sen):
+def Regex(sen):
     sen=re.sub(r'\.{2,}','',sen)
     while 1:
-        mm = re.search("\d,\d", sen)
+        mm = re.search(u'([\u4e00-\u9fa5] [\u4e00-\u9fa5])', sen)
         if mm:
             mm = mm.group()
-            sen = sen.replace(mm, mm.replace(",", ""))
+            sen = sen.replace(mm, mm.replace(" ", ""))
         else:
             break
     return sen
@@ -102,7 +108,7 @@ def cleanWords(seg_list):
 def doText(text):
     #text is a string 
     text=strQ2B(text)
-    text=reReplace(text)
+    text=Regex(text)
     words = jieba.cut(text,cut_all=False)  #segmentation method use by jieba
     #words_position=jieba.tokenize(text)  #return words with position ("word %s\t\t start: %d \t\t end:%d" % (tk[0],tk[1],tk[2]))
     #words=[tk[0] for tk in words_position]
@@ -120,12 +126,13 @@ def conDB(collection):
     
 
 def getDB():
-    post=conDB('discusshk')
+    post=conDB('discuss')
 
-    start_date = datetime.strptime(global_start_date, '%Y-%m-%d')
-    end_date = datetime.strptime(global_end_date, '%Y-%m-%d')
+    start_date = datetime_timestamp(global_start_date)
+    end_date = datetime_timestamp(global_end_date)
     date_query={'$gte':start_date, '$lt':end_date}
-    objs=post.find({'post_create_date':date_query}).sort([('post_create_date',1)])
+    query={'post_create_date':date_query,'category':'½ðÈÚØ”½›Í¶ÙY…^'}
+    objs=post.find(query).sort([('post_create_date',1)])
     #find post_create_date and group comments.create_time
     
     #objs=post.find({},{'_id':0}).limit(50)
@@ -140,17 +147,15 @@ def dataPrepare():
     textrank_sentences=[]
     objs=getDB()
     for obj in objs:
+        post=conDB('discuss')
+        
         document=[]
-        title=obj['title']
-        title=doText(title)
-        content=''.join(obj['content']['text'])
-        content=doText(content)
-        
-        post=conDB('discusshk')
-        
+        title=doText(obj['title'])
+        content=doText(obj['content'])
+
         document.extend(title)
-        document.extend(content)
-        comments=obj['comments']
+        #document.extend(content)
+        comments=obj['posts']
         for i,comment in enumerate( comments):
             comment=doText(comment['text'])
             comments[i]['seg']=comment
@@ -159,9 +164,9 @@ def dataPrepare():
             document.extend(comment)
         #update db, add segmentation result
 
-        post.update({'_id':obj['_id']},{'$set':{'title_seg':title,'content_seg':content,'comments':comments}})
+        post.update({'_id':obj['_id']},{'$set':{'title_seg':title,'content_seg':content,'posts':comments}})
         lda_documents.append(document)
-        textrank_sentences.append(''.join(document))
+        #textrank_sentences.append(''.join(document))
         print num  
         num+=1
         
@@ -186,15 +191,15 @@ def selectDB(keywords):
     start_date = global_start_date
     end_date = global_end_date
     
-    start_date = datetime.strptime(start_date, '%Y-%m-%d')
-    end_date = datetime.strptime(end_date, '%Y-%m-%d')
+    start_date = datetime_timestamp(start_date)
+    end_date = datetime_timestamp(end_date)
     select_date = {'$gte':start_date, '$lt':end_date}
     
     result_list=post.aggregate([
-                                    {'$project':{'post_create_date':1,'comments.create_time':1, 'comments.text':1, 'comments.seg':1, '_id':0}},
-                                    {'$unwind':'$comments'},
-                                    {'$match':{'post_create_date':select_date,'comments.create_time':select_date,'comments.seg':{'$in':keywords}}},
-                                    {'$group': {'_id': '$comments.create_time', 'content': {'$push': {'text':'$comments.text','seg':'$comments.seg'}}}},
+                                    {'$project':{'post_create_date':1,'posts.create_time':1, 'posts.text':1, 'posts.seg':1, '_id':0}},
+                                    {'$unwind':'$posts'},
+                                    {'$match':{'post_create_date':select_date,'posts.create_time':select_date,'posts.seg':{'$in':keywords}}},
+                                    {'$group': {'_id': '$posts.create_time', 'content': {'$push': {'text':'$posts.text','seg':'$posts.seg'}}}},
                                     {'$sort':{'_id':1}}])
     '''                                
     project={'post_create_date':1,'title_seg':1, 'comments.create_time':1,'comments.content.text':1, '_id':0}
@@ -257,7 +262,7 @@ def dataFormat(word_weight_list):
                 tag='('+','.join(words)+':'+str(rate)+')'  #add keywords and weight 
                 text=(text+'<br>'+seg_text+'<br>'+'<B>'+tag+'</B>').encode('utf-8')
                 texts.append(text)
-            post_create_date=result['_id'].date().strftime('%Y-%m-%d')
+            post_create_date=time.strftime('%Y-%m-%d', time.localtime(result['_id']))
             post_create_date=dateFormat(post_create_date)
             
             if temp_data.has_key(post_create_date):
@@ -287,7 +292,7 @@ if __name__=='__main__':
     
     #by month
     lda_keywords=dataPrepare()
-    with open('../web/view/lda_dbData_weight_july.json', 'w')as f1:
+    with open('../web/view/lda_financial_july.json', 'w')as f1:
     #with open('../web/view/lda_dbData_month_weight.json', 'w')as f1, open('../web/view/textrank_dbData_month_weight.json', 'w')as f2:
         lda_json=dataFormat(lda_keywords)
         f1.write(json.dumps(lda_json))

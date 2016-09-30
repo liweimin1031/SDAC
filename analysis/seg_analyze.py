@@ -77,10 +77,11 @@ def strQ2B(ustring):
 def reReplace(sen):
     sen=re.sub(r'\.{2,}','',sen)
     while 1:
-        mm = re.search("\d,\d", sen)
+        mm = re.search(u'([\u4e00-\u9fa5] [\u4e00-\u9fa5])', sen)
         if mm:
             mm = mm.group()
-            sen = sen.replace(mm, mm.replace(",", ""))
+            print mm
+            sen = sen.replace(mm, mm.replace(' ', ''))
         else:
             break
     return sen

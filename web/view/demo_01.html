@@ -93,6 +93,14 @@
                 <label for="sel_module">Select Module:</label>
                 <select class="form-control" id="sel_module" onchange='selModuleFunction()'>
                     <option value="lda">LDA</option>
+                    <option value="textrank">Textrank</option>
+                </select>
+                <select class="form-control" id="sel_period" onchange='selPeriodFunction()'>
+                    <option value="july">July</option>
+                    <option value="week1">Week1</option>
+                    <option value="week2">Week2</option>
+                    <option value="week3">Week3</option>
+                    <option value="week4">Week4</option>
                 </select>
                 <table class="table table-hover"> 
                     <tbody id="topic_table"> 
@@ -123,7 +131,7 @@
 		var oneDay = 24 * 3600 * 1000;
 		var date;
     var data_file;
-    var default_file='./data/lda_financial_july.json';
+    var default_file='./data/lda_dbData_july.json';
     
     function init(){
       setDate('july');
@@ -200,7 +208,7 @@
       selPeriodFunction();
         
     }
-    function selModuleFunction(){
+    function selPeriodFunction(){
 
       var select_module_value=$('#sel_module option:selected').val();
       if (select_module_value=='lda'){
