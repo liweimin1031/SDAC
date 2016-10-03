@@ -43,9 +43,11 @@ with open('./dict/hkexSynonym_update.txt') as f:
         synonymDict[key] = value
 
 #---set db select date---#
-global_start_date='2016-7-1'
-global_end_date='2016-8-1'
-
+global_start_date='2016-8-15'
+global_end_date='2016-9-15'
+# 金融財經投資區
+# 香港及世界新聞討論
+# 飲飲食食
         
 #---textrank---#
 def textrank(sentence):
@@ -81,7 +83,8 @@ def strQ2B(ustring):
     return rstring
     
 def Regex(sen):
-    sen=re.sub(r'\.{2,}','',sen)
+    #sen=re.sub(r'\.{2,}','',sen)
+    sen=re.sub(r'(\.{2,})|(\d+\-\d+\-\d+)|(\d+\:\d+)','',sen)
     while 1:
         mm = re.search(u'([\u4e00-\u9fa5] [\u4e00-\u9fa5])', sen)
         if mm:
@@ -95,7 +98,7 @@ def Regex(sen):
 def cleanWords(seg_list):
     c_seg = []
     for word in seg_list:
-        if word.strip():
+        if len(word.strip())>1:
             seg = word.strip()
         # print seg
             if seg not in stopList:  # check stop words
@@ -131,7 +134,7 @@ def getDB():
     start_date = datetime_timestamp(global_start_date)
     end_date = datetime_timestamp(global_end_date)
     date_query={'$gte':start_date, '$lt':end_date}
-    query={'post_create_date':date_query,'category':'����ؔ��Ͷ�Y�^'}
+    query={'post_create_date':date_query,'category':'金融財經投資區'}
     objs=post.find(query).sort([('post_create_date',1)])
     #find post_create_date and group comments.create_time
     
@@ -185,7 +188,7 @@ def dataPrepare():
     
 def selectDB(keywords):
     # keywords must be unicode list
-    post=conDB('discusshk')
+    post=conDB('discuss')
     result_list = []
 
     start_date = global_start_date
@@ -199,7 +202,7 @@ def selectDB(keywords):
                                     {'$project':{'post_create_date':1,'posts.create_time':1, 'posts.text':1, 'posts.seg':1, '_id':0}},
                                     {'$unwind':'$posts'},
                                     {'$match':{'post_create_date':select_date,'posts.create_time':select_date,'posts.seg':{'$in':keywords}}},
-                                    {'$group': {'_id': '$posts.create_time', 'content': {'$push': {'text':'$posts.text','seg':'$posts.seg'}}}},
+                                    {'$group': {'_id': '$posts.create_time', 'content': {'$push': {'text':'$posts.text','seg':'$posts.seg','create_time':'$posts.create_time'}}}},
                                     {'$sort':{'_id':1}}])
     '''                                
     project={'post_create_date':1,'title_seg':1, 'comments.create_time':1,'comments.content.text':1, '_id':0}
@@ -243,10 +246,10 @@ def dataFormat(word_weight_list):
         
         keywords=word_weight.keys()
         db_result_list = selectDB(keywords) #get data from db
-        
         topic_json={}
 
-        _topic = ','.join([keyword.encode('utf-8') for keyword in keywords])
+        #_topic = ','.join([keyword.encode('utf-8') for keyword in keywords]) #only has word
+        _topic = ', '.join([(keyword+':'+word_weight[keyword]).encode('utf-8') for keyword in word_weight]) #word with 
         #f.write('topic %s \n' % (topic))
         data_list=[]
         temp_data=OrderedDict()
@@ -260,7 +263,10 @@ def dataFormat(word_weight_list):
                 text=content['text']
                 seg_text='['+' '.join(seg)+']' #add seg list for ref
                 tag='('+','.join(words)+':'+str(rate)+')'  #add keywords and weight 
-                text=(text+'<br>'+seg_text+'<br>'+'<B>'+tag+'</B>').encode('utf-8')
+
+                create_time=time.strftime('%Y-%m-%d', time.localtime(content['create_time']))
+                create_time=dateFormat(create_time)
+                text=(text+'<br>'+seg_text+'<br>'+'<B>'+tag+'</B>'+'<br>'+create_time).encode('utf-8')
                 texts.append(text)
             post_create_date=time.strftime('%Y-%m-%d', time.localtime(result['_id']))
             post_create_date=dateFormat(post_create_date)
@@ -285,6 +291,7 @@ def dataFormat(word_weight_list):
         #print topic_json
         #save topic_json
         topic_list.append(topic_json)
+    # topic_list  format [ {'topic':'xxxxx','data':[ {'date':'xxxx-xx-xx','content':['xxx','xxx',...]}, ...]} ,{},.....]
     return topic_list
 
     
@@ -292,9 +299,11 @@ if __name__=='__main__':
     
     #by month
     lda_keywords=dataPrepare()
-    with open('../web/view/lda_financial_july.json', 'w')as f1:
+    with open('../web/view/data/financial_test.json', 'w')as f1:
     #with open('../web/view/lda_dbData_month_weight.json', 'w')as f1, open('../web/view/textrank_dbData_month_weight.json', 'w')as f2:
         lda_json=dataFormat(lda_keywords)
+        print lda_json[1]['data'][29]['date']
+        print len(lda_json[1]['data'][29]['content'])
         f1.write(json.dumps(lda_json))
         '''
         textrank_json=dataFormat(textrank_keywords)

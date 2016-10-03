@@ -92,7 +92,9 @@
             <div class="col-sm-2 sidenav">
                 <label for="sel_module">Select Module:</label>
                 <select class="form-control" id="sel_module" onchange='selModuleFunction()'>
-                    <option value="lda">LDA</option>
+                    <option value="financial_july">July Financial</option>
+                    <option value="financial_sep">Sep Financial</option>
+                    <option value="mix_sep">Sep Mix</option>
                 </select>
                 <table class="table table-hover"> 
                     <tbody id="topic_table"> 
@@ -114,19 +116,17 @@
     var myChart = echarts.init(document.getElementById('main'));
 		var topic_obj;
 		var defaultDate={
-                'july':['2016-7-1','2016-8-1'],
-                'week1':['2016-7-4','2016-7-11'],
-                'week2':['2016-7-11','2016-7-18'],
-                'week3':['2016-7-18','2016-7-25'],
-                'week4':['2016-7-25','2016-8-1']
+                'financial_july':['2016-7-1','2016-8-1'],
+                'financial_sep':['2016-9-1','2016-10-1'],
+                'mix_sep':['2016-9-1','2016-10-1']
     };
 		var oneDay = 24 * 3600 * 1000;
 		var date;
     var data_file;
-    var default_file='./data/lda_financial_july.json';
+    var default_file='./data/financial_july.json';
     
     function init(){
-      setDate('july');
+      setDate('financial_july');
     	$.get(default_file,function(data){
         console.log('readfile');
         //topic_obj = eval('(' + data + ')');
@@ -195,23 +195,11 @@
     //var data_file='dbData.json';
     
     function selModuleFunction(){
-      var reset_select_period=document.getElementById('sel_period');
-      reset_select_period.options[0].selected=true;
-      selPeriodFunction();
-        
-    }
-    function selModuleFunction(){
-
       var select_module_value=$('#sel_module option:selected').val();
-      if (select_module_value=='lda'){
-          data_file='./data/lda_dbData_';
-      }else if(select_module_value=='textrank'){
-          data_file='./data/textrank_dbData_';
-      }
-      var select_period_value=$('#sel_period option:selected').val(); 
-      var file_name=data_file+select_period_value+'.json';
+
+      data_file='./data/'+select_module_value+'.json';
       
-      setDate(select_period_value)
+      setDate(select_module_value)
       
       $.get(file_name,function(data){
           console.log('readfile');
@@ -219,8 +207,8 @@
           topic_obj=data
           changeTable(topic_obj)
       });
-    
     }
+    
         
 
 

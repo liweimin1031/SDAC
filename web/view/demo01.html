@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SDAC Demo</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.min.js"></script>
+	<script type="text/javascript" src="jquery-3.1.0.js"></script>
+	
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+    html, body {
+	    height: 100%;
+    }
+
+    body {
+	    padding-top: 50px;
+    }
+    
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    #content {min-height: 800px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    .main-body{
+        height: 100%;
+        min-height: 100%;
+    }
+    /*.bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+    }
+    .container-footer {
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+    */
+    .margin {margin-bottom: 45px;}
+    
+    
+    .result_text{
+        overflow-y: scroll;
+        //width: 100%; 
+        //height: 100%; 
+        overflow-x: hidden;
+        overflow-x: hidden;
+        max-height: 800px;
+    }
+    .post-content{
+        text-align:left;
+        list-style: none;
+    }
+    
+    ul.post-content li { 
+        background-color: #dcdcdc;
+        margin: -10px;
+        padding: 15px 10px;
+    }
+    ul.post-content li:nth-child(odd) {
+        background-color: #ccc;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">SDAC</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Hot Topic</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class=""></span> </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="container-fluid text-center main-body">
+        <div class="row" id="content">
+            <div class="col-sm-2 sidenav">
+                <label for="sel_module">Select Module:</label>
+                <select class="form-control" id="sel_module" onchange='selModuleFunction()'>
+                    <option value="financial_july">July Financial</option>
+                    <option value="financial_sep">Sep Financial</option>
+                    <option value="mix_sep">Sep Mix</option>
+                    <option value="financial_test">test</option>
+                </select>
+                <table class="table table-hover"> 
+                    <tbody id="topic_table"> 
+                </table>
+            </div>
+            <div class="col-sm-6 text-left">
+                <div id="main" style="width: 600px;height:400px;margin: 30px auto;"></div>
+            </div>
+            <div class="col-sm-4 sidenav">
+                <div id="analysis_result" class="result_text"></div>
+            </div>
+        </div>
+        <footer class="container-footer bg-4 text-center">
+	      <p>Hong Kong Applied Science and Technology Research Institute Company Limited (ASTRI)</p>
+	    </footer>
+    </div>
+    
+    <script type="text/javascript">
+    //set global params
+    var myChart = echarts.init(document.getElementById('main'));
+		var topic_obj;
+		var defaultDate={
+                'financial_july':['2016-7-1','2016-8-1'],
+                'financial_sep':['2016-9-1','2016-10-1'],
+                'mix_sep':['2016-9-1','2016-10-1'],
+                'financial_test':['2016-8-15','2016-9-15']
+    };
+		var oneDay = 24 * 3600 * 1000;
+		var date;
+    var data_file;
+    var default_file='./data/financial_july.json';
+    
+    function init(){
+      setDate('financial_july');
+    	$.get(default_file,function(data){
+        console.log('readfile');
+        //topic_obj = eval('(' + data + ')');
+        topic_obj=data
+        setTable(topic_obj)
+      });
+    }
+    init()
+    
+    
+    function setDate(select_date){
+      date=[];
+      var start=defaultDate[select_date];
+      var end=defaultDate[select_date];
+      var start_date = Date.parse(start[0]);
+      var end_date= Date.parse(end[1]);
+      var dates=(end_date-start_date)/oneDay;
+      var now;
+      var str_date;
+      for (var i = 0; i <= dates; i++) {
+        now = new Date(start_date+ i*oneDay);
+        str_date=[now.getFullYear(), now.getMonth()+1 , now.getDate()].join('-');
+        date.push(str_date);
+      };
+    }
+
+	   //content_data[k]='<p>'+v+'</p>'
+
+		// draw table
+		function setTable(tableData){
+			var trLineNumber=tableData.length;
+			var _table = document.getElementById("topic_table"); 
+			var _row; 
+			var _cell; 
+			for (var i = 0; i < trLineNumber; i++) { 
+				_row = document.createElement("tr"); 
+				var td_topic=tableData[i].topic;
+				var td_data=tableData[i].data;
+				_row.onclick= function(){myChart.setOption(setOption(this))}; //为每行增加单击事件 
+				_cell = document.createElement("td");
+				_cell.innerText = td_topic; 
+				_row.appendChild(_cell); 
+				document.getElementById("topic_table").appendChild(_row); 
+			} 
+      _row1=_table.getElementsByTagName('tr')[0];
+      _row1.click();
+		} 
+    function changeTable(tableData){
+      var trLineNumber=tableData.length;
+      var _table = document.getElementById("topic_table"); 
+			var _row=_table.getElementsByTagName('tr') 
+			var _cell;
+
+			for (var i = 0; i < trLineNumber; i++) { 
+        _cell=_row[i].getElementsByTagName('td')[0]
+				var td_topic=tableData[i].topic;
+				var td_data=tableData[i].data;
+				_row[i].onclick= function(){myChart.setOption(setOption(this))}; //为每行增加单击事件 
+				_cell.innerText = td_topic; 
+			}
+      _row1=_row[0];
+      _row1.click();      
+    };
+
+		//read file and get json data
+    //var data_file='dbData.json';
+    
+    function selModuleFunction(){
+      var select_module_value=$('#sel_module option:selected').val();
+
+      data_file='./data/'+select_module_value+'.json';
+      
+      setDate(select_module_value)
+      
+      $.get(data_file,function(data){
+          console.log('readfile');
+          //topic_obj = eval('(' + data + ')');
+          topic_obj=data
+          changeTable(topic_obj)
+      });
+    }
+    
+        
+
+
+
+		function dateFormat(date){
+			temp=date.split('-')
+			return temp[0] + '-' + parseInt(temp[1]).toString() + '-' + parseInt(temp[2]).toString();  
+		}
+
+		function setOption(obj){
+			var data_index=obj.rowIndex;
+			var topic_json=topic_obj[data_index];
+
+			var content_data=topic_json.data;
+      
+			var data=[];
+			var value=[];
+      var total_mentioned=0;
+			for (var i =0,j=0, len_date=date.length,len_content_data=content_data.length; i<len_date; i++){
+				//console.log(date[i])
+				data[i]='';
+				value[i]='';
+				for( ;j<len_content_data;){
+					//console.log(content_data[j].date)
+                    //console.log(Date.parse(date[i]))
+                    //console.log(Date.parse(content_data[j].date))
+					if (date[i]==content_data[j].date){
+
+						data[i]=content_data[j].content;
+						//value[i]=content_data[j].reply;
+            value[i]=content_data[j].content.length;
+            total_mentioned=total_mentioned+value[i]
+						j++
+						break;
+					}else{
+						break;
+					}
+				}
+			}
+			var topic= topic_json.topic+'('+total_mentioned+')';
+			
+			option = {
+				title:{
+					text:topic
+					},
+				color: ['#3398DB'],
+				tooltip : {
+					trigger: 'axis',
+					axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+						type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+					},
+					triggerOn:'click',
+					formatter:function(params, ticket, callback){
+						// $.get('detail?name=' + params.name, function (content) {
+						//    callback(ticket, toHTML(content));
+						//});
+						html_content=''
+						if(params[0].value){
+							content=data[params[0].dataIndex]
+							html_content='<h3>'+params[0].value+' times'+'</h3><ul class="post-content">'
+							for (var i =0,len_cotent=content.length;i<len_cotent;i++){
+								html_content+='<li><p>'+content[i]+'</p></li>'
+							}
+							html_content+='</ul>'
+						}
+						showAnalysisResult(html_content);
+						// return html_content;
+
+					}
+				},
+				grid: {
+					left: '3%',
+					right: '4%',
+					bottom: '3%',
+					containLabel: true
+				},
+				xAxis : [
+					{
+						type : 'category',
+						data :date
+			,
+						axisTick: {
+							alignWithLabel: true
+						}
+					}
+				],
+				yAxis : [
+					{
+						type : 'value'
+					}
+				],
+				series : [
+					{
+						title:topic,
+						name:'直接访问',
+						type:'bar',
+						barWidth: '60%',
+						data:value
+					}
+				]
+			};
+			return option;
+		}
+	    
+	    function showAnalysisResult(data){
+	    	$("#analysis_result").html(data);
+	    }
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        //myChart.setOption(option);
+    </script>
+
+
+</body>
+
+</html> 	
