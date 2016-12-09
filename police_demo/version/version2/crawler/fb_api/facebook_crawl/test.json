@@ -1,0 +1,7680 @@
+[{
+	"created_time": "2016-05-02T03:02:38+0000",
+	"reactions": [{
+		"type": "LIKE",
+		"id": "201521760232869",
+		"name": "Gally Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "281552722176746",
+		"name": "Ng Wing Hei"
+	},
+	{
+		"type": "LIKE",
+		"id": "1199386503419841",
+		"name": "Isaac Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "507351926123799",
+		"name": "Barry  Chang"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153517002776129",
+		"name": "\u6797\u666f\u6607"
+	},
+	{
+		"type": "LIKE",
+		"id": "1008011609306391",
+		"name": "Poon  Ban"
+	},
+	{
+		"type": "ANGRY",
+		"id": "859381974172315",
+		"name": "Charles Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1716794865241201",
+		"name": "June Tang"
+	},
+	{
+		"type": "LIKE",
+		"id": "816652171812415",
+		"name": "Lee Kwong-fat"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10153761220178773",
+		"name": "Oris Nam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207973103918495",
+		"name": "Mui Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "1805985662962748",
+		"name": "Mui Jackson"
+	},
+	{
+		"type": "LIKE",
+		"id": "262299967445756",
+		"name": "Cherry Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1685792151673377",
+		"name": "\u5433\u69ae\u5f70"
+	},
+	{
+		"type": "LIKE",
+		"id": "225947807761246",
+		"name": "HK Youngs"
+	},
+	{
+		"type": "LIKE",
+		"id": "1279158152113872",
+		"name": "Peter Chiang"
+	},
+	{
+		"type": "LIKE",
+		"id": "994776270608213",
+		"name": "Oldcat Cat"
+	},
+	{
+		"type": "LIKE",
+		"id": "700224106747560",
+		"name": "Dee Dee Chen"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206078774517491",
+		"name": "Peter Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153878895479902",
+		"name": "Pak Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "219917135044298",
+		"name": "Shingcheong Mak"
+	},
+	{
+		"type": "LIKE",
+		"id": "1722373358048198",
+		"name": "\u738b\u512a\u5bf6"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208066489594105",
+		"name": "Cheongkor Leung"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1727334890876168",
+		"name": "Kobo Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "227113517660251",
+		"name": "\u6d2a\u6021\u957f"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156893657960602",
+		"name": "Eric Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154297044069672",
+		"name": "Rimmy Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "218760051821679",
+		"name": "Frankie Wu"
+	},
+	{
+		"type": "LOVE",
+		"id": "1016868495061701",
+		"name": "Cyrus King"
+	},
+	{
+		"type": "LIKE",
+		"id": "1180773128613338",
+		"name": "\u8d99\u9280\u767c"
+	},
+	{
+		"type": "LIKE",
+		"id": "463450780520375",
+		"name": "\u8a31\u71d5\u6885"
+	},
+	{
+		"type": "LIKE",
+		"id": "1062168027154993",
+		"name": "\u8d99\u5fd7\u5eb7"
+	},
+	{
+		"type": "LIKE",
+		"id": "997279697026062",
+		"name": "Coon Tang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1707841006159189",
+		"name": "Howah Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1169603936406201",
+		"name": "\u4f55\u9326\u8c6a"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154160730653628",
+		"name": "Charles Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "614247962060844",
+		"name": "\u4f0d\u6176\u5f37"
+	},
+	{
+		"type": "LIKE",
+		"id": "996483920436261",
+		"name": "Rocky Kawai"
+	},
+	{
+		"type": "LIKE",
+		"id": "1001466099919380",
+		"name": "Siu Sun"
+	},
+	{
+		"type": "LIKE",
+		"id": "1738052796418700",
+		"name": "Vini Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "470545883135563",
+		"name": "\u8b5a\u7d39\u6c11"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206069156236601",
+		"name": "Alfred Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153614998447569",
+		"name": "Thomas Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "518131685058545",
+		"name": "Che Keung  Choy"
+	},
+	{
+		"type": "LIKE",
+		"id": "1030232737043335",
+		"name": "San Lung Mo"
+	},
+	{
+		"type": "LIKE",
+		"id": "1558446984455427",
+		"name": "John King"
+	},
+	{
+		"type": "LIKE",
+		"id": "1002069306546879",
+		"name": "Judy Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "245414242472171",
+		"name": "Leung Cheuk Man"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207377843377238",
+		"name": "Ralphen Yau"
+	},
+	{
+		"type": "LIKE",
+		"id": "1776651325897675",
+		"name": "Leung Pui Yip"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154187871368023",
+		"name": "Sushi's Siu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1731668410387970",
+		"name": "Natalief Ngan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153569135217283",
+		"name": "Win Lin Galletta"
+	},
+	{
+		"type": "LIKE",
+		"id": "1018086651639792",
+		"name": "Lai Pinky"
+	},
+	{
+		"type": "LIKE",
+		"id": "519369498270375",
+		"name": "Bruce T H Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "266806410328819",
+		"name": "Trista Law"
+	},
+	{
+		"type": "LIKE",
+		"id": "1036407516429450",
+		"name": "Kam Wing Tsui"
+	},
+	{
+		"type": "LIKE",
+		"id": "1732955716951430",
+		"name": "\u76e7\u8d85"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207101190302750",
+		"name": "Beatrice Lin"
+	},
+	{
+		"type": "LIKE",
+		"id": "1214840098540079",
+		"name": "Vanessa Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "2034856743407101",
+		"name": "\u5f6d\u4e2d\u5efa"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1606498293002728",
+		"name": "Pakki Liu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1220718127961459",
+		"name": "Lai Man Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "216127535423203",
+		"name": "Leo Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1062709237123785",
+		"name": "Vincent Chau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154067105302243",
+		"name": "Wing Sze Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153505948112374",
+		"name": "Erica Ca"
+	},
+	{
+		"type": "LIKE",
+		"id": "1537384296556409",
+		"name": "Chau Lai"
+	},
+	{
+		"type": "ANGRY",
+		"id": "939376929513804",
+		"name": "Yeeco Liu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1170238263000307",
+		"name": "Karen Yip"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153431452531389",
+		"name": "Liu Man Lok"
+	},
+	{
+		"type": "LIKE",
+		"id": "521506624701788",
+		"name": "Choy Winnie"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10154159499094365",
+		"name": "\u5b50\u85cd\u912d"
+	},
+	{
+		"type": "LIKE",
+		"id": "223298428058087",
+		"name": "Elizabeth Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "996374780451394",
+		"name": "Alan Wong"
+	},
+	{
+		"type": "LOVE",
+		"id": "1049396268488699",
+		"name": "Cori Hon"
+	},
+	{
+		"type": "LIKE",
+		"id": "763980193702483",
+		"name": "Pinky Hon"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206683899559803",
+		"name": "Yiu Kwong Kwok"
+	},
+	{
+		"type": "LIKE",
+		"id": "1021699031240652",
+		"name": "Tom Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154133468199712",
+		"name": "Chris Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154047922423972",
+		"name": "Laipo Tze"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156800454920022",
+		"name": "Neo Shum"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209061408435195",
+		"name": "Patrick Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1016664085091376",
+		"name": "Cho Yau Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "1677283475867257",
+		"name": "Bor Cheung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209728443113503",
+		"name": "Rambo Whisky"
+	},
+	{
+		"type": "LIKE",
+		"id": "551378381703459",
+		"name": "Oi Ming Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "213421732362625",
+		"name": "Bar Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1307685339245521",
+		"name": "Lulu Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "703954493079106",
+		"name": "Mangor Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10205889690713605",
+		"name": "Albert Cheung"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10154157120808792",
+		"name": "Lau ChunTing"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153661223508667",
+		"name": "Gloria Lee"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10208134054163334",
+		"name": "Benson Choi"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209688797683100",
+		"name": "Kwok Wai Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153739004573472",
+		"name": "Wai Chai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208965440751301",
+		"name": "Ricky Kwok"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209323815434228",
+		"name": "Ringo Ip"
+	},
+	{
+		"type": "LIKE",
+		"id": "1068188119905983",
+		"name": "Sing Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153771032334055",
+		"name": "Cat Chow"
+	},
+	{
+		"type": "LIKE",
+		"id": "1062677333803313",
+		"name": "\u59dc\u5029\u5100"
+	},
+	{
+		"type": "LIKE",
+		"id": "1009308539162997",
+		"name": "George Poon"
+	},
+	{
+		"type": "LIKE",
+		"id": "262646984080752",
+		"name": "Yammie Yammie"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1076942079035460",
+		"name": "Tinker Yam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154154075224570",
+		"name": "Dan Hui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154056242924299",
+		"name": "Miki MilkyWay Wu"
+	},
+	{
+		"type": "LIKE",
+		"id": "997781073638142",
+		"name": "Lamlamb Jai"
+	},
+	{
+		"type": "LIKE",
+		"id": "1999997260224423",
+		"name": "Chu  Ka Sing"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206408158580121",
+		"name": "Ma Ho Ken"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10154131101277579",
+		"name": "\u9673\u5bb6\u79a7"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154153292502959",
+		"name": "Michael Cheung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207978184430162",
+		"name": "Ho Bun Yung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10204505659161532",
+		"name": "Henry Hui"
+	},
+	{
+		"type": "LIKE",
+		"id": "1260563400638514",
+		"name": "W DB Bie"
+	},
+	{
+		"type": "LIKE",
+		"id": "576836242499343",
+		"name": "Sau Ching Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "220997848258952",
+		"name": "Ritaon Sum"
+	},
+	{
+		"type": "LIKE",
+		"id": "584059371757009",
+		"name": "Tamie Mak"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153699574272809",
+		"name": "Steve Saunders"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208633974023458",
+		"name": "May Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1198289366848369",
+		"name": "Chow Wong Suet Ling"
+	},
+	{
+		"type": "LIKE",
+		"id": "1723534674584578",
+		"name": "Shuk Yee Sum"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154216994144636",
+		"name": "William William Yip"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206550760062871",
+		"name": "\u9ec3\u79c0\u78a7"
+	},
+	{
+		"type": "LIKE",
+		"id": "1185963088103839",
+		"name": "Woody Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1547929938835643",
+		"name": "Sau Fung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1601393453518749",
+		"name": "Pong Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "1706886132934061",
+		"name": "Awk  Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154229311953694",
+		"name": "Ann Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "1137166376314426",
+		"name": "\u738b\u9d3b\u4f86"
+	},
+	{
+		"type": "LIKE",
+		"id": "1009672615736341",
+		"name": "Raymond Kwok"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154190503522372",
+		"name": "Jonathan Yuen"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209386017067805",
+		"name": "Alfred Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1173825355974965",
+		"name": "Kelson Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1341191479227854",
+		"name": "Joyce Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "847852165327177",
+		"name": "Jacky Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "1053958871365433",
+		"name": "Marco So"
+	},
+	{
+		"type": "LIKE",
+		"id": "1102203219800559",
+		"name": "\u674e\u570b\u83ef"
+	},
+	{
+		"type": "LIKE",
+		"id": "1281044768591583",
+		"name": "Allan So"
+	},
+	{
+		"type": "LIKE",
+		"id": "10155176568644572",
+		"name": "Patrick Min"
+	},
+	{
+		"type": "LIKE",
+		"id": "1714725995477350",
+		"name": "Kun Mei Sam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153647512109895",
+		"name": "Ka Ka Kwok"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207199779567189",
+		"name": "Grace Mak"
+	},
+	{
+		"type": "LIKE",
+		"id": "1116766491709104",
+		"name": "Yves Chow"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207631002905940",
+		"name": "Cody Szeto"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153752050802933",
+		"name": "Calvin Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10205055073850662",
+		"name": "Keith Pang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1154077357956058",
+		"name": "Gary Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154094301272866",
+		"name": "Benny Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156878885370182",
+		"name": "Yanb Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209462775314474",
+		"name": "Ka Kui Hung"
+	},
+	{
+		"type": "LIKE",
+		"id": "571400973024305",
+		"name": "William Lo"
+	},
+	{
+		"type": "LIKE",
+		"id": "1173326602708156",
+		"name": "Elizabeth Choy"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10209624401113961",
+		"name": "Elaine To"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209314584847346",
+		"name": "Chan Super"
+	},
+	{
+		"type": "LIKE",
+		"id": "881360801985881",
+		"name": "Milk Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154101595838744",
+		"name": "Emily Mak"
+	},
+	{
+		"type": "LIKE",
+		"id": "247824825564709",
+		"name": "Merci Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "1742685659310324",
+		"name": "KamLung Poon"
+	},
+	{
+		"type": "LIKE",
+		"id": "1016533978454684",
+		"name": "Mable Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "844312819048095",
+		"name": "\u6c88\u9435\u5f37"
+	},
+	{
+		"type": "LIKE",
+		"id": "1730933930524597",
+		"name": "Yaolin  Hu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1042647732440650",
+		"name": "Keung Chun"
+	},
+	{
+		"type": "LIKE",
+		"id": "468164670039790",
+		"name": "Kam Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "1595709850747876",
+		"name": "Yim Wingching"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153395717672032",
+		"name": "Chi Chung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1582736068709097",
+		"name": "Yee Wah Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "1697382570550191",
+		"name": "\u9127\u529b\u4ec1"
+	},
+	{
+		"type": "LIKE",
+		"id": "1209811675707435",
+		"name": "Riff Hill"
+	},
+	{
+		"type": "LIKE",
+		"id": "1040618729310787",
+		"name": "\u5468\u7d39\u5ee3"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209458778694297",
+		"name": "Sam Kwan"
+	},
+	{
+		"type": "LIKE",
+		"id": "501419193379606",
+		"name": "Ben Hui"
+	},
+	{
+		"type": "LIKE",
+		"id": "1005691176172893",
+		"name": "Joseph Au"
+	},
+	{
+		"type": "LIKE",
+		"id": "1268811229796478",
+		"name": "Ken Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "916250365152824",
+		"name": "Mamimieva  Mimieva"
+	},
+	{
+		"type": "LIKE",
+		"id": "1597676653885043",
+		"name": "Ho Legend"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209535387371959",
+		"name": "Ngai Yuk Ying"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154217960983755",
+		"name": "Tat Kfe"
+	},
+	{
+		"type": "LIKE",
+		"id": "624522771033587",
+		"name": "Alice  Wu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1585180491811351",
+		"name": "Peter Sam Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1569018533428681",
+		"name": "Moon Kate"
+	},
+	{
+		"type": "LIKE",
+		"id": "1031268083609672",
+		"name": "Kathleen Lam"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1665121487086588",
+		"name": "Wk Chin"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209483459830248",
+		"name": "FamilyGuy-Leo Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153782656673558",
+		"name": "\u8861\u5b50\u9ece"
+	},
+	{
+		"type": "LIKE",
+		"id": "881763548612565",
+		"name": "Herman Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "494437684073095",
+		"name": "Meiha Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207736768430082",
+		"name": "Pl Mok"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207737647573697",
+		"name": "Ivy Tong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153814087109550",
+		"name": "\u71a8\u6597\u4eba"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1766677956896040",
+		"name": "\u5e73\u5049\u9054"
+	},
+	{
+		"type": "LIKE",
+		"id": "1319698211379118",
+		"name": "Shan Kau"
+	},
+	{
+		"type": "LIKE",
+		"id": "1198577343494758",
+		"name": "\u9673\u6c38\u8c6a"
+	},
+	{
+		"type": "LIKE",
+		"id": "1005151959575530",
+		"name": "Chung Sze"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209439797822576",
+		"name": "Chung Chantal"
+	},
+	{
+		"type": "LIKE",
+		"id": "1044071272320051",
+		"name": "Hole Lee Yuk"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209612005123382",
+		"name": "Bing LI"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208100428964011",
+		"name": "Billy Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "10157010599085413",
+		"name": "Anson Hui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208674043470486",
+		"name": "Remon Kam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153699860629217",
+		"name": "Wel Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154725193377542",
+		"name": "Wai Hang Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1755302331422672",
+		"name": "Jeffrey Wosolo"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154051522651897",
+		"name": "Kristy Chu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1581040322224572",
+		"name": "Bw Tang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1583944295249834",
+		"name": "Ping Lun Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "551501128365984",
+		"name": "Pauline  Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "1561121887514499",
+		"name": "Dora Khema Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153552663901662",
+		"name": "Bon Ko"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154886566843298",
+		"name": "Joey Wu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154048346163758",
+		"name": "Ken Un"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1044490232285610",
+		"name": "Eddy Choy"
+	},
+	{
+		"type": "LIKE",
+		"id": "597998447047811",
+		"name": "Ling Fan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153623530187843",
+		"name": "Edward Tong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153391634342063",
+		"name": "Stephen Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10201713431474981",
+		"name": "Calvin Pang"
+	},
+	{
+		"type": "LIKE",
+		"id": "616196278535162",
+		"name": "\u90ed\u83ef"
+	},
+	{
+		"type": "LIKE",
+		"id": "1212539022090770",
+		"name": "Arthur Lim"
+	},
+	{
+		"type": "LIKE",
+		"id": "216323108744007",
+		"name": "OiKwan YU"
+	},
+	{
+		"type": "LIKE",
+		"id": "585583521602207",
+		"name": "Kit Mei Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "251953095155568",
+		"name": "\u6b50\u967d\u5b50\u59ae"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207802692959454",
+		"name": "Norman Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "917851868344415",
+		"name": "Seven Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1071322902935468",
+		"name": "Wong Wai Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "1205459606138910",
+		"name": "Daisy Tong"
+	},
+	{
+		"type": "LIKE",
+		"id": "195073207545866",
+		"name": "Yauchuen Yip"
+	},
+	{
+		"type": "LIKE",
+		"id": "996754057073366",
+		"name": "Cyndi Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153890917003891",
+		"name": "Alex K K Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "789251287841616",
+		"name": "\u99ac\u5049\u9d6c"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206367888251892",
+		"name": "Waiyeung Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154111136708537",
+		"name": "Tony Cheung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1047610018643893",
+		"name": "Fa-Jen Chang"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154133129504438",
+		"name": "Shering Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1787514138143797",
+		"name": "\u674e\u6c38\u5805"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153727602145326",
+		"name": "Sandy Wong"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10153592693512076",
+		"name": "Wong Ka Lok"
+	},
+	{
+		"type": "LIKE",
+		"id": "856091311202803",
+		"name": "Wai Yuk  LO"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154060460413607",
+		"name": "Vincent Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153671458036359",
+		"name": "Tammy Cheung"
+	},
+	{
+		"type": "LIKE",
+		"id": "147746808954050",
+		"name": "Maggie Ng"
+	},
+	{
+		"type": "HAHA",
+		"id": "162489504149126",
+		"name": "Mei Yan Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "983319491756114",
+		"name": "Tsang Tsz Shun"
+	},
+	{
+		"type": "LIKE",
+		"id": "1010442502382365",
+		"name": "\u6697\u7d2b"
+	},
+	{
+		"type": "LIKE",
+		"id": "1277152058964139",
+		"name": "Danil Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208458758162454",
+		"name": "Mickey Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209246428742141",
+		"name": "To Ngai Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154137764572156",
+		"name": "Lung Ki"
+	},
+	{
+		"type": "LIKE",
+		"id": "1280687465278958",
+		"name": "Winnie Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153688930823458",
+		"name": "Jason IP"
+	},
+	{
+		"type": "LIKE",
+		"id": "1075288979194999",
+		"name": "\u8a31\u660e\u7693"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154039918999303",
+		"name": "Kei Choi"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209174848266802",
+		"name": "Pang Ka Ming"
+	},
+	{
+		"type": "LIKE",
+		"id": "599824936842386",
+		"name": "\u674e\u5fd7\u5f37"
+	},
+	{
+		"type": "LIKE",
+		"id": "1586994371617014",
+		"name": "Homy Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "1700578616888564",
+		"name": "Michael Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153587962054639",
+		"name": "Cheryl Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1003050366442087",
+		"name": "Lee Yuet Yuk"
+	},
+	{
+		"type": "LIKE",
+		"id": "1747521285275723",
+		"name": "Joe Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206315090575733",
+		"name": "Ray Woo"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206023079964091",
+		"name": "JuJu So"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153818040544934",
+		"name": "Winnie Lui"
+	},
+	{
+		"type": "LIKE",
+		"id": "1314487411901446",
+		"name": "\u611f\u6069"
+	},
+	{
+		"type": "LIKE",
+		"id": "963261183769149",
+		"name": "Eric Sin"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153782299479748",
+		"name": "Assunta Yung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156695545770567",
+		"name": "Frances Lee"
+	},
+	{
+		"type": "LOVE",
+		"id": "640394242777996",
+		"name": "Micheal Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209484071528868",
+		"name": "Lam Hui"
+	},
+	{
+		"type": "LIKE",
+		"id": "790154034451678",
+		"name": "Garnet Fung"
+	},
+	{
+		"type": "LIKE",
+		"id": "886162351506856",
+		"name": "Eva Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "1133995589955787",
+		"name": "Winnie Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153607367307476",
+		"name": "Anthony To"
+	},
+	{
+		"type": "LIKE",
+		"id": "491732784349371",
+		"name": "Kala Zhang"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208494737623162",
+		"name": "Tammy Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1121700017862132",
+		"name": "Lydia Fok"
+	},
+	{
+		"type": "LIKE",
+		"id": "1063222597053894",
+		"name": "\u9673\u742a\u742a"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10153541434287304",
+		"name": "Souls Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "1697843047172211",
+		"name": "Edmond Chung"
+	},
+	{
+		"type": "LIKE",
+		"id": "557389851097452",
+		"name": "Lucy Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207538683719968",
+		"name": "Kit Sang Lo"
+	},
+	{
+		"type": "LIKE",
+		"id": "576424899174082",
+		"name": "Hihi Friend"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154285274951535",
+		"name": "Wendy Dy"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153782065828026",
+		"name": "Catherine Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153773065133401",
+		"name": "Stefenie Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "110220819389531",
+		"name": "Lok Tsui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153789732038172",
+		"name": "Karen Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "384350875068764",
+		"name": "DaDa Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "471666833031270",
+		"name": "Kai Kai"
+	},
+	{
+		"type": "LIKE",
+		"id": "712220328919023",
+		"name": "\u4f59\u570b\u6cf0"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206928327712074",
+		"name": "Cheuk On Poon"
+	},
+	{
+		"type": "LIKE",
+		"id": "1717984235083520",
+		"name": "On  Woo"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209281160811582",
+		"name": "Hei Hei Chui"
+	},
+	{
+		"type": "LIKE",
+		"id": "235686060118593",
+		"name": "\u8521\u695a\u541b"
+	},
+	{
+		"type": "LIKE",
+		"id": "218222731886199",
+		"name": "Ching Shan Keung"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1152347571443674",
+		"name": "Movewheel Leo Choi"
+	},
+	{
+		"type": "LOVE",
+		"id": "1716940175231885",
+		"name": "\u80e1\u9326\u6c5f"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153612179542852",
+		"name": "Kathy NG"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209128420228796",
+		"name": "Peter So"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208190308569556",
+		"name": "Kawai Tseh"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153620371971801",
+		"name": "John Tse"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156883798520492",
+		"name": "\u6a13\u5bb6\u5f37"
+	},
+	{
+		"type": "LIKE",
+		"id": "1228926063785975",
+		"name": "Ho Yeung Victor Ma"
+	},
+	{
+		"type": "LIKE",
+		"id": "1098264160214622",
+		"name": "Raymond Sun"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154078658743186",
+		"name": "Lewis Tse"
+	},
+	{
+		"type": "LIKE",
+		"id": "556376044523627",
+		"name": "James  Joa"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154769477274167",
+		"name": "Mike Hung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206514138075324",
+		"name": "Winnie Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154110720919254",
+		"name": "Paul Mak"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153424545832274",
+		"name": "Sukie Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "952087204886686",
+		"name": "Esther Cheung"
+	},
+	{
+		"type": "LOVE",
+		"id": "512847122232988",
+		"name": "Ga Ga Chu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1160378867353391",
+		"name": "Patrick Ma Hon Pang"
+	},
+	{
+		"type": "LIKE",
+		"id": "608806225938355",
+		"name": "Louisa Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "1794274560793506",
+		"name": "Tiff Lam"
+	}],
+	"message": "\u3010\u7db2\u7d61\u5b89\u5168 \u7531\u6211\u505a\u8d77 #2\u3011\u4f5c\u70ba\u4e00\u500b\u512a\u79c0\u5605\u4e0a\u7db2\u5929\u624d\uff0c\u5343\u7948\u5514\u597d\u57cb\u6c92\u5497\u4f60\u5605\u5929\u4efd\u540c\u57cb\u77e5\u8b58\u3002\u300c\u7db2\u7d61\u5b89\u5168\u6bd4\u8cfd2016\u300d\uff0c\u4f60\u5831\u5497\u540d\u53c3\u52a0\u672a\u5440\uff1f\n\nJoin the Cyber Security Competition 2016, get more tips to safeguard personal data on the Internet!\n\n\u6bd4\u8cfd\u7db2\u5740\uff1ahttp://hkcybersecuritycompetition2016.net/tc/index.html\n\n#\u7db2\u7d61\u5b89\u5168 #\u500b\u4eba\u8cc7\u6599 #\u79c1\u96b1 #\u7db2\u7d61\u5b89\u5168\u6bd4\u8cfd2016 #\u5b89\u5168\u4e0a\u7db2 #BOP #\u9999\u6e2f\u5927\u5b78 \uff03\u9999\u6e2f\u8b66\u5bdf \uff03\u5c11\u5e74\u8b66\u8a0a \uff03\u7db2\u7d61\u5b89\u5168\u53ca\u79d1\u6280\u7f6a\u6848\u8abf\u67e5\u79d1",
+	"id": "960526577368640_1064048443683119",
+	"comments": [{
+		"from": {
+			"name": "Billy Bee",
+			"id": "1153602638013258"
+		},
+		"comments": [{
+			"created_time": "2016-05-02T04:50:56+0000",
+			"message": "\u524d\u5e74\u9ec3\u87f2\u9738\u8def\uff0c\u624d\u907a\u4e0b\u90e8\u4efd\u9752\u5c11\u5e74\u7121\u6cd5\u7121\u5929\u7684\u5fc3\u798d\u3002",
+			"from": {
+				"name": "Yim Wingching",
+				"id": "1595709850747876"
+			},
+			"id": "1064048443683119_1083660245055272",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			},
+			{
+				"id": "10206077652920685",
+				"name": "\u8b1d\u6c5d\u51cc"
+			},
+			{
+				"id": "1042647732440650",
+				"name": "Keung Chun"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T05:07:13+0000",
+			"message": "\u5c31\u9ece\u5e6b\u4f60\u689d\u9ec4\u5c4d\u6253L\u57cb\u5305\u6f7b\u5440\uff01",
+			"from": {
+				"name": "Keung Chun",
+				"id": "1042647732440650"
+			},
+			"id": "1064048443683119_1083665968388033",
+			"likes": [{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			},
+			{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "10206077652920685",
+				"name": "\u8b1d\u6c5d\u51cc"
+			},
+			{
+				"id": "1595709850747876",
+				"name": "Yim Wingching"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T08:01:36+0000",
+			"message": "\u4e00\u6bdb\u4e0d\u503c\u7684\u9ec3\u87f2\u5783\u573e\u3002",
+			"from": {
+				"name": "Yim Wingching",
+				"id": "1595709850747876"
+			},
+			"id": "1064048443683119_1083729175048379",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1042647732440650",
+				"name": "Keung Chun"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		}],
+		"likes": [{
+			"id": "1763886407180847",
+			"name": "Herbert FC"
+		}],
+		"created_time": "2016-05-02T03:09:59+0000",
+		"message": "\u6b7b\u5dee\u4f6c\u5305\u85cf\u798d\u5fc3",
+		"id": "1064048443683119_1083626245058672"
+	},
+	{
+		"created_time": "2016-05-02T03:16:55+0000",
+		"message": "\u8cc7\u8a0a\u4fdd\u5b89\u90fd\u7121\u7528\uff0c\u5927\u628a\u9ec3\u7d72\u55ba\u8b66\u968a\uff0c\u4f60\u9ede\u4fdd\u5b89\u90fd\u6709\u4eba\u8ce3\u6599\u51fa\u569f\u3002",
+		"from": {
+			"name": "\u6881\u570b\u96c4",
+			"id": "116849555385451"
+		},
+		"id": "1064048443683119_1083628155058481",
+		"comments": [{
+			"created_time": "2016-05-02T04:52:39+0000",
+			"message": "\u9ec3\u7d72\u8b66\u5bdf\u5b88\u6cd5\uff0c\u5b88\u7d00\u5f8b\u4fc2\u6c92\u5411\u984c\u3002",
+			"from": {
+				"name": "Yim Wingching",
+				"id": "1595709850747876"
+			},
+			"id": "1064048443683119_1083660598388570",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1042647732440650",
+				"name": "Keung Chun"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T04:59:24+0000",
+			"message": "\u65bd\u6052",
+			"from": {
+				"name": "\u6881\u570b\u96c4",
+				"id": "116849555385451"
+			},
+			"id": "1064048443683119_1083664308388199"
+		},
+		{
+			"created_time": "2016-05-02T05:02:05+0000",
+			"message": "\u5514\u8a72\u63db\u5de6\u4f60\u5f35\u6b7b\u4eba\u9ec4\u5c4d\u982dfb\u76f8\u5566\uff01Out\u5566\uff01",
+			"from": {
+				"name": "Keung Chun",
+				"id": "1042647732440650"
+			},
+			"id": "1064048443683119_1083664911721472",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "218760051821679",
+				"name": "Frankie Wu"
+			},
+			{
+				"id": "1595709850747876",
+				"name": "Yim Wingching"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T06:20:34+0000",
+			"message": "\u51c9\u570b\u718a\uff0c\u4ee4\u6211\u60f3\u8d77\u5317\u6975\u718a\uff0c\u666e\u4eac\uff0c\u7279\u9996\uff0c\u4fdd\u5b89\u5c40\u9577\uff0c\u8b66\u968a\u4e00\u54e5\u786c\u8d77\u4f86\uff0c\u9999\u6e2f\u624d\u7a69\u5b9a\uff0c\u4efb\u4ed6\u4e71\u5481\u7793\u8857\u963b\u8def\uff0c\u8b66\u5bdf\u8b8a\u4e86\u54c8\u5df4\u72d7\uff0c\u4efb\u4eba\u73a9\u5f04\uff0c\ud83d\ude20\ud83d\ude20\ud83d\ude20\u6068\uff01",
+			"from": {
+				"name": "\u8b1d\u6c5d\u51cc",
+				"id": "10206077652920685"
+			},
+			"id": "1064048443683119_1083692885052008"
+		},
+		{
+			"created_time": "2016-05-02T14:03:59+0000",
+			"message": "\u65bd\u6052\u4fc2\u9ec3\u7d72\u5b4c\u7ae5\u9ed1\u8b66\n\u55ba\u975e\u6cd5\u4f54\u9818\u671f\u9593\u64c5\u81ea\u5728\u8b66\u968a\u5167\u90e8\u96fb\u8166\u7cfb\u7d71\n\u641c\u5c0b\u4f54\u9818\u5340\u57f7\u52e4\u8b66\u54e1\u8cc7\u6599\n\u518d\u4e0a\u8f09\u81f3\u4e92\u806f\u7db2\u760b\u50b3\n\u53c8\u88ab\u767c\u73fe\u7ba1\u6709\u591a\u9805\u5152\u7ae5\u8272\u60c5\u7247\u6bb5\u53ca\u7167\u7247\n\n\u6881\u570b\u96c4\u4fc2\u8b74\u8cac\u7dca\u9ec3\u7d72\u5605\u76ee\u7121\u6cd5\u7d00",
+			"from": {
+				"name": "Tabasco Tan",
+				"id": "212654599106790"
+			},
+			"id": "1064048443683119_1083891811698782",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1595709850747876",
+				"name": "Yim Wingching"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T15:07:22+0000",
+			"message": "\u5f97\u4f60\u7747\u5f97\u660e\u6211\u8b1b\u5622\u3002\u611f\u52d5",
+			"from": {
+				"name": "\u6881\u570b\u96c4",
+				"id": "116849555385451"
+			},
+			"id": "1064048443683119_1083919258362704"
+		},
+		{
+			"created_time": "2016-05-02T15:08:57+0000",
+			"message": "\u5571\u5571\u67f4\u7063\u53c8\u591a\u96bb\u9b3c\ud83d\ude2f\ud83d\ude10\ud83d\ude11",
+			"from": {
+				"name": "\u6881\u570b\u96c4",
+				"id": "116849555385451"
+			},
+			"id": "1064048443683119_1083919645029332"
+		}]
+	},
+	{
+		"created_time": "2016-05-02T03:18:51+0000",
+		"message": "",
+		"from": {
+			"name": "Anthony To",
+			"id": "10153607367307476"
+		},
+		"id": "1064048443683119_1083629551725008",
+		"likes": [{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		}]
+	},
+	{
+		"created_time": "2016-05-02T03:21:48+0000",
+		"message": "shit, \u641e\u932f\u4e2b!!\u9ede\u89e3\u7576\u6642\u8b80\u66f8\u5187\u5462\u985e\u597d\u73a9\u5605\u91ce\u67b6....XDDDD\n\u6211\u6709\u8208\u8da3\u53c3\u52a0\u67b6\u5176\u5be6!!!!!!!!!\n#\u524d\u5c11\u5e74\u8b66\u8a0a\u6703\u54e1\n#\u6211\u4ee5\u524d\u90fd\u4fc2JPC\u6210\u54e1",
+		"from": {
+			"name": "Catherine Lee",
+			"id": "10153782065828026"
+		},
+		"id": "1064048443683119_1083630255058271"
+	},
+	{
+		"created_time": "2016-05-02T03:23:02+0000",
+		"message": "\u5049\u5927\u5605\u201c\u767c\u660e\u201d\u2026\u4e0d\u8aa0\u5be6\u4f7f\u7528\u96fb\u8166 \uff0c\u6bba\u6652\uff01",
+		"from": {
+			"name": "Ricky Pang",
+			"id": "10208895180757508"
+		},
+		"id": "1064048443683119_1083630541724909",
+		"comments": [{
+			"created_time": "2016-05-02T04:56:20+0000",
+			"message": "\u5049\u5927\u7684\u6bba\u5b83\u6b7b\u6bba\u87f2\u6c34\u767c\u660e\uff0c\u9ec3\u87f2\u4e00\u898b\u5c31\u6b7b\u66ec\u3002",
+			"from": {
+				"name": "Yim Wingching",
+				"id": "1595709850747876"
+			},
+			"id": "1064048443683119_1083661498388480",
+			"likes": [{
+				"id": "1042647732440650",
+				"name": "Keung Chun"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		}]
+	},
+	{
+		"created_time": "2016-05-02T03:32:14+0000",
+		"message": "\u4eca\u65e5\u9078\u6c11\u767b\u8a18\u622a\u6b62\u5566\uff01\u7528\u9078\u7968\u8e22\u8d70\u798d\u6e2f\u8ce3\u570b\u8cca\u5440\uff01\n\u652f\u6301\u9999\u6e2f\u512a\u79c0\u8b66\u968a !",
+		"from": {
+			"name": "Homy Ho",
+			"id": "1586994371617014"
+		},
+		"id": "1064048443683119_1083633001724663",
+		"likes": [{
+			"id": "220997848258952",
+			"name": "Ritaon Sum"
+		},
+		{
+			"id": "224419694612538",
+			"name": "Wong Wong"
+		},
+		{
+			"id": "218760051821679",
+			"name": "Frankie Wu"
+		},
+		{
+			"id": "10206077652920685",
+			"name": "\u8b1d\u6c5d\u51cc"
+		},
+		{
+			"id": "257232687952251",
+			"name": "\u67ef\u5357\u5149"
+		},
+		{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		}]
+	},
+	{
+		"created_time": "2016-05-02T04:54:04+0000",
+		"message": "\u7528\u4f60\u624b\u4e0a\u7684\u9078\u7968\uff0c\u8e22\u8d70\u4e0d\u5b88\u6cd5\u7684\u8b70\u54e1\u3002",
+		"from": {
+			"name": "Yim Wingching",
+			"id": "1595709850747876"
+		},
+		"id": "1064048443683119_1083660945055202",
+		"likes": [{
+			"id": "257232687952251",
+			"name": "\u67ef\u5357\u5149"
+		},
+		{
+			"id": "220997848258952",
+			"name": "Ritaon Sum"
+		},
+		{
+			"id": "224419694612538",
+			"name": "Wong Wong"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		},
+		{
+			"id": "1042647732440650",
+			"name": "Keung Chun"
+		}]
+	},
+	{
+		"from": {
+			"name": "Billy Bee",
+			"id": "1153602638013258"
+		},
+		"comments": [{
+			"created_time": "2016-05-02T06:26:40+0000",
+			"message": "\u7576\u521d\u4e2d\u592e\u540c\u5efa\u5236\u539f\u672c\u5c6c\u610f\u5510\u5510\u505a\u7279\u9996\n\u53ea\u56e0\u6cdb\u6c11\u540c\u6bd2\u5a92\u501f\u50ed\u5efa\u5927\u9020\u6587\u7ae0\n\u4e0d\u65b7\u6253\u64ca\u5510\u5510\uff0c\u4ee4CY\u4eba\u6c23\u6025\u5347\n\u6700\u7d42\u4ee4\u4e2d\u592e\u8f49\u8eda\uff0cCY\u7576\u9078\n\u4e4b\u5f8c\u672c\u4f86\u4e00\u4eba\u4e00\u7968\u4e0bCY\u6839\u672c\u7121\u53ef\u80fd\u9023\u4efb\n\u53c8\u4fc2\u6cdb\u6c11\u5426\u6c7a\u653f\u6539\n\u5e6b\u4e86CY\u4e00\u500b\u5927\u5fd9\n\u5481\u4f60\u610f\u601d\u4fc2\u53eb\u5e02\u6c11\u7528\u9078\u7968\u8e22\u8d70\u6cdb\u6c11\u653f\u68cd\uff1f",
+			"from": {
+				"name": "Tabasco Tan",
+				"id": "212654599106790"
+			},
+			"id": "1064048443683119_1083694278385202",
+			"likes": [{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T06:45:07+0000",
+			"message": "\u5047\u5982\u4e94\u6bdb\u4ee3\u8868\u6536\u5229\u76ca\u6490\u5834\n\u95a3\u4e0b\u624d\u662f\u771f\u771f\u6b63\u6b63\u5605\u4e94\u6bdb\n\u660e\u660e\u6cdb\u6c11\u4fc2CY\u6700\u5927\u5605\u529f\u81e3\n\u5efa\u5236\u53ea\u4fc2\u8b58\u6642\u52d9\u5605\u4fca\u5091\nCY\u7576\u9078\n\u6cdb\u6c11\u624d\u662f\u7f6a\u9b41\u798d\u9996\n\u4e00\u6beb\u5b50\u6173\u7ffb\u81ea\u7528\u5427",
+			"from": {
+				"name": "Tabasco Tan",
+				"id": "212654599106790"
+			},
+			"id": "1064048443683119_1083702231717740",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			},
+			{
+				"id": "1595709850747876",
+				"name": "Yim Wingching"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T07:37:37+0000",
+			"message": "\u6b6a\u7406\uff01",
+			"from": {
+				"name": "Fansa Wong",
+				"id": "1761833284050403"
+			},
+			"id": "1064048443683119_1083721231715840",
+			"likes": [{
+				"id": "1595709850747876",
+				"name": "Yim Wingching"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T08:00:13+0000",
+			"message": "\u7793\u8857\u9738\u8def\u505a\u4e5e\u8863\u8a71\u70ba\u4e0b\u4e00\u4ee3\u5c31\u4fc2\u6b6a\u7406\u3002",
+			"from": {
+				"name": "Yim Wingching",
+				"id": "1595709850747876"
+			},
+			"id": "1064048443683119_1083728885048408",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1042647732440650",
+				"name": "Keung Chun"
+			},
+			{
+				"id": "1683997438532847",
+				"name": "Itv Stick"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T11:11:25+0000",
+			"message": "Billy Bee \u4f60\u7518L\u5514\u9806689\uff01\u6709\u7a2e\u5c31\u660e\u5e74\u53c3\u9078\u7279\u9996\u5440\uff01\u5230\u6642\u4f60\u5927\u628a\u6a5f\u6703\u627e689\u7b97\u8139\u5440\uff01\u4f60\u8001\u6bcd\uff01",
+			"from": {
+				"name": "Keung Chun",
+				"id": "1042647732440650"
+			},
+			"id": "1064048443683119_1083815248373105",
+			"likes": [{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			},
+			{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1595709850747876",
+				"name": "Yim Wingching"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T11:54:22+0000",
+			"message": "\u81ea\u5df1\u6b6a\u7406\u6700\u53ef\u60b2\u81ea\u5df1\u5514\u89ba\u5f97\u4fc2\uff01\n\u505a\u4e5c\u5614\u4ef2\u8981\u7747\u5440\uff1f\u55b1\u5572\u5473\u6b6a\u7406\u56c9\uff01",
+			"from": {
+				"name": "Ritaon Sum",
+				"id": "220997848258952"
+			},
+			"id": "1064048443683119_1083840208370609",
+			"likes": [{
+				"id": "1595709850747876",
+				"name": "Yim Wingching"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		}],
+		"likes": [{
+			"id": "10153916780079300",
+			"name": "Champagne Lee"
+		},
+		{
+			"id": "1763886407180847",
+			"name": "Herbert FC"
+		}],
+		"created_time": "2016-05-02T06:09:03+0000",
+		"message": "\u963f\u5566\u90fd\u540cd\u4e94\u6bdb\u8d81\u5413\u71b1\u9b27\u5148!\n\u7528\u4f60\u624b\u4e0a\u7684\u9078\u7968\uff0c\u8e22\u8d70\u652f\u6301\u904ecy\u7684\u8b70\u54e1\u3002",
+		"id": "1064048443683119_1083687375052559"
+	},
+	{
+		"created_time": "2016-05-02T08:46:26+0000",
+		"message": "Huiling Michelle Li Xiaoqi Heng Claudio Chock cyber security leh",
+		"from": {
+			"name": "Liyana Soh",
+			"id": "10156919039860370"
+		},
+		"id": "1064048443683119_1083750325046264",
+		"message_tags": [{
+			"length": 19,
+			"offset": 0,
+			"type": "user",
+			"id": "10154253099720962",
+			"name": "Huiling Michelle Li"
+		},
+		{
+			"length": 11,
+			"offset": 20,
+			"type": "user",
+			"id": "10207607007787044",
+			"name": "Xiaoqi Heng"
+		},
+		{
+			"length": 13,
+			"offset": 32,
+			"type": "user",
+			"id": "10156648615730538",
+			"name": "Claudio Chock"
+		}]
+	},
+	{
+		"created_time": "2016-05-02T10:15:39+0000",
+		"message": "\u91d1\u982d\u9280\u982d \u5f62\u8c61\u6709d\u5dee",
+		"from": {
+			"name": "Sam Chow",
+			"id": "10208601351327121"
+		},
+		"id": "1064048443683119_1083795251708438",
+		"likes": [{
+			"id": "10153737304963860",
+			"name": "Jeff Law"
+		},
+		{
+			"id": "1763886407180847",
+			"name": "Herbert FC"
+		},
+		{
+			"id": "10154154130693781",
+			"name": "Kathy Yee"
+		}]
+	},
+	{
+		"created_time": "2016-05-02T11:32:04+0000",
+		"message": "\u4f60\u7121\u505a\u932f\u5230\uff01          \n\u7063\u4ed4\u8b66\u7f72\u8b66\u9577\u5931\u66f4 107\u842c\u4fdd\u91cb\u91d1\u540c\u5931\u8e64\nhttp://hk.apple.nextmedia.com/realtime/breaking/20160502/55054860",
+		"from": {
+			"name": "\u674e\u7426",
+			"id": "1033314236748988"
+		},
+		"id": "1064048443683119_1083828045038492",
+		"likes": [{
+			"id": "10153916780079300",
+			"name": "Champagne Lee"
+		},
+		{
+			"id": "1763886407180847",
+			"name": "Herbert FC"
+		}]
+	},
+	{
+		"created_time": "2016-05-02T12:02:26+0000",
+		"message": "http://hk.apple.nextmedia.com/realtime/breaking/20160502/55054860",
+		"from": {
+			"name": "Evan Li",
+			"id": "10156844153905181"
+		},
+		"id": "1064048443683119_1083843991703564"
+	},
+	{
+		"created_time": "2016-05-02T12:23:40+0000",
+		"message": "\u9999\u6e2f\u8b66\u5bdf,\u5509, \u7531\u4f54\u4e2d\u5230\u800c\u5bb6\u90fd\u6210\u96bb\u9f9c\u5481, \u65e9\u5169\u65e5\u53c8\u6709\u5440SIR\u6bd4\u4eba\u6307\u4f4f\u9eceX\",   \u7747\u898b\u90fd\u5fc3UP,  \u8b66\u968a\u9ad8\u5c60\u4fc2\u54aa\u98df\u5de6\u5c4e\u9ece??",
+		"from": {
+			"name": "Lau M Wing",
+			"id": "10208321331265016"
+		},
+		"id": "1064048443683119_1083851981702765",
+		"likes": [{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		}]
+	}]
+},
+{
+	"created_time": "2016-05-01T12:36:26+0000",
+	"reactions": [{
+		"type": "LIKE",
+		"id": "1536827489952531",
+		"name": "Jack Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153656063658763",
+		"name": "Joseph Chung"
+	},
+	{
+		"type": "LIKE",
+		"id": "220584291663102",
+		"name": "Ph\u1ea1m H\u00e0 Gia \u0110\u1ecbnh"
+	},
+	{
+		"type": "LIKE",
+		"id": "1038038282942987",
+		"name": "Hui Wanfai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154753070759502",
+		"name": "Joey Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1170625766310938",
+		"name": "Kwok Keung Wu"
+	},
+	{
+		"type": "LIKE",
+		"id": "201427483574886",
+		"name": "David Law"
+	},
+	{
+		"type": "LIKE",
+		"id": "1167190626639156",
+		"name": "Winzia Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153802021251645",
+		"name": "Eve Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153529341931272",
+		"name": "Maureen Lo"
+	},
+	{
+		"type": "LIKE",
+		"id": "158074544592303",
+		"name": "Cindy Ko"
+	},
+	{
+		"type": "LOVE",
+		"id": "1008336722590919",
+		"name": "Yuen Shan Kwok"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153543440612644",
+		"name": "Barbara Olaes"
+	},
+	{
+		"type": "LIKE",
+		"id": "259774101032960",
+		"name": "Laney Zhang"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207366759860459",
+		"name": "Louis Him"
+	},
+	{
+		"type": "LIKE",
+		"id": "1541221136179849",
+		"name": "\u5f35\u5999\u68cb"
+	},
+	{
+		"type": "LIKE",
+		"id": "1001804769913087",
+		"name": "Christy So"
+	},
+	{
+		"type": "LOVE",
+		"id": "10206718058005042",
+		"name": "Anne Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1343116665705110",
+		"name": "Margaret Yung"
+	},
+	{
+		"type": "LIKE",
+		"id": "630194527128907",
+		"name": "Lawretta Law"
+	},
+	{
+		"type": "LIKE",
+		"id": "1611945412464200",
+		"name": "\u7518\u8e0f\u96ea"
+	},
+	{
+		"type": "LIKE",
+		"id": "262299967445756",
+		"name": "Cherry Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1685792151673377",
+		"name": "\u5433\u69ae\u5f70"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153689443513165",
+		"name": "Jonathan Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "513599238825416",
+		"name": "Hoi Ying Chow"
+	},
+	{
+		"type": "LIKE",
+		"id": "225947807761246",
+		"name": "HK Youngs"
+	},
+	{
+		"type": "LIKE",
+		"id": "976223522468325",
+		"name": "Bonnie Ko"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153804661272886",
+		"name": "Judy Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1279158152113872",
+		"name": "Peter Chiang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1696873080581030",
+		"name": "Daniel Chang"
+	},
+	{
+		"type": "LIKE",
+		"id": "994776270608213",
+		"name": "Oldcat Cat"
+	},
+	{
+		"type": "LIKE",
+		"id": "1186835047994497",
+		"name": "Jeff Tang"
+	},
+	{
+		"type": "LIKE",
+		"id": "482877945251551",
+		"name": "Fanny  Mak"
+	},
+	{
+		"type": "LIKE",
+		"id": "978072612270340",
+		"name": "Harry Ow"
+	},
+	{
+		"type": "LOVE",
+		"id": "1170135973029060",
+		"name": "Elle Yu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153739417610326",
+		"name": "Sandy Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154297044069672",
+		"name": "Rimmy Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "1003355723035685",
+		"name": "Wandy Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "1062168027154993",
+		"name": "\u8d99\u5fd7\u5eb7"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154225933783474",
+		"name": "Corliss Liu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1169603936406201",
+		"name": "\u4f55\u9326\u8c6a"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154160730653628",
+		"name": "Charles Wong"
+	},
+	{
+		"type": "WOW",
+		"id": "10204790286556223",
+		"name": "Frances Kam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153914784013387",
+		"name": "Da Ku"
+	},
+	{
+		"type": "LIKE",
+		"id": "1738052796418700",
+		"name": "Vini Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "264064877271865",
+		"name": "Peggy Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "233576317007869",
+		"name": "Ben Mak"
+	},
+	{
+		"type": "LIKE",
+		"id": "1389724691052950",
+		"name": "Sowa Kong"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1033314236748988",
+		"name": "\u674e\u7426"
+	},
+	{
+		"type": "LOVE",
+		"id": "10153639858183723",
+		"name": "Sally Chow"
+	},
+	{
+		"type": "LIKE",
+		"id": "1722018784706617",
+		"name": "Stephen Chang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1776651325897675",
+		"name": "Leung Pui Yip"
+	},
+	{
+		"type": "LIKE",
+		"id": "10205064876016397",
+		"name": "Kam Kai Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209002636773396",
+		"name": "Kitty Shum"
+	},
+	{
+		"type": "LIKE",
+		"id": "759412824194224",
+		"name": "Joanne Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1162687893771466",
+		"name": "Yuppie King"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156767957255109",
+		"name": "Ray Tai"
+	},
+	{
+		"type": "LIKE",
+		"id": "569116433265389",
+		"name": "Cat Chung Si Wan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154067105302243",
+		"name": "Wing Sze Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "2034856743407101",
+		"name": "\u5f6d\u4e2d\u5efa"
+	},
+	{
+		"type": "LIKE",
+		"id": "615486588610437",
+		"name": "On Tie Jennifer Lo"
+	},
+	{
+		"type": "LIKE",
+		"id": "1730813840498158",
+		"name": "Siu Fong  Wan"
+	},
+	{
+		"type": "LIKE",
+		"id": "526956460809316",
+		"name": "\u66fe\u777f\u5f6c"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208288087471879",
+		"name": "Lulu Lo"
+	},
+	{
+		"type": "LOVE",
+		"id": "1134001916652506",
+		"name": "Chan Kin Hei Augustine"
+	},
+	{
+		"type": "LIKE",
+		"id": "130828340654034",
+		"name": "\u838a\u660e\u798f"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209374481018930",
+		"name": "Wu Yuen Ting"
+	},
+	{
+		"type": "LIKE",
+		"id": "585123744996195",
+		"name": "Chi Wing Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1176756739023480",
+		"name": "YinWing Lo"
+	},
+	{
+		"type": "LIKE",
+		"id": "1591066537871757",
+		"name": "\u6797\u9cf3\u5b0c"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154065692733670",
+		"name": "Wu Kwok Wun Alex"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153372087396856",
+		"name": "Chiu Wai Shan"
+	},
+	{
+		"type": "LIKE",
+		"id": "247201815632155",
+		"name": "Jenny Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "526683764185665",
+		"name": "Jova SC Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208274749600227",
+		"name": "Momo Tang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1435000233183305",
+		"name": "Ming Hin Chan"
+	},
+	{
+		"type": "LOVE",
+		"id": "1049396268488699",
+		"name": "Cori Hon"
+	},
+	{
+		"type": "LIKE",
+		"id": "1700578616888564",
+		"name": "Michael Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "108884416190854",
+		"name": "Bello Bello"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206189975537052",
+		"name": "Ernie Brogden"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208013648392733",
+		"name": "Lie Lorrine"
+	},
+	{
+		"type": "LIKE",
+		"id": "213421732362625",
+		"name": "Bar Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "2011849862372785",
+		"name": "Kei Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1063419283717077",
+		"name": "\u8b5a\u5fe0"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209378891934835",
+		"name": "Kwok Keung Yiu"
+	},
+	{
+		"type": "LIKE",
+		"id": "756759897792525",
+		"name": "Terry  Choy"
+	},
+	{
+		"type": "LIKE",
+		"id": "216127535423203",
+		"name": "Leo Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209123619145368",
+		"name": "Johnnie Johnnie"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209688797683100",
+		"name": "Kwok Wai Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1180773128613338",
+		"name": "\u8d99\u9280\u767c"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208965440751301",
+		"name": "Ricky Kwok"
+	},
+	{
+		"type": "LIKE",
+		"id": "581593148688062",
+		"name": "Wing Fat To"
+	},
+	{
+		"type": "LOVE",
+		"id": "10153813034977284",
+		"name": "\u843d\u96e8\u5929"
+	},
+	{
+		"type": "LIKE",
+		"id": "1748754508687073",
+		"name": "\u674e\u6770\u679d"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10154131101277579",
+		"name": "\u9673\u5bb6\u79a7"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1081847901859026",
+		"name": "TY DS"
+	},
+	{
+		"type": "LOVE",
+		"id": "906975636085820",
+		"name": "Che Keung  Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "220997848258952",
+		"name": "Ritaon Sum"
+	},
+	{
+		"type": "LIKE",
+		"id": "1194345167272563",
+		"name": "Clement So"
+	},
+	{
+		"type": "LIKE",
+		"id": "1721028501487967",
+		"name": "\u6d2a\u6bdb"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209414556510535",
+		"name": "Betty Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154109898208428",
+		"name": "Tommy Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "985621928183840",
+		"name": "Henry Fung"
+	},
+	{
+		"type": "LIKE",
+		"id": "266867976979918",
+		"name": "BieBie Prineo"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154216994144636",
+		"name": "William William Yip"
+	},
+	{
+		"type": "LIKE",
+		"id": "656030707868713",
+		"name": "Lydia Chow"
+	},
+	{
+		"type": "LIKE",
+		"id": "164393433957652",
+		"name": "Simon Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1601393453518749",
+		"name": "Pong Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "1755353558028117",
+		"name": "Vivien Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154052287531257",
+		"name": "ShSh Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "1023633867703324",
+		"name": "Cocoping Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1714559132158699",
+		"name": "\u4f59\u5609\u7487"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153798189654272",
+		"name": "Alan Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "847852165327177",
+		"name": "Jacky Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "10201421382933280",
+		"name": "\u6881\u5fd7\u660e"
+	},
+	{
+		"type": "LIKE",
+		"id": "10204883046070388",
+		"name": "Grace Yau"
+	},
+	{
+		"type": "LIKE",
+		"id": "1053958871365433",
+		"name": "Marco So"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153747228133585",
+		"name": "Nicole Simpson"
+	},
+	{
+		"type": "LIKE",
+		"id": "1116766491709104",
+		"name": "Yves Chow"
+	},
+	{
+		"type": "LIKE",
+		"id": "1255369121157435",
+		"name": "Pong Vivien"
+	},
+	{
+		"type": "LIKE",
+		"id": "987896981300644",
+		"name": "LCa Tree"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153578238878161",
+		"name": "Candy Tsang"
+	},
+	{
+		"type": "LIKE",
+		"id": "704340789708326",
+		"name": "Angel Liu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1016160575139972",
+		"name": "Yee Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154080351663879",
+		"name": "Ken Pun"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206683899559803",
+		"name": "Yiu Kwong Kwok"
+	},
+	{
+		"type": "LIKE",
+		"id": "1124185050979334",
+		"name": "\u95dc\u4ec1\u96b1\u58eb"
+	},
+	{
+		"type": "LIKE",
+		"id": "944629302318624",
+		"name": "Nelson Long Hei"
+	},
+	{
+		"type": "LIKE",
+		"id": "1702872589991030",
+		"name": "Randy Chu"
+	},
+	{
+		"type": "LIKE",
+		"id": "145499765851160",
+		"name": "\u694a\u8c9d\u8389"
+	},
+	{
+		"type": "LIKE",
+		"id": "1088582707854170",
+		"name": "Lucia Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1082392261825073",
+		"name": "Kwongyu Nip"
+	},
+	{
+		"type": "LIKE",
+		"id": "1135394789826135",
+		"name": "Lily Kwan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1031834076883642",
+		"name": "Ling Kit"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153352542616537",
+		"name": "Jeffrey Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153613935803590",
+		"name": "Patrick Tse"
+	},
+	{
+		"type": "ANGRY",
+		"id": "991493307602384",
+		"name": "Wan Sze Ling"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154231553934427",
+		"name": "H Por Tai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153580371192896",
+		"name": "Rodney Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209149834933287",
+		"name": "Bosco Chan"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10153591403757965",
+		"name": "Au Calvin"
+	},
+	{
+		"type": "LIKE",
+		"id": "1066714370055143",
+		"name": "Eddie Man"
+	},
+	{
+		"type": "LIKE",
+		"id": "218378425197145",
+		"name": "Yc Ken"
+	},
+	{
+		"type": "LIKE",
+		"id": "1604972599823220",
+		"name": "\u5bb9\u5149\u5fa9"
+	},
+	{
+		"type": "LIKE",
+		"id": "968968113217409",
+		"name": "Xiaolu Hu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1140682879321856",
+		"name": "Hoi Lam Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153644300787897",
+		"name": "Kato Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206083517863482",
+		"name": "Leo Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154177931778979",
+		"name": "Irene Ma"
+	},
+	{
+		"type": "LIKE",
+		"id": "619917268161166",
+		"name": "\u6a39\u660e\u5289"
+	},
+	{
+		"type": "LIKE",
+		"id": "1058779777548558",
+		"name": "Lam Suk Wai Swlam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1100427986687303",
+		"name": "Meiha Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "279912752341595",
+		"name": "Katniss Chow"
+	},
+	{
+		"type": "LIKE",
+		"id": "227912750897995",
+		"name": "\u8521\u76e4\u958b"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209532360408252",
+		"name": "kiu por cheung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206119154845932",
+		"name": "William Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "831995530278238",
+		"name": "Wangwang Yuen"
+	},
+	{
+		"type": "LIKE",
+		"id": "1716943438582866",
+		"name": "\u7f85\u9e97\u96f2"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208541581124671",
+		"name": "May Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "496951920495783",
+		"name": "Betty Sze"
+	},
+	{
+		"type": "LIKE",
+		"id": "1329178360442604",
+		"name": "Choi Hung"
+	},
+	{
+		"type": "LIKE",
+		"id": "471175846409877",
+		"name": "Sandy  Chong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1314061211943561",
+		"name": "Ge Fong Lo"
+	},
+	{
+		"type": "LIKE",
+		"id": "1695312964062903",
+		"name": "Lin Wai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208223836566871",
+		"name": "Yip Wai Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1065749383463425",
+		"name": "Kong Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1716633961909402",
+		"name": "Fung Kiu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1474902789201933",
+		"name": "Shing Hung Chan"
+	},
+	{
+		"type": "LOVE",
+		"id": "10154051522651897",
+		"name": "Kristy Chu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1697734793847456",
+		"name": "Jaiso So"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209061408435195",
+		"name": "Patrick Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "585583521602207",
+		"name": "Kit Mei Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207896003749687",
+		"name": "Leung Hing"
+	},
+	{
+		"type": "LIKE",
+		"id": "1000849426662667",
+		"name": "Delton Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1029058023844131",
+		"name": "Daniel Yung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153323814071292",
+		"name": "Thomas Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "1558446984455427",
+		"name": "John King"
+	},
+	{
+		"type": "LIKE",
+		"id": "1031277946962152",
+		"name": "\u76e7\u5ee3\u76db"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154168802173259",
+		"name": "Leo Chu"
+	},
+	{
+		"type": "LOVE",
+		"id": "10206350253542956",
+		"name": "Teresa Fung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10204522053891479",
+		"name": "\u5f35\u5b50\u5f6c"
+	},
+	{
+		"type": "LIKE",
+		"id": "1003050366442087",
+		"name": "Lee Yuet Yuk"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206315090575733",
+		"name": "Ray Woo"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206023079964091",
+		"name": "JuJu So"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154092860023486",
+		"name": "Choi Ivy"
+	},
+	{
+		"type": "LIKE",
+		"id": "1597571450558947",
+		"name": "Fung Ling Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1423076041253920",
+		"name": "\u6cb3\u87f9\u4e0d\u6c89\u9ed8"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209220785497682",
+		"name": "\u912d\u5091\u751f"
+	},
+	{
+		"type": "LIKE",
+		"id": "1570635063266188",
+		"name": "Cheng Shuk Ling"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154124958097930",
+		"name": "Loretta Jasper"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156930232835691",
+		"name": "V\u0430mpi\u044fe Shirley"
+	},
+	{
+		"type": "LIKE",
+		"id": "486555708207832",
+		"name": "Po Chu Wu Cheng"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1217499294929945",
+		"name": "Lok Man Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206490243796936",
+		"name": "Luk Chun Hang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1067522279988075",
+		"name": "Mei Chong"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10208315894187784",
+		"name": "KC Cheung"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1588106368171088",
+		"name": "Kaito Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1713811085541712",
+		"name": "Bill Hoo"
+	},
+	{
+		"type": "LIKE",
+		"id": "10204568938142282",
+		"name": "Kuen FuChan"
+	},
+	{
+		"type": "LIKE",
+		"id": "783249448474266",
+		"name": "Hung Hung Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "616887968460167",
+		"name": "\u7b71\u7daa"
+	},
+	{
+		"type": "LOVE",
+		"id": "10153722078698191",
+		"name": "Michael Chu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1703084223282912",
+		"name": "Matthew Law"
+	},
+	{
+		"type": "LIKE",
+		"id": "1733882613494564",
+		"name": "Chan Keung Lui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156841210325710",
+		"name": "Siu Andrew"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153685430118224",
+		"name": "Vincy Shiu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154245523503777",
+		"name": "Wai Wai Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1186675904699830",
+		"name": "Patrick Wood"
+	},
+	{
+		"type": "LIKE",
+		"id": "221830734846914",
+		"name": "\u8d99\u6dd1\u7434"
+	},
+	{
+		"type": "LIKE",
+		"id": "1709354132687256",
+		"name": "Wing Ling Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156883798520492",
+		"name": "\u6a13\u5bb6\u5f37"
+	},
+	{
+		"type": "LIKE",
+		"id": "1160399350661221",
+		"name": "Joseph Ma"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154096989837731",
+		"name": "Stephanie Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "1164313833588068",
+		"name": "Thomas Chu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209634681689736",
+		"name": "\u9f90\u6167\u93a3"
+	},
+	{
+		"type": "LOVE",
+		"id": "981471641890264",
+		"name": "Johnny Cheung"
+	},
+	{
+		"type": "LIKE",
+		"id": "642427399244988",
+		"name": "\u5353\u78a7\u742a"
+	},
+	{
+		"type": "LIKE",
+		"id": "621892291313136",
+		"name": "Tuni Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1708895686031030",
+		"name": "Anna Ho"
+	},
+	{
+		"type": "LOVE",
+		"id": "992984120798205",
+		"name": "Dick Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209317239393233",
+		"name": "Rayray Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "619162828231508",
+		"name": "\u9ec3\u4e43\u5f37"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154956725523438",
+		"name": "Lam Lui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209409539222037",
+		"name": "Yun Fei Man"
+	},
+	{
+		"type": "LIKE",
+		"id": "854537281325136",
+		"name": "\u66fe\u6d69\u4fca"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153653073188269",
+		"name": "Will Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "989213017839885",
+		"name": "Wilson Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154154752614911",
+		"name": "Ming Mak"
+	},
+	{
+		"type": "LOVE",
+		"id": "490271514509001",
+		"name": "\u83ef\u82f1\u96c4"
+	},
+	{
+		"type": "LIKE",
+		"id": "616196278535162",
+		"name": "\u90ed\u83ef"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209394886378706",
+		"name": "\u4f55\u7f8e\u84ee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153363351667493",
+		"name": "Paddy Yuen"
+	},
+	{
+		"type": "LIKE",
+		"id": "506414186230958",
+		"name": "Yan Kwok"
+	},
+	{
+		"type": "LIKE",
+		"id": "717529405055259",
+		"name": "Auntie Fung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10157073955795144",
+		"name": "Michael Chui"
+	},
+	{
+		"type": "LIKE",
+		"id": "1102203219800559",
+		"name": "\u674e\u570b\u83ef"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1755425421347061",
+		"name": "\u6731\u79ae\u8ce2"
+	},
+	{
+		"type": "LIKE",
+		"id": "1818021041759694",
+		"name": "Chi Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "834229613375760",
+		"name": "Samson Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153977371692110",
+		"name": "Joe Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "576212965883377",
+		"name": "Amy Ko"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207811252270963",
+		"name": "Stephen Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153560975438321",
+		"name": "Chi-hoi Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1782017925351865",
+		"name": "Man Super"
+	},
+	{
+		"type": "LIKE",
+		"id": "1140479775982796",
+		"name": "Edmund Tsui"
+	},
+	{
+		"type": "LIKE",
+		"id": "1159883320688984",
+		"name": "Ken Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "1733181100233581",
+		"name": "YC Lee"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10153376782690706",
+		"name": "Johnny Tse"
+	},
+	{
+		"type": "LIKE",
+		"id": "1036600906427887",
+		"name": "Ace Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "581572452016823",
+		"name": "Kelvin Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "215434282171552",
+		"name": "Suk Yi Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10201590118871373",
+		"name": "Tiger Kenny"
+	},
+	{
+		"type": "LIKE",
+		"id": "568261270001308",
+		"name": "\u674e\u6c99"
+	},
+	{
+		"type": "LIKE",
+		"id": "1001307683271719",
+		"name": "Judy Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1062709237123785",
+		"name": "Vincent Chau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208144012030053",
+		"name": "Billy Wat"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208967136596078",
+		"name": "Wai Kei Fok"
+	},
+	{
+		"type": "LOVE",
+		"id": "1755302331422672",
+		"name": "Jeffrey Wosolo"
+	},
+	{
+		"type": "LIKE",
+		"id": "488182981387391",
+		"name": "Man Ha Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "158852247846440",
+		"name": "May Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154098496558360",
+		"name": "Alex.Pong Kwok"
+	},
+	{
+		"type": "LIKE",
+		"id": "10205344118995914",
+		"name": "Annie Yu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10205425785355705",
+		"name": "Teresa Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "147746808954050",
+		"name": "Maggie Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "874075672738716",
+		"name": "Laihamimi  Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "221590108204678",
+		"name": "Leung Kwok Keung Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1021699031240652",
+		"name": "Tom Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "593429100825790",
+		"name": "Lue Papamama"
+	},
+	{
+		"type": "LIKE",
+		"id": "1256874374341014",
+		"name": "Thomas Chong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1086919068037686",
+		"name": "Maxine Ma"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208865751422675",
+		"name": "Pekko Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "1747521285275723",
+		"name": "Joe Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "1138229452866065",
+		"name": "Carmen Lai"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1766677956896040",
+		"name": "\u5e73\u5049\u9054"
+	},
+	{
+		"type": "LIKE",
+		"id": "10204861643855753",
+		"name": "Kenneth Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1102276839827959",
+		"name": "\u9648\u5f69\u4e91"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154050752474831",
+		"name": "Carmen Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "499136020277406",
+		"name": "Yuk Lin Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "1156152594419517",
+		"name": "\u5bb6\u5f3a\u7f85"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154075439225912",
+		"name": "Mc Q King"
+	},
+	{
+		"type": "LIKE",
+		"id": "1537384296556409",
+		"name": "Chau Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206403202821142",
+		"name": "\u694a\u5bb6\u8ce2"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153734841574858",
+		"name": "Cissie Tsang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1190256974319264",
+		"name": "Ka Wai Carol Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "998146163568516",
+		"name": "Princess Wang"
+	},
+	{
+		"type": "LIKE",
+		"id": "223990564635182",
+		"name": "Hong Wo Poon"
+	},
+	{
+		"type": "LIKE",
+		"id": "1174025555963770",
+		"name": "Wilson So"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154085512539720",
+		"name": "Tony Tan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1712617505679381",
+		"name": "Monica Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "785920684842334",
+		"name": "Waichiu  Lo"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208496847092603",
+		"name": "Joan Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1261349047226575",
+		"name": "Kwok Tai Fung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1541808729455717",
+		"name": "Roy Do"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208902737261718",
+		"name": "Sally Lui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207552993837769",
+		"name": "Grace Tang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1071322902935468",
+		"name": "Wong Wai Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154059908218433",
+		"name": "Danny Law"
+	},
+	{
+		"type": "LIKE",
+		"id": "222653184769477",
+		"name": "Yiu Chung Chui"
+	},
+	{
+		"type": "LIKE",
+		"id": "521847698022404",
+		"name": "Pak To Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153432628806135",
+		"name": "\u8607\u83f2\u7d2b\u67d4"
+	},
+	{
+		"type": "LIKE",
+		"id": "1009866795771189",
+		"name": "\u8d99\u932b\u6d2a"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209489714308710",
+		"name": "Ben Kwong"
+	},
+	{
+		"type": "LIKE",
+		"id": "212791212427411",
+		"name": "Ka Kit Siu"
+	},
+	{
+		"type": "LOVE",
+		"id": "10209971205583865",
+		"name": "Joey Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1621692434822094",
+		"name": "Fiona Mok"
+	},
+	{
+		"type": "LIKE",
+		"id": "1072695309440954",
+		"name": "Tsz Kin Shum"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10208134054163334",
+		"name": "Benson Choi"
+	},
+	{
+		"type": "LIKE",
+		"id": "1729384093973721",
+		"name": "Isadora Tang"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153935410291075",
+		"name": "Andrew Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154833420044129",
+		"name": "Theo Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1185100604841498",
+		"name": "Oi King Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "213720992344277",
+		"name": "Mk Khan"
+	},
+	{
+		"type": "LIKE",
+		"id": "963261183769149",
+		"name": "Eric Sin"
+	},
+	{
+		"type": "LIKE",
+		"id": "608806225938355",
+		"name": "Louisa Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206428969348002",
+		"name": "Eliza Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209609799547731",
+		"name": "Eve Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154104862464099",
+		"name": "Danny Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "218760051821679",
+		"name": "Frankie Wu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154224889598578",
+		"name": "Joe Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1606587869664614",
+		"name": "Ching Nan Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207724591406320",
+		"name": "Kim Po Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154042379002332",
+		"name": "Weng Woo"
+	},
+	{
+		"type": "LIKE",
+		"id": "557389851097452",
+		"name": "Lucy Chan"
+	},
+	{
+		"type": "LOVE",
+		"id": "1166856023377474",
+		"name": "Agnes Liu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156834815595113",
+		"name": "Viann LI"
+	},
+	{
+		"type": "LIKE",
+		"id": "10201470767288222",
+		"name": "Helen Lo"
+	},
+	{
+		"type": "LOVE",
+		"id": "1615451485444113",
+		"name": "Ring Ring"
+	},
+	{
+		"type": "LIKE",
+		"id": "1031268083609672",
+		"name": "Kathleen Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1134027249942228",
+		"name": "Michelle Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206450603652650",
+		"name": "Aaron Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "554582974723590",
+		"name": "Fung King Ivy  Au"
+	},
+	{
+		"type": "LIKE",
+		"id": "1717603451829755",
+		"name": "Leung Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "996260120458943",
+		"name": "Chan Kenneth"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153687467189538",
+		"name": "Onion Yong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154178188986942",
+		"name": "Sze Law"
+	},
+	{
+		"type": "LIKE",
+		"id": "218801111824024",
+		"name": "Paula Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "510133172509707",
+		"name": "Ho Tsz Lai"
+	},
+	{
+		"type": "LOVE",
+		"id": "597266430452156",
+		"name": "Merry  Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1260563400638514",
+		"name": "W DB Bie"
+	},
+	{
+		"type": "LIKE",
+		"id": "1067827876608065",
+		"name": "Gloria CMan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154838249519298",
+		"name": "Christine Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1710107785895232",
+		"name": "\u91d1\u5c71\u963f\u6bcd"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156746461365277",
+		"name": "Karen Shing"
+	},
+	{
+		"type": "LIKE",
+		"id": "1184170208268059",
+		"name": "Linda Linda Tang"
+	},
+	{
+		"type": "LIKE",
+		"id": "711542862282419",
+		"name": "Man Nok"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209612005123382",
+		"name": "Bing LI"
+	},
+	{
+		"type": "LIKE",
+		"id": "515043942001015",
+		"name": "Wei Chu Hon"
+	},
+	{
+		"type": "LIKE",
+		"id": "256541951359863",
+		"name": "Wai Lung Chiu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1747351612177456",
+		"name": "Kenneth Choi"
+	},
+	{
+		"type": "LIKE",
+		"id": "1585180491811351",
+		"name": "Peter Sam Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "963812880376253",
+		"name": "Yuk King Bonnie Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "566416970203303",
+		"name": "Mi Ling Choi"
+	},
+	{
+		"type": "LIKE",
+		"id": "1057916264268073",
+		"name": "Catherina Lui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209529074644063",
+		"name": "Kenny Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153878895479902",
+		"name": "Pak Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10201289332591286",
+		"name": "Yumiko Tsang"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154152679344122",
+		"name": "Ken Rong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1162691973750744",
+		"name": "Flora S F Cheung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153556377202596",
+		"name": "Wen-Li Huang"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153556166367006",
+		"name": "Kitty Wan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208362296270968",
+		"name": "Angel Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1079073622135030",
+		"name": "Lui Wing-yuen"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153647858171267",
+		"name": "Suet-yee Shirly Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "1009697709099845",
+		"name": "Leung Rachel"
+	},
+	{
+		"type": "LIKE",
+		"id": "1294326150582543",
+		"name": "Stephen Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1730425007171867",
+		"name": "Joe  Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "539117479583433",
+		"name": "Peter Chiu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153781870908533",
+		"name": "Vani Wun"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156800454920022",
+		"name": "Neo Shum"
+	},
+	{
+		"type": "LIKE",
+		"id": "268986340109663",
+		"name": "\u9ec4\u5fb7\u660e"
+	},
+	{
+		"type": "LIKE",
+		"id": "228276910861854",
+		"name": "Runner Kin"
+	},
+	{
+		"type": "LIKE",
+		"id": "1753166148232745",
+		"name": "Kwai Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "1725422627676374",
+		"name": "Donna Man Ching Cheung"
+	},
+	{
+		"type": "LIKE",
+		"id": "260728820936980",
+		"name": "\u9673\u81ea\u5f3a"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153699574272809",
+		"name": "Steve Saunders"
+	},
+	{
+		"type": "LIKE",
+		"id": "1009672615736341",
+		"name": "Raymond Kwok"
+	},
+	{
+		"type": "LIKE",
+		"id": "1103633613034385",
+		"name": "Marco Ma"
+	},
+	{
+		"type": "LIKE",
+		"id": "10205889690713605",
+		"name": "Albert Cheung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1043455585724600",
+		"name": "Robert Young"
+	},
+	{
+		"type": "LIKE",
+		"id": "812796238852833",
+		"name": "\u6d69\u4fca\u9673"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209210861327019",
+		"name": "Little Alvin"
+	},
+	{
+		"type": "LIKE",
+		"id": "1006537426092405",
+		"name": "Jaysideny Wai Ho Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156778639765237",
+		"name": "Alice Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156841063210424",
+		"name": "Kwok Yee Kan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1709768285905224",
+		"name": "Vicky  So"
+	},
+	{
+		"type": "LIKE",
+		"id": "944515559000686",
+		"name": "Sofi So"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153628615534227",
+		"name": "Johnny Sy"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10154070336922969",
+		"name": "Jun Yinwong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1160082584016349",
+		"name": "May Kong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209428495979458",
+		"name": "Ng Kai-man Paul Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206550760062871",
+		"name": "\u9ec3\u79c0\u78a7"
+	},
+	{
+		"type": "LIKE",
+		"id": "244032282617983",
+		"name": "\u6797\u570b\u8c6a"
+	},
+	{
+		"type": "LIKE",
+		"id": "201521760232869",
+		"name": "Gally Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1097839246950450",
+		"name": "Happy Tou"
+	},
+	{
+		"type": "LIKE",
+		"id": "10204856325768270",
+		"name": "\u5c0f\u96e8\u9ed1\u5360"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154169819673092",
+		"name": "Marlon Cheung"
+	},
+	{
+		"type": "HAHA",
+		"id": "10206138175158774",
+		"name": "Paco Yau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156695545770567",
+		"name": "Frances Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "1070640846334417",
+		"name": "Stephen Fung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1084395174956227",
+		"name": "Annie Cheng"
+	},
+	{
+		"type": "LOVE",
+		"id": "1778868632346211",
+		"name": "\u621a\u6176\u8c50"
+	},
+	{
+		"type": "LIKE",
+		"id": "1030232737043335",
+		"name": "San Lung Mo"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208103265192613",
+		"name": "Gary Low"
+	},
+	{
+		"type": "LIKE",
+		"id": "10205333791458069",
+		"name": "Ada Wong"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10206343180840367",
+		"name": "Daniel Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208753079562081",
+		"name": "Sarah Choi"
+	},
+	{
+		"type": "LIKE",
+		"id": "1753405638238735",
+		"name": "Regine Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208497373248402",
+		"name": "CB Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1015378558517528",
+		"name": "Mk Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "507351926123799",
+		"name": "Barry  Chang"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208633974023458",
+		"name": "May Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1693527450899862",
+		"name": "Lai Sun Siu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1580250595600019",
+		"name": "Benton Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "1717011411909393",
+		"name": "Chris Moon"
+	},
+	{
+		"type": "LIKE",
+		"id": "812248122243127",
+		"name": "Wang Lele"
+	},
+	{
+		"type": "LIKE",
+		"id": "1158666517478439",
+		"name": "Michael Dai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10204656789619042",
+		"name": "Mario Cww Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "856091311202803",
+		"name": "Wai Yuk  LO"
+	},
+	{
+		"type": "LIKE",
+		"id": "1066575986733433",
+		"name": "Selina Lo"
+	},
+	{
+		"type": "LIKE",
+		"id": "1783136058585782",
+		"name": "Eva Chow"
+	},
+	{
+		"type": "LIKE",
+		"id": "896712273770577",
+		"name": "Hung Yuan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1173326602708156",
+		"name": "Elizabeth Choy"
+	},
+	{
+		"type": "LOVE",
+		"id": "2009898259235683",
+		"name": "\u90ed\u5137\u5100"
+	},
+	{
+		"type": "LIKE",
+		"id": "779650368802545",
+		"name": "Mandy SooHyun Fung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153739004573472",
+		"name": "Wai Chai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209199220126469",
+		"name": "Wing Yan Carrie"
+	},
+	{
+		"type": "LIKE",
+		"id": "1608717019426390",
+		"name": "Man King Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153484918688021",
+		"name": "Ming Choi"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153512877927227",
+		"name": "Joyce Lam"
+	},
+	{
+		"type": "LOVE",
+		"id": "10208228197854825",
+		"name": "Shui Oi Woo"
+	},
+	{
+		"type": "LIKE",
+		"id": "1788991031322220",
+		"name": "Suiman Chim"
+	},
+	{
+		"type": "LIKE",
+		"id": "10204519899395806",
+		"name": "Chan Ling Ling"
+	},
+	{
+		"type": "LIKE",
+		"id": "877991685678436",
+		"name": "Sue To"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207194571717387",
+		"name": "Ada Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1392032100823117",
+		"name": "\u7d05\u7d05"
+	},
+	{
+		"type": "LIKE",
+		"id": "168815890181994",
+		"name": "Man Fung"
+	},
+	{
+		"type": "LIKE",
+		"id": "886162351506856",
+		"name": "Eva Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "1047610018643893",
+		"name": "Fa-Jen Chang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1002069306546879",
+		"name": "Judy Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "1729298457310731",
+		"name": "Denise Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209800152985751",
+		"name": "Fanny Li"
+	},
+	{
+		"type": "LOVE",
+		"id": "10204535893277170",
+		"name": "Brownie Stevenstone"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10154180355411789",
+		"name": "Michelle Tang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1772864092947910",
+		"name": "Road Ang"
+	},
+	{
+		"type": "LIKE",
+		"id": "862017520593453",
+		"name": "Suki Yip"
+	},
+	{
+		"type": "LIKE",
+		"id": "899588560166828",
+		"name": "Annie Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1209811675707435",
+		"name": "Riff Hill"
+	},
+	{
+		"type": "LIKE",
+		"id": "1158903954133825",
+		"name": "\u9ec3\u7f8e\u60e0"
+	},
+	{
+		"type": "LIKE",
+		"id": "1009308539162997",
+		"name": "George Poon"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153524613235869",
+		"name": "Mac Lee"
+	},
+	{
+		"type": "ANGRY",
+		"id": "528215017366092",
+		"name": "Chiyui Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154158012202302",
+		"name": "\u99ae\u666f\u8f1d"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209314584847346",
+		"name": "Chan Super"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208344846151695",
+		"name": "Chi Hang Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "1103592039681820",
+		"name": "Yeung Ming Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154128982373909",
+		"name": "Cheung Wai Yee"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10153592693512076",
+		"name": "Wong Ka Lok"
+	},
+	{
+		"type": "LIKE",
+		"id": "1714308185497398",
+		"name": "Betty Lai"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10153820035003183",
+		"name": "Laam Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "239300113094950",
+		"name": "Solidkwan Kwan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154251795898586",
+		"name": "Tuen Yuk Hang"
+	},
+	{
+		"type": "LIKE",
+		"id": "980732372022859",
+		"name": "Queenie Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10205723411474492",
+		"name": "Edmond Yew"
+	},
+	{
+		"type": "LIKE",
+		"id": "1305531709462713",
+		"name": "W K Ricky Chan"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1044490232285610",
+		"name": "Eddy Choy"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153688930823458",
+		"name": "Jason IP"
+	},
+	{
+		"type": "LIKE",
+		"id": "1755313201351558",
+		"name": "Zhaodi Long"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206260812420889",
+		"name": "Ki-fung Choi"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1758248651058202",
+		"name": "\u767d\u6731\u8fea"
+	},
+	{
+		"type": "LIKE",
+		"id": "789251287841616",
+		"name": "\u99ac\u5049\u9d6c"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209078260851226",
+		"name": "Clive Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209102673266289",
+		"name": "Yip Shirley"
+	},
+	{
+		"type": "LIKE",
+		"id": "1313698481973942",
+		"name": "Florence Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153587962054639",
+		"name": "Cheryl Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "787721641358160",
+		"name": "Sun Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10201441770683771",
+		"name": "Justin So"
+	},
+	{
+		"type": "LIKE",
+		"id": "1036407516429450",
+		"name": "Kam Wing Tsui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154741586289240",
+		"name": "\u5433\u70f1\u83ef"
+	},
+	{
+		"type": "LIKE",
+		"id": "1595709850747876",
+		"name": "Yim Wingching"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154053521662332",
+		"name": "Phoebe Lai"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1058807697491031",
+		"name": "Ringo Kan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1202506629768013",
+		"name": "Wing Cheong Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208336574027772",
+		"name": "Siu Ling"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206928327712074",
+		"name": "Cheuk On Poon"
+	},
+	{
+		"type": "LIKE",
+		"id": "1163567047011520",
+		"name": "Karen Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "1724117624472660",
+		"name": "Lee Gigi"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153342497513239",
+		"name": "Katherine Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209741532243489",
+		"name": "Wong Yee Fai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154112698984241",
+		"name": "Gary Pun"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209417295616187",
+		"name": "Tin Yau Liu"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10205821520527090",
+		"name": "Mulder Mulder"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154219141872147",
+		"name": "Li Cecilia"
+	},
+	{
+		"type": "LIKE",
+		"id": "1050047741722970",
+		"name": "Wing Tak Siu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1387043507987871",
+		"name": "Dede Kiki"
+	},
+	{
+		"type": "LIKE",
+		"id": "1731668410387970",
+		"name": "Natalief Ngan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1176713742348493",
+		"name": "Hilary Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "502522183285100",
+		"name": "\u80e1\u5609\u705d"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10154861412354698",
+		"name": "Dennis Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1726596650950866",
+		"name": "Wu Wendy"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153935279570339",
+		"name": "Robin Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209074857485674",
+		"name": "Alan Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206277358918251",
+		"name": "Yam Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "1090427861029438",
+		"name": "Fong Fung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1098264160214622",
+		"name": "Raymond Sun"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154217960983755",
+		"name": "Tat Kfe"
+	},
+	{
+		"type": "LOVE",
+		"id": "1725925541016557",
+		"name": "TL Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154793525949947",
+		"name": "Cyrus Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1097906973586606",
+		"name": "Shirley Chen"
+	},
+	{
+		"type": "LIKE",
+		"id": "659409807534953",
+		"name": "Mei Hing Liu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154177593246600",
+		"name": "Frank Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209402820890717",
+		"name": "Sing Sing"
+	},
+	{
+		"type": "LIKE",
+		"id": "480933822100690",
+		"name": "Yuen Ling Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "1058868457520784",
+		"name": "Apple To"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154210147849684",
+		"name": "Karry Ip"
+	},
+	{
+		"type": "LIKE",
+		"id": "538710212973986",
+		"name": "\u59da\u5fb7\u5fe0"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153603956288481",
+		"name": "Cathy Yung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209510871797081",
+		"name": "Wai Shing Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154040589190279",
+		"name": "Philip Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "847982531997423",
+		"name": "Daisy Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153498012426373",
+		"name": "Andy Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "262044644137811",
+		"name": "Jade Mok"
+	},
+	{
+		"type": "LIKE",
+		"id": "703954493079106",
+		"name": "Mangor Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "1770734983158230",
+		"name": "\u9673\u5922\u6a59"
+	},
+	{
+		"type": "LIKE",
+		"id": "1283041651723470",
+		"name": "Hui Chui Chi"
+	},
+	{
+		"type": "LIKE",
+		"id": "959112787541110",
+		"name": "Lahoko Rogerlawai"
+	},
+	{
+		"type": "LIKE",
+		"id": "1022098954494521",
+		"name": "Kam Yee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153763957992535",
+		"name": "Kong Wai Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153728099863250",
+		"name": "Rachel Mak"
+	},
+	{
+		"type": "LIKE",
+		"id": "1804372936457770",
+		"name": "Polly Mok"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207827684642576",
+		"name": "\u5341\u4ee3\u76ee"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10154108774454134",
+		"name": "Calvin Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208100428964011",
+		"name": "Billy Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154197753064903",
+		"name": "Yeung Liu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206450895293558",
+		"name": "Connie Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1777270262492618",
+		"name": "Canny Chen"
+	},
+	{
+		"type": "LIKE",
+		"id": "1725538101022327",
+		"name": "Zoe Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10205684474382692",
+		"name": "Mayho Chow"
+	},
+	{
+		"type": "LIKE",
+		"id": "1155495601168044",
+		"name": "\u5f35\u7d30\u6839"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154763294724027",
+		"name": "Jun Zhu"
+	},
+	{
+		"type": "LIKE",
+		"id": "601218270045115",
+		"name": "Pak Kok  Hui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206281930428974",
+		"name": "Allan Cheung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1173051686060560",
+		"name": "Monita Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "462463847279543",
+		"name": "Ivy Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207968050433115",
+		"name": "Halina Cheong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10201618274334877",
+		"name": "Eden Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154094301272866",
+		"name": "Benny Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10205946554052288",
+		"name": "Wan Kee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209458778694297",
+		"name": "Sam Kwan"
+	},
+	{
+		"type": "LIKE",
+		"id": "952943538159248",
+		"name": "Sally Shiu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153717252353759",
+		"name": "Isabella Ng Ho Pui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153572623089646",
+		"name": "Tony Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "1886968498196638",
+		"name": "Po Chui But"
+	},
+	{
+		"type": "LIKE",
+		"id": "1764204733800633",
+		"name": "KL Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "916250365152824",
+		"name": "Mamimieva  Mimieva"
+	},
+	{
+		"type": "LIKE",
+		"id": "1709383182635495",
+		"name": "Sinyu Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1164032156943305",
+		"name": "Corina Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "1164249870272798",
+		"name": "Bond Waishing Au"
+	},
+	{
+		"type": "LIKE",
+		"id": "1716794865241201",
+		"name": "June Tang"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153939263235622",
+		"name": "Yindy Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154012825847347",
+		"name": "Bobo Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154133800387720",
+		"name": "Jenny Yu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207973103918495",
+		"name": "Mui Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207451446539215",
+		"name": "Sum Choi"
+	},
+	{
+		"type": "LIKE",
+		"id": "996374780451394",
+		"name": "Alan Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "814330885379720",
+		"name": "\u6731\u9e97\u83ef"
+	},
+	{
+		"type": "LIKE",
+		"id": "1017950654956054",
+		"name": "HoNam Lo"
+	},
+	{
+		"type": "LIKE",
+		"id": "1888413574719022",
+		"name": "Mala Beh Ag"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209391314407000",
+		"name": "Winnie Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "1600861173574027",
+		"name": "Robert Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "1739859629590808",
+		"name": "Tin Ming Tsang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1773020159593396",
+		"name": "Stephen Yiu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209386017067805",
+		"name": "Alfred Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1002374269849379",
+		"name": "CN SC"
+	},
+	{
+		"type": "LIKE",
+		"id": "1318334044848714",
+		"name": "Frances To"
+	},
+	{
+		"type": "LIKE",
+		"id": "1228926063785975",
+		"name": "Ho Yeung Victor Ma"
+	},
+	{
+		"type": "ANGRY",
+		"id": "579090915590874",
+		"name": "Jack  Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "215639382148806",
+		"name": "\u5f35\u4e01\u5c71"
+	},
+	{
+		"type": "LIKE",
+		"id": "1594108187575194",
+		"name": "Andes Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207715336215413",
+		"name": "Chi Keung Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154830786663636",
+		"name": "CW Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "614247962060844",
+		"name": "\u4f0d\u6176\u5f37"
+	},
+	{
+		"type": "HAHA",
+		"id": "10156880910615327",
+		"name": "Vivian Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153614678293014",
+		"name": "Michelle Koo"
+	},
+	{
+		"type": "LIKE",
+		"id": "1260084764020751",
+		"name": "Tong Tsz Yuet"
+	},
+	{
+		"type": "LIKE",
+		"id": "205265113194017",
+		"name": "CW Ming"
+	},
+	{
+		"type": "LIKE",
+		"id": "143967489339744",
+		"name": "\u6881\u6d77\u7587"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154123241724161",
+		"name": "Candy Bing"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153581032728499",
+		"name": "Hali Chong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1082746701768392",
+		"name": "Ng Wai Kwong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1008519865898353",
+		"name": "Chan Pak Kuen"
+	},
+	{
+		"type": "LIKE",
+		"id": "253489431666354",
+		"name": "Tsz Kin Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "510301272512822",
+		"name": "Shuk Han Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209281160811582",
+		"name": "Hei Hei Chui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153740221077408",
+		"name": "\u8881\u90a6\u59ae"
+	},
+	{
+		"type": "LIKE",
+		"id": "1268811229796478",
+		"name": "Ken Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "1737889229760488",
+		"name": "\u9ec3\u660e\u767c"
+	},
+	{
+		"type": "LIKE",
+		"id": "968776296571147",
+		"name": "PingPing Ivy"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207333259943208",
+		"name": "Teresa Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154101194555762",
+		"name": "ada cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "1717984235083520",
+		"name": "On  Woo"
+	},
+	{
+		"type": "LIKE",
+		"id": "1154077357956058",
+		"name": "Gary Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "235686060118593",
+		"name": "\u8521\u695a\u541b"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153684985698178",
+		"name": "Polly Yau"
+	},
+	{
+		"type": "LIKE",
+		"id": "450694608473302",
+		"name": "Grace Yiu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153647523518207",
+		"name": "Hung Yiu Yiu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154792871979689",
+		"name": "\u5c0f\u58a8"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208179804146639",
+		"name": "Barbara Tang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1001466099919380",
+		"name": "Siu Sun"
+	},
+	{
+		"type": "LIKE",
+		"id": "1100982999943277",
+		"name": "Ho Ching Philip Wan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1063753833698603",
+		"name": "Lyllian Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153391634342063",
+		"name": "Stephen Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1187294607948756",
+		"name": "Elsa Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208359044750233",
+		"name": "Gemma Yip"
+	},
+	{
+		"type": "LIKE",
+		"id": "1132876066743098",
+		"name": "Ken Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10210557730158997",
+		"name": "Kin Ying Chung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1103062083049456",
+		"name": "Ricky Cheung"
+	},
+	{
+		"type": "LOVE",
+		"id": "1716940175231885",
+		"name": "\u80e1\u9326\u6c5f"
+	},
+	{
+		"type": "LIKE",
+		"id": "1040618729310787",
+		"name": "\u5468\u7d39\u5ee3"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156893657960602",
+		"name": "Eric Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "558244584338660",
+		"name": "Kitty Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1723012071274151",
+		"name": "Kwok Chi  Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154060460413607",
+		"name": "Vincent Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1056202404474213",
+		"name": "Poney Tse"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153695820043212",
+		"name": "Vinnie Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "576424899174082",
+		"name": "Hihi Friend"
+	},
+	{
+		"type": "LIKE",
+		"id": "885572248231691",
+		"name": "Gurung Amit"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153701703048650",
+		"name": "Kiki Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154128187014127",
+		"name": "Carmen Au"
+	},
+	{
+		"type": "LIKE",
+		"id": "1341191479227854",
+		"name": "Joyce Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153606714591452",
+		"name": "Doris Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "778183802281573",
+		"name": "Chu Ma"
+	},
+	{
+		"type": "LIKE",
+		"id": "1198289366848369",
+		"name": "Chow Wong Suet Ling"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156820197000113",
+		"name": "Bhim Hon"
+	},
+	{
+		"type": "LIKE",
+		"id": "1620723864919382",
+		"name": "Connie Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "1311835442165264",
+		"name": "Chuk Kwan Yiu"
+	},
+	{
+		"type": "LIKE",
+		"id": "863133817146361",
+		"name": "Mabel Chung"
+	},
+	{
+		"type": "LIKE",
+		"id": "261597107515801",
+		"name": "Eunice Law"
+	},
+	{
+		"type": "LIKE",
+		"id": "981187251966592",
+		"name": "Crystal Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153727602145326",
+		"name": "Sandy Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1742685659310324",
+		"name": "KamLung Poon"
+	},
+	{
+		"type": "LIKE",
+		"id": "780106405466941",
+		"name": "Wai Ying Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "1151273008238837",
+		"name": "Paul Lo"
+	},
+	{
+		"type": "LIKE",
+		"id": "10155176568644572",
+		"name": "Patrick Min"
+	},
+	{
+		"type": "LIKE",
+		"id": "1261475827214468",
+		"name": "Sharon Kiyomi"
+	},
+	{
+		"type": "LIKE",
+		"id": "1205459606138910",
+		"name": "Daisy Tong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1129066707125646",
+		"name": "Marcus Chow"
+	},
+	{
+		"type": "LIKE",
+		"id": "1716471435236730",
+		"name": "Amy Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "1014932568600748",
+		"name": "Yung Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154237014895815",
+		"name": "Tkk Heung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208609144441150",
+		"name": "Lf Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207538683719968",
+		"name": "Kit Sang Lo"
+	},
+	{
+		"type": "LIKE",
+		"id": "1121700017862132",
+		"name": "Lydia Fok"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154173777379696",
+		"name": "Queenie Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207892722107873",
+		"name": "Stephen Choi"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154075568179501",
+		"name": "Jeffrey Tang"
+	},
+	{
+		"type": "LIKE",
+		"id": "2014695728755055",
+		"name": "\u77f3\u8f1d\u9298"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153395717672032",
+		"name": "Chi Chung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1136590349706074",
+		"name": "Dancingking Fong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1280687465278958",
+		"name": "Winnie Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1044071272320051",
+		"name": "Hole Lee Yuk"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153567575334639",
+		"name": "Eunice Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "869051266550408",
+		"name": "\u912d\u70a4\u68cb"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154141260113656",
+		"name": "Sandra Wang"
+	},
+	{
+		"type": "LIKE",
+		"id": "585809494902216",
+		"name": "To Sau Ling"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10153990439436885",
+		"name": "Laurence Yau"
+	},
+	{
+		"type": "LIKE",
+		"id": "997279697026062",
+		"name": "Coon Tang"
+	},
+	{
+		"type": "LIKE",
+		"id": "226741874355419",
+		"name": "Sri Jani"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154175888194295",
+		"name": "Tommy Mui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153562713447006",
+		"name": "Ray Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "218222731886199",
+		"name": "Ching Shan Keung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154062730750119",
+		"name": "Zoey Chu"
+	},
+	{
+		"type": "LIKE",
+		"id": "494487757406713",
+		"name": "William Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "1262017867159411",
+		"name": "YanLo Lo"
+	},
+	{
+		"type": "LIKE",
+		"id": "10201701558618692",
+		"name": "Yan Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "236337550056528",
+		"name": "Bobo Chong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1583944295249834",
+		"name": "Ping Lun Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "1561121887514499",
+		"name": "Dora Khema Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "195073207545866",
+		"name": "Yauchuen Yip"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153816337349678",
+		"name": "Laura Lui"
+	},
+	{
+		"type": "LIKE",
+		"id": "937586929671865",
+		"name": "Chan Kaman"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207733430688174",
+		"name": "Eddy Kwan"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153509137559109",
+		"name": "\u674e\u5b8f\u8c50"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153682564239685",
+		"name": "Dennis Yin"
+	},
+	{
+		"type": "LIKE",
+		"id": "1836818263212520",
+		"name": "\u5468\u570b\u8f1d"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10204570553983060",
+		"name": "Chun Yan Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207978184430162",
+		"name": "Ho Bun Yung"
+	},
+	{
+		"type": "LIKE",
+		"id": "917851868344415",
+		"name": "Seven Wong"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10209624401113961",
+		"name": "Elaine To"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153723907899412",
+		"name": "Pkl Pkl Hk"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209483459830248",
+		"name": "FamilyGuy-Leo Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154142385548923",
+		"name": "Darren Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208190308569556",
+		"name": "Kawai Tseh"
+	},
+	{
+		"type": "LIKE",
+		"id": "1133995589955787",
+		"name": "Winnie Yeung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153754952213264",
+		"name": "Jim Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153734882578198",
+		"name": "Winnie Lai Peline"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154069758482910",
+		"name": "Maggie Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154045768732667",
+		"name": "Joana Cheung"
+	},
+	{
+		"type": "LIKE",
+		"id": "597998447047811",
+		"name": "Ling Fan"
+	},
+	{
+		"type": "LIKE",
+		"id": "260152624333676",
+		"name": "\u9673\u6cc9"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153813772418300",
+		"name": "Hamy Fung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153638099212921",
+		"name": "Sandy Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "2011124849111990",
+		"name": "Pat Leong"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154769477274167",
+		"name": "Mike Hung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1586203808360563",
+		"name": "Lai Lai"
+	},
+	{
+		"type": "ANGRY",
+		"id": "1665121487086588",
+		"name": "Wk Chin"
+	},
+	{
+		"type": "LIKE",
+		"id": "10205055073850662",
+		"name": "Keith Pang"
+	},
+	{
+		"type": "LIKE",
+		"id": "1042647732440650",
+		"name": "Keung Chun"
+	},
+	{
+		"type": "HAHA",
+		"id": "162489504149126",
+		"name": "Mei Yan Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207886801919814",
+		"name": "Nicole Chen"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208959956377615",
+		"name": "Skinny C. Laam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10201713431474981",
+		"name": "Calvin Pang"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208416453402440",
+		"name": "Ricky Lin"
+	},
+	{
+		"type": "LIKE",
+		"id": "227344470954549",
+		"name": "Man Chiu LI"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154191755064917",
+		"name": "Chan Kar Wai"
+	},
+	{
+		"type": "LIKE",
+		"id": "793488077454575",
+		"name": "\u6b50\u967d\u6c38\u5f37"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209205369120141",
+		"name": "Wai Yin Alvin Liu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209362592566933",
+		"name": "\u6a02\u6a02\u6a02\u6a02"
+	},
+	{
+		"type": "LOVE",
+		"id": "628656210614880",
+		"name": "Jane Law"
+	},
+	{
+		"type": "LIKE",
+		"id": "209719042734564",
+		"name": "Chorshan Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "584844218331982",
+		"name": "Shirley Lun"
+	},
+	{
+		"type": "LIKE",
+		"id": "556376044523627",
+		"name": "James  Joa"
+	},
+	{
+		"type": "LIKE",
+		"id": "576836242499343",
+		"name": "Sau Ching Ng"
+	},
+	{
+		"type": "LIKE",
+		"id": "983319491756114",
+		"name": "Tsang Tsz Shun"
+	},
+	{
+		"type": "LIKE",
+		"id": "1138765909496556",
+		"name": "Oi Ying Kung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1010442502382365",
+		"name": "\u6697\u7d2b"
+	},
+	{
+		"type": "LIKE",
+		"id": "1326898277325928",
+		"name": "Jason Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "996298257114249",
+		"name": "Ha Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "253956548283235",
+		"name": "Hui Hui"
+	},
+	{
+		"type": "LIKE",
+		"id": "990042631114307",
+		"name": "Elsa  Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "1728275767387576",
+		"name": "Cyf Martha"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207802692959454",
+		"name": "Norman Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "604159576403236",
+		"name": "Simon Peter"
+	},
+	{
+		"type": "LIKE",
+		"id": "1722840447964308",
+		"name": "Leen Chong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1003329473084551",
+		"name": "Jkmona Mona"
+	},
+	{
+		"type": "ANGRY",
+		"id": "10154032957017295",
+		"name": "\u767d\u99ac\u738b\u5b50"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153713939013717",
+		"name": "Fannie Siu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1314487411901446",
+		"name": "\u611f\u6069"
+	},
+	{
+		"type": "LIKE",
+		"id": "2014422835449942",
+		"name": "\u949f\u5065\u660c"
+	},
+	{
+		"type": "LIKE",
+		"id": "825722410866299",
+		"name": "\u6d2a\u4fca\u4e1a"
+	},
+	{
+		"type": "LIKE",
+		"id": "1060182847372107",
+		"name": "Kwok Fung Chu"
+	},
+	{
+		"type": "LIKE",
+		"id": "1547929938835643",
+		"name": "Sau Fung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1890647597828417",
+		"name": "Kitty Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1006833012743587",
+		"name": "Adele Goh"
+	},
+	{
+		"type": "LIKE",
+		"id": "482187955322390",
+		"name": "\u7941\u6a19"
+	},
+	{
+		"type": "LOVE",
+		"id": "230591990634962",
+		"name": "Woodwood Mukmuk"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208058193485299",
+		"name": "Wong Hon Chung"
+	},
+	{
+		"type": "LOVE",
+		"id": "996453683772510",
+		"name": "Kf Kevin"
+	},
+	{
+		"type": "LIKE",
+		"id": "2013781478846926",
+		"name": "Nga Hing Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "1281044768591583",
+		"name": "Allan So"
+	},
+	{
+		"type": "LIKE",
+		"id": "864433590350188",
+		"name": "Alexis Tong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1015273338562770",
+		"name": "\u5f35\u7f8e\u537f"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153731109699585",
+		"name": "Marcus Tsui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207101190302750",
+		"name": "Beatrice Lin"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154157110573493",
+		"name": "Henry Sgt."
+	},
+	{
+		"type": "LIKE",
+		"id": "10206514138075324",
+		"name": "Winnie Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "1586994371617014",
+		"name": "Homy Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209484071528868",
+		"name": "Lam Hui"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153517002776129",
+		"name": "\u6797\u666f\u6607"
+	},
+	{
+		"type": "LIKE",
+		"id": "802812433188379",
+		"name": "Chuen Miu"
+	},
+	{
+		"type": "LIKE",
+		"id": "518131685058545",
+		"name": "Che Keung  Choy"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153642753819779",
+		"name": "Elaine Yee Lam Tse"
+	},
+	{
+		"type": "LIKE",
+		"id": "10156877190885217",
+		"name": "Chris Tsui R"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154148147242269",
+		"name": "Henry Sham"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153771032334055",
+		"name": "Cat Chow"
+	},
+	{
+		"type": "LIKE",
+		"id": "10206643023810106",
+		"name": "Nelson Ho"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153431452531389",
+		"name": "Liu Man Lok"
+	},
+	{
+		"type": "LIKE",
+		"id": "1529488840693427",
+		"name": "\u5510\u671d"
+	},
+	{
+		"type": "LIKE",
+		"id": "465277663670834",
+		"name": "Yan BonBonniiee"
+	},
+	{
+		"type": "LIKE",
+		"id": "1049966135051334",
+		"name": "Wu Keung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1699601886974939",
+		"name": "Ko Siu Hong"
+	},
+	{
+		"type": "LIKE",
+		"id": "1008082735935073",
+		"name": "Mandy Tse"
+	},
+	{
+		"type": "LIKE",
+		"id": "279646585707480",
+		"name": "Isaac Lipy"
+	},
+	{
+		"type": "LIKE",
+		"id": "10209462775314474",
+		"name": "Ka Kui Hung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153594555641009",
+		"name": "\u9999\u7126\u4eba"
+	},
+	{
+		"type": "LIKE",
+		"id": "673597076150212",
+		"name": "Eva Lau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153569135217283",
+		"name": "Win Lin Galletta"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153329281736735",
+		"name": "Bo So"
+	},
+	{
+		"type": "LIKE",
+		"id": "1063222597053894",
+		"name": "\u9673\u742a\u742a"
+	},
+	{
+		"type": "LIKE",
+		"id": "1717071658572836",
+		"name": "Ang Yap"
+	},
+	{
+		"type": "LIKE",
+		"id": "1114682425219366",
+		"name": "Nam Cheung"
+	},
+	{
+		"type": "LIKE",
+		"id": "970817362972724",
+		"name": "Cheng Cheng Yap"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153988877630851",
+		"name": "Karmen Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208139909368045",
+		"name": "Kwok Hang Yau"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154285274951535",
+		"name": "Wendy Dy"
+	},
+	{
+		"type": "LIKE",
+		"id": "1703488066590048",
+		"name": "Hoi Man"
+	},
+	{
+		"type": "LIKE",
+		"id": "261205837552361",
+		"name": "John Ng"
+	},
+	{
+		"type": "LOVE",
+		"id": "10201500931402431",
+		"name": "Eric Lai"
+	},
+	{
+		"type": "LIKE",
+		"id": "865045276939405",
+		"name": "Joanna  Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154025141176425",
+		"name": "Mango Wong"
+	},
+	{
+		"type": "LIKE",
+		"id": "602623533221291",
+		"name": "Sonia Tung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1602233470095415",
+		"name": "Kei Sun Tung"
+	},
+	{
+		"type": "LIKE",
+		"id": "932340916883135",
+		"name": "Chui Kam Chan"
+	},
+	{
+		"type": "LIKE",
+		"id": "247824825564709",
+		"name": "Merci Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "932816376836973",
+		"name": "Alice Spearman"
+	},
+	{
+		"type": "LIKE",
+		"id": "1677985109134005",
+		"name": "Dede Chung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154182947038707",
+		"name": "Law Chung Ting"
+	},
+	{
+		"type": "LIKE",
+		"id": "1717553191817903",
+		"name": "Lai Yau-mm"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154001000560170",
+		"name": "Ka Man"
+	},
+	{
+		"type": "LOVE",
+		"id": "512847122232988",
+		"name": "Ga Ga Chu"
+	},
+	{
+		"type": "LIKE",
+		"id": "384350875068764",
+		"name": "DaDa Cheng"
+	},
+	{
+		"type": "LIKE",
+		"id": "166693873725601",
+		"name": "Ys Tam"
+	},
+	{
+		"type": "LIKE",
+		"id": "1073671732704446",
+		"name": "\u5c39\u5efa\u6c11"
+	},
+	{
+		"type": "LIKE",
+		"id": "1794274560793506",
+		"name": "Tiff Lam"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153745634611715",
+		"name": "\u82b1\u5e2b\u5976"
+	},
+	{
+		"type": "LIKE",
+		"id": "1340892002592970",
+		"name": "Choi Chon Wai"
+	},
+	{
+		"type": "LIKE",
+		"id": "1612998792358094",
+		"name": "Eama Kwok"
+	},
+	{
+		"type": "LIKE",
+		"id": "1334123923269589",
+		"name": "Raquel Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "980366162032162",
+		"name": "Tango So"
+	},
+	{
+		"type": "LIKE",
+		"id": "277191012615755",
+		"name": "\u674e\u9cf3\u82f1"
+	},
+	{
+		"type": "LIKE",
+		"id": "10205219173353409",
+		"name": "Lai Fung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1060901964019911",
+		"name": "\u674e\u975a"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153782299479748",
+		"name": "Assunta Yung"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154119537373610",
+		"name": "Alex Li"
+	},
+	{
+		"type": "LIKE",
+		"id": "764362917033636",
+		"name": "\u6797\u93ae\u8f1d"
+	},
+	{
+		"type": "LIKE",
+		"id": "503912219809360",
+		"name": "\u6797\u6708\u5713"
+	},
+	{
+		"type": "LIKE",
+		"id": "10207736768430082",
+		"name": "Pl Mok"
+	},
+	{
+		"type": "LIKE",
+		"id": "1597676653885043",
+		"name": "Ho Legend"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154886566843298",
+		"name": "Joey Wu"
+	},
+	{
+		"type": "LIKE",
+		"id": "10208800889041572",
+		"name": "Rachel Hon"
+	},
+	{
+		"type": "LIKE",
+		"id": "274269919572578",
+		"name": "Kar Kar"
+	},
+	{
+		"type": "LIKE",
+		"id": "1593171624335997",
+		"name": "Anew Cheung"
+	},
+	{
+		"type": "LIKE",
+		"id": "1201630419861912",
+		"name": "Lion Wang"
+	},
+	{
+		"type": "LIKE",
+		"id": "804801522959004",
+		"name": "Simon  Yung"
+	},
+	{
+		"type": "LOVE",
+		"id": "1342190195794799",
+		"name": "Ching Fisch Ma"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153784566613141",
+		"name": "\u9673\u9664\u6cf3\u8863"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153620371971801",
+		"name": "John Tse"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153619324455003",
+		"name": "Wong Kai Kai"
+	},
+	{
+		"type": "LIKE",
+		"id": "1005691176172893",
+		"name": "Joseph Au"
+	},
+	{
+		"type": "LOVE",
+		"id": "10153782065828026",
+		"name": "Catherine Lee"
+	},
+	{
+		"type": "LIKE",
+		"id": "1098121353559369",
+		"name": "Ryan Leung"
+	},
+	{
+		"type": "LIKE",
+		"id": "521506624701788",
+		"name": "Choy Winnie"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154075575041308",
+		"name": "Fannie Hong CY"
+	},
+	{
+		"type": "LIKE",
+		"id": "10204367651871702",
+		"name": "Joe Chow"
+	},
+	{
+		"type": "LIKE",
+		"id": "10153818040544934",
+		"name": "Winnie Lui"
+	},
+	{
+		"type": "LIKE",
+		"id": "1722373358048198",
+		"name": "\u738b\u512a\u5bf6"
+	},
+	{
+		"type": "LIKE",
+		"id": "10154110720919254",
+		"name": "Paul Mak"
+	}],
+	"message": "\u3010\u6176\u795d\u52de\u52d5\u7bc0\u3011\u4eca\u660e\u5169\u65e5(2016\u5e745\u67081\u65e5\u53ca5\u67082\u65e5\uff09\u4fc2\u4e94\u4e00\u52de\u52d5\u7bc0\u53ca\u88dc\u5047\uff0c \u4e0d\u904e\u5927\u5bb6\u653e\u5047\u5916\u51fa\u5605\u540c\u6642\uff0c\u90fd\u8981\u5c0f\u5fc3\u500b\u4eba\u8ca1\u7269 \uff0c\u56e0\u70ba\u8cca\u4eba\u4fc2\u5514\u6703\u653e\u5047\u35ce \uff01\n\nBeware of pickpockets while you're hanging out on public holiday!\n\n#\u52de\u52d5\u7bc0 #\u5047\u671f #\u904a\u73a9 #\u614e\u9632\u5c0f\u624b #\u9999\u6e2f\u8b66\u5bdf #\u52de\u5de5 #\u8ca2\u737b",
+	"id": "960526577368640_1083198555101441",
+	"comments": [{
+		"created_time": "2016-05-01T12:38:44+0000",
+		"message": "\u6bcf\u5929\u958b\u958b\u5fc3\u5fc3 \u5927\u6148\u5927\u60b2\u89c0\u4e16\u97f3\u83e9\u85a9\n\n\u5e73\u5b89\u559c\u6a02   \u4f5b\u7de3\u6df1\u539a  \u56e0\u7de3\u4ff1\u8db3\n\nhttps://m.youtube.com/watch?v=i06yo_LpyZY",
+		"from": {
+			"name": "Fannie Hong CY",
+			"id": "10154075575041308"
+		},
+		"id": "1083198555101441_1083257615095535",
+		"likes": [{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		},
+		{
+			"id": "1158680387488996",
+			"name": "Jacky Ho"
+		},
+		{
+			"id": "512847122232988",
+			"name": "Ga Ga Chu"
+		},
+		{
+			"id": "10154075575041308",
+			"name": "Fannie Hong CY"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T12:40:25+0000",
+		"message": "\u611f\u8b1d\u63d0\u9192\u3002",
+		"from": {
+			"name": "Kar Kar",
+			"id": "274269919572578"
+		},
+		"id": "1083198555101441_1083258101762153",
+		"likes": [{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		},
+		{
+			"id": "257232687952251",
+			"name": "\u67ef\u5357\u5149"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T12:40:34+0000",
+		"message": "",
+		"from": {
+			"name": "\u6797\u6708\u5713",
+			"id": "503912219809360"
+		},
+		"id": "1083198555101441_1083258128428817",
+		"likes": [{
+			"id": "10209800152985751",
+			"name": "Fanny Li"
+		},
+		{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T12:43:54+0000",
+		"message": "\u5927\u6642\u5927\u7bc0\uff0c\u6700\u8f9b\u82e6\u662f\u8b66\u5bdf\u8981\u7dad\u6301\u79e9\u5e8f\uff0c\u591a\u8b1d\u54c2\uff01",
+		"from": {
+			"name": "Ga Ga Chu",
+			"id": "512847122232988"
+		},
+		"id": "1083198555101441_1083259071762056",
+		"likes": [{
+			"id": "147746808954050",
+			"name": "Maggie Ng"
+		},
+		{
+			"id": "220997848258952",
+			"name": "Ritaon Sum"
+		},
+		{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		},
+		{
+			"id": "1158680387488996",
+			"name": "Jacky Ho"
+		},
+		{
+			"id": "1311835442165264",
+			"name": "Chuk Kwan Yiu"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T12:50:36+0000",
+		"message": "\u52de\u52d9\u7bc0",
+		"from": {
+			"name": "Poon Lai Kin Peter",
+			"id": "10154889984042195"
+		},
+		"id": "1083198555101441_1083262035095093",
+		"likes": [{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		}]
+	},
+	{
+		"from": {
+			"name": "Homy Ho",
+			"id": "1586994371617014"
+		},
+		"comments": [{
+			"created_time": "2016-05-02T02:26:44+0000",
+			"message": "\u4f60\u5462\u96bb\u4e94\u6bdb\u6709\u6548\u7387",
+			"from": {
+				"name": "Billy Bee",
+				"id": "1153602638013258"
+			},
+			"id": "1083198555101441_1083609538393676"
+		}],
+		"likes": [{
+			"id": "976223522468325",
+			"name": "Bonnie Ko"
+		},
+		{
+			"id": "224419694612538",
+			"name": "Wong Wong"
+		},
+		{
+			"id": "147746808954050",
+			"name": "Maggie Ng"
+		},
+		{
+			"id": "220997848258952",
+			"name": "Ritaon Sum"
+		},
+		{
+			"id": "10156814951550224",
+			"name": "Tracy Tsang"
+		},
+		{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		},
+		{
+			"id": "257232687952251",
+			"name": "\u67ef\u5357\u5149"
+		},
+		{
+			"id": "1311835442165264",
+			"name": "Chuk Kwan Yiu"
+		},
+		{
+			"id": "10153734882578198",
+			"name": "Winnie Lai Peline"
+		},
+		{
+			"id": "512847122232988",
+			"name": "Ga Ga Chu"
+		}],
+		"created_time": "2016-05-01T12:51:12+0000",
+		"message": "\u5927\u6642\u5927\u7bc0\uff0c\u6700\u8f9b\u82e6\u662f\u8b66\u5bdf\u8981\u7dad\u6301\u79e9\u5e8f\uff0c\u591a\u8b1d\u54c2\uff01x2\n\u4e5f\u795d\u4f60\u5011\u5e73\u5b89\u5feb\u6a02",
+		"id": "1083198555101441_1083262388428391"
+	},
+	{
+		"created_time": "2016-05-01T13:06:11+0000",
+		"message": "\u591a\u8b1d\uff0c\u8f9b\u82e6\u4f60\u5730\ud83d\udc93",
+		"from": {
+			"name": "Lai Lai",
+			"id": "1586203808360563"
+		},
+		"id": "1083198555101441_1083268691761094",
+		"likes": [{
+			"id": "220997848258952",
+			"name": "Ritaon Sum"
+		},
+		{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		},
+		{
+			"id": "257232687952251",
+			"name": "\u67ef\u5357\u5149"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		},
+		{
+			"id": "1311835442165264",
+			"name": "Chuk Kwan Yiu"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T13:12:24+0000",
+		"message": "\u8b66\u5bdf\u5011\uff0c\u8f9b\u82e6\u4e86 ... \u52a0\u6cb9\u554a",
+		"from": {
+			"name": "Bobo Chong",
+			"id": "236337550056528"
+		},
+		"id": "1083198555101441_1083271451760818",
+		"likes": [{
+			"id": "220997848258952",
+			"name": "Ritaon Sum"
+		},
+		{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		},
+		{
+			"id": "10153647523518207",
+			"name": "Hung Yiu Yiu"
+		},
+		{
+			"id": "257232687952251",
+			"name": "\u67ef\u5357\u5149"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		},
+		{
+			"id": "1311835442165264",
+			"name": "Chuk Kwan Yiu"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T13:13:10+0000",
+		"message": "\u652f\u6301\u9999\u6e2f\u8b66\u5bdf\u524d\u7dda\u8b66\u52d9\u4eba\u54e1\ud83d\udc4d",
+		"from": {
+			"name": "William Lau",
+			"id": "494487757406713"
+		},
+		"id": "1083198555101441_1083271695094127",
+		"likes": [{
+			"id": "1170135973029060",
+			"name": "Elle Yu"
+		},
+		{
+			"id": "220997848258952",
+			"name": "Ritaon Sum"
+		},
+		{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		},
+		{
+			"id": "257232687952251",
+			"name": "\u67ef\u5357\u5149"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		},
+		{
+			"id": "1311835442165264",
+			"name": "Chuk Kwan Yiu"
+		},
+		{
+			"id": "10207892722107873",
+			"name": "Stephen Choi"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T13:17:46+0000",
+		"message": "",
+		"from": {
+			"name": "Eunice Chan",
+			"id": "10153567575334639"
+		},
+		"id": "1083198555101441_1083273165093980",
+		"likes": [{
+			"id": "145499765851160",
+			"name": "\u694a\u8c9d\u8389"
+		},
+		{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		},
+		{
+			"id": "1311835442165264",
+			"name": "Chuk Kwan Yiu"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T13:20:28+0000",
+		"message": "\u5176\u5be6\u4e0a\u6c34\u8d70\u6c34\u8ca8\u8cfa\u5230d\u9322\u4f60\u5730\u4fc2\u54aa\u6709\u5f97\u5206\uff1f",
+		"from": {
+			"name": "Johnny Tse",
+			"id": "10153376782690706"
+		},
+		"id": "1083198555101441_1083276108427019",
+		"comments": [{
+			"created_time": "2016-05-01T13:36:40+0000",
+			"message": "\u4f60\u53bb\u8001\u5ec9\u554f\u4e00\u5413\u5566.",
+			"from": {
+				"name": "\u67ef\u5357\u5149",
+				"id": "257232687952251"
+			},
+			"id": "1083198555101441_1083282768426353",
+			"likes": [{
+				"id": "145499765851160",
+				"name": "\u694a\u8c9d\u8389"
+			},
+			{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1595709850747876",
+				"name": "Yim Wingching"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-01T23:35:02+0000",
+			"message": "\u8d70\u6c34\u8ca8\u554f\u984c\u5514\u4fc2\u8b66\u65b9\u90e8\u9580\u55ae\u7368\u53ef\u4ee5\u8655\u7406\u5605\uff0c\u727d\u6d89\u98df\u74b0\u7f72(\u5730\u5340\u885b\u751f\uff0c\u64fa\u8ca8\u4f54\u7528\u516c\u5171\u5730\u65b9)\u2026\u53ca\u6709\u95dc\u90e8\u9580\uff0c\u8d70\u6c34\u8ca8\u672c\u8eab\u5728\u672c\u571f\u4e26\u4e0d\u662f\u9055\u6cd5\u884c\u70ba\uff0c\u4f46\u53ef\u80fd\u884d\u751f\u51fa\u9055\u6cd5\u4e8b\u4ef6\uff0c\u4f60\u6591\u4eba\u53cd\u6c34\u8ca8\u8981\u641e\u6e05\u695a\uff0c\u5340\u8b70\u54e1\u5728\u4e8b\u4ef6\u4e2d\u53ef\u4ee5\u62c5\u7576\u8abf\u89e3\u89d2\u8272\uff0c\u4ee5\u6587\u660e\u4eba\u65b9\u5f0f\u5c07\u4e8b\u60c5\u64fa\u5e73\u3002",
+			"from": {
+				"name": "So Kam Tam",
+				"id": "218239795206573"
+			},
+			"id": "1083198555101441_1083552905066006"
+		},
+		{
+			"created_time": "2016-05-02T00:14:46+0000",
+			"message": "\u5481\u3002\u3002\u3002\u5373\u4fc2\u5514\u95dc\u8b66\u5bdf\u4e8b\uff1f",
+			"from": {
+				"name": "Johnny Tse",
+				"id": "10153376782690706"
+			},
+			"id": "1083198555101441_1083564248398205"
+		},
+		{
+			"created_time": "2016-05-02T02:28:42+0000",
+			"message": "Johnny Tse \u4e5c\u90fd\u5514\u95dc\u8b66\u5bdf\u4e8b\uff0c\u975c\u4fc2\u51fa\u7ce7\u5148\u95dc\u4e8b\u3002",
+			"from": {
+				"name": "Billy Bee",
+				"id": "1153602638013258"
+			},
+			"id": "1083198555101441_1083610155060281"
+		},
+		{
+			"created_time": "2016-05-02T02:53:22+0000",
+			"message": "\u4eba\u5730\u7b2c\u4e00\u53e5\u7c73\u8b1b\u5f97\u597d\u6e05\u695a\u56c9\uff01\u543e\u8b58\u5b57\u67b6?",
+			"from": {
+				"name": "Homy Ho",
+				"id": "1586994371617014"
+			},
+			"id": "1083198555101441_1083619705059326",
+			"likes": [{
+				"id": "145499765851160",
+				"name": "\u694a\u8c9d\u8389"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T03:14:47+0000",
+			"message": "",
+			"from": {
+				"name": "Johnny Tse",
+				"id": "10153376782690706"
+			},
+			"id": "1083198555101441_1083627551725208"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T13:21:51+0000",
+		"message": "\u8b66\u5bdf\u5011\uff0c\u8f9b\u82e6\u4e86 \uff0c\u8b1d\u8b1d\uff01\u52a0\u6cb9\uff01",
+		"from": {
+			"name": "Lydia Fok",
+			"id": "1121700017862132"
+		},
+		"id": "1083198555101441_1083276665093630",
+		"likes": [{
+			"id": "145499765851160",
+			"name": "\u694a\u8c9d\u8389"
+		},
+		{
+			"id": "220997848258952",
+			"name": "Ritaon Sum"
+		},
+		{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		},
+		{
+			"id": "10209391314407000",
+			"name": "Winnie Lee"
+		},
+		{
+			"id": "257232687952251",
+			"name": "\u67ef\u5357\u5149"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		},
+		{
+			"id": "778183802281573",
+			"name": "Chu Ma"
+		},
+		{
+			"id": "1311835442165264",
+			"name": "Chuk Kwan Yiu"
+		}]
+	},
+	{
+		"from": {
+			"name": "Tabasco Tan",
+			"id": "212654599106790"
+		},
+		"comments": [{
+			"created_time": "2016-05-01T14:13:27+0000",
+			"message": "\u6240\u4ee5\u6211\u8b1b\u904e, \u8b8a\u5497\u5473. \u73fe\u5728\u6839\u672c\u662f\u6575\u6211\u77db\u76fe\u4e86. \u978b. \u6a39\u6b32\u975c\u800c\u98a8\u4e0d\u606f.",
+			"from": {
+				"name": "\u67ef\u5357\u5149",
+				"id": "257232687952251"
+			},
+			"id": "1083198555101441_1083297455091551",
+			"likes": [{
+				"id": "145499765851160",
+				"name": "\u694a\u8c9d\u8389"
+			},
+			{
+				"id": "1595709850747876",
+				"name": "Yim Wingching"
+			}]
+		},
+		{
+			"created_time": "2016-05-01T14:34:16+0000",
+			"message": "\u4e0d\u662f\u6575\u6211\u77db\u76fe\n\u662f\u5168\u6e2f\u5b88\u6cd5\u826f\u6c11\u751f\u547d\u8ca1\u7522\u6b63\u88ab\u4e00\u7fa4\u76ee\u7121\u6cd5\u7d00\u7684\u66b4\u5f92\u5a01\u8105\n\u800c\u8b66\u65b9\u773c\u898b\u7f6a\u884c\u767c\u751f\u537b\u53ea\u61c2\u91cd\u8986\u91cd\u8986\u53c8\u91cd\u8986\u8aaa\u9055\u6cd5\n\u4f46\u537b\u4e0d\u80af\u57f7\u6cd5\n\u4e0d\u80af\u5c07\u9ad8\u8abf\u9055\u6cd5\u66b4\u6c11\u7e69\u4e4b\u4ee5\u6cd5",
+			"from": {
+				"name": "Tabasco Tan",
+				"id": "212654599106790"
+			},
+			"id": "1083198555101441_1083306685090628",
+			"likes": [{
+				"id": "145499765851160",
+				"name": "\u694a\u8c9d\u8389"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			},
+			{
+				"id": "1758248651058202",
+				"name": "\u767d\u6731\u8fea"
+			},
+			{
+				"id": "1595709850747876",
+				"name": "Yim Wingching"
+			}]
+		},
+		{
+			"created_time": "2016-05-01T14:45:07+0000",
+			"message": "\u6253\u500b\u6bd4\u55bb\n\u8b6c\u5982\u4e00\u540d\u7537\u5b50\u4e8b\u5148\u5f35\u63da\u660e\u5929\u8981\u5728\u67d0\u5973\u5b50\u5bb6\u4e2d\u5f37\u59e6\u67d0\u5973\u5b50\n\u8b66\u65b9\u660e\u77e5\u537b\u4e0d\u80af\u57f7\u6cd5\uff0c\u53ea\u5728\u67d0\u5973\u5b50\u5bb6\u9644\u8fd1\u52a0\u6d3e\u8b66\u529b\n\u5230\u8b66\u54e1\u76ee\u7779\u67d0\u7537\u5b50\u6b63\u4ed8\u8af8\u884c\u52d5\n\u537b\u4e0d\u5236\u6b62\u90a3\u540d\u7537\u5b50\n\u53ea\u5728\u65c1\u4e0d\u65b7\u91cd\u8986\u5411\u8a72\u7537\u5b50\u8aaa\u5f37\u59e6\u662f\u9055\u6cd5\n\u4efb\u5f97\u90a3\u540d\u5973\u5b50\u98fd\u53d7\u50ac\u6b98\n\u6700\u5f8c\u8981\u5973\u5b50\u81ea\u884c\u5230\u6cd5\u9662\u7533\u8acb\u7981\u5236\u4ee4\u8b66\u54e1\u624d\u52c9\u70ba\u5176\u96e3\n\u62d8\u8d95\u8a72\u540d\u7537\u5b50\n\u9019\u662f\u6c11\u4e3b\u6cd5\u6cbb\u793e\u6703\u61c9\u898b\u7684\u73fe\u8c61\u55ce\uff1f",
+			"from": {
+				"name": "Tabasco Tan",
+				"id": "212654599106790"
+			},
+			"id": "1083198555101441_1083311491756814",
+			"likes": [{
+				"id": "145499765851160",
+				"name": "\u694a\u8c9d\u8389"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-01T17:23:42+0000",
+			"message": "\u9999\u6e2f\u4e4b\u4e82\u5c31\u662f\u9999\u6e2f\u57df\u5167\u4e4b\u4e8b\u54a9? \u5927\u570b\u640f\u5955, d\u9ec3\u8272\u7684\u6709\u6d0b\u7239\u502d\u7239\u67b6, \u662f\u6709\u7d44\u7e54\u7684\u5168\u5929\u5019\u5411\"\u5b89\u5b9a\u7e41\u69ae\"\u56db\u500b\u5b57\u958b\u706b. \u4eca\u5929\u5481\u88ab\u52d5, \u597d\u591a\u4e8b\u6709\u53e3\u96e3\u8a00. \u6211x\u904e\u73ed\u4fdd\u5b89\u7bc4\u7587\u7684\u9ad8\u5b98\u597d\u591a\u5566. \u5948\u4f55\u4eba\u5f37\u6211\u5f31. \u6b65\u6b65\u9032\u8feb\u4e4b\u4e2d.",
+			"from": {
+				"name": "\u67ef\u5357\u5149",
+				"id": "257232687952251"
+			},
+			"id": "1083198555101441_1083390318415598"
+		},
+		{
+			"created_time": "2016-05-01T23:20:11+0000",
+			"message": "\u67ef\u5357\u5149\n\u4e0d\u8981\u51e1\u4e8b\u653f\u6cbb\u5316\n\u4fc2\u4e00\u5c0f\u64ae\u5d07\u6d0b\u53ca\u53ea\u6b32\u6536\u7a6b\u537b\u4e0d\u6b32\u4ed8\u51fa\u6240\u4ee5\u5c0d\u73fe\u5be6\u4e0d\u6eff\u7684\u5e74\u9752\u4eba\u88ab\u516c\u6c11\u9ee8\u70ba\u9996\u653f\u68cd\u717d\u52d5\n\u7528\u66b4\u529b\u9055\u6cd5\u624b\u6bb5\u767c\u6d29\u5c0d\u793e\u6703\u4e0d\u6eff\n\u4f46\u53c8\u6015\u627f\u64d4\u7f6a\u8cac\n\u6240\u4ee5\u7528\u4ec0\u9ebc\u6c11\u4e3b\u516c\u7fa9\u4f86\u505a\u64cb\u7bad\u724c\n\u9a19\u5f97\u4e00\u5927\u7fa4\u611a\u6c11\u51fa\u4f86\u97ff\u61c9\u3001\u652f\u6301\n\u4ee4\u5ee2\u67f4689\u653f\u5e9c\u4e0d\u6562\u57f7\u6cd5\u800c\u5df2",
+			"from": {
+				"name": "Tabasco Tan",
+				"id": "212654599106790"
+			},
+			"id": "1083198555101441_1083548448399785"
+		},
+		{
+			"created_time": "2016-05-01T23:26:07+0000",
+			"message": "\u9019\u7fa4\u66b4\u6c11\u70ba\u9054\u76ee\u7684\n\u5012\u662f\u5341\u5206\u5e0c\u671b\u505a\u6f22\u5978\n\u7d93\u5e38\u8d70\u5230\u6b50\u7f8e\u4e5e\u6c42\u5225\u570b\u5e72\u9810\u4e2d\u570b\u5185\u653f\n\u53ea\u662f\u6b50\u7f8e\u5404\u570b\u4e0d\u8822\n\u61c2\u5f97\u9867\u53ca\u81ea\u8eab\u5229\u76ca\n\u4e0d\u7406\u776c\u4ed6\u5011\u800c\u5df2",
+			"from": {
+				"name": "Tabasco Tan",
+				"id": "212654599106790"
+			},
+			"id": "1083198555101441_1083550158399614",
+			"likes": [{
+				"id": "145499765851160",
+				"name": "\u694a\u8c9d\u8389"
+			}]
+		}],
+		"likes": [{
+			"id": "145499765851160",
+			"name": "\u694a\u8c9d\u8389"
+		},
+		{
+			"id": "236337550056528",
+			"name": "Bobo Chong"
+		},
+		{
+			"id": "10156814951550224",
+			"name": "Tracy Tsang"
+		},
+		{
+			"id": "1758248651058202",
+			"name": "\u767d\u6731\u8fea"
+		},
+		{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		},
+		{
+			"id": "10209391314407000",
+			"name": "Winnie Lee"
+		}],
+		"created_time": "2016-05-01T13:41:02+0000",
+		"message": "\u81ea\u975e\u6cd5\u4f54\u9818\u9996\u5021\u66b4\u529b\u9055\u6cd5\u5f8c\n\u66b4\u529b\u6297\u722d\u9019\u91ce\u883b\u3001\u4e0d\u6c11\u4e3b\u884c\u70ba\u6f38\u6210\u5e38\u614b\n\u76f8\u4fe1\u4ee5\u5f8c\u9022\u7bc0\u65e5\u5047\u671f\uff0c\u66b4\u6c11\u90fd\u6703\u6709\u7e3d\u7e3d\u4e0d\u540c\u85c9\u53e3\u652a\u4e8b\n\u56b4\u91cd\u5a01\u8105\u5168\u6e2f\u5e02\u6c11\u751f\u547d\u8ca1\u7522\u5b89\u5168\n\u9999\u6e2f\u7e41\u69ae\u7a69\u5b9a\u5be6\u6709\u8cf4\u8b66\u968a\u679c\u65b7\u57f7\u6cd5\n\u652f\u6301\u8b66\u65b9\u56b4\u6b63\u57f7\u6cd5\uff0c\u9084\u6211\u5b89\u5b9a\u6cd5\u6cbb\u793e\u6703",
+		"id": "1083198555101441_1083284545092842"
+	},
+	{
+		"created_time": "2016-05-01T14:12:12+0000",
+		"message": "https://www.facebook.com/resistancelive2014/posts/1696520670612281",
+		"from": {
+			"name": "Willis Luk",
+			"id": "1010287235725412"
+		},
+		"id": "1083198555101441_1083297081758255"
+	},
+	{
+		"from": {
+			"name": "Willis Luk",
+			"id": "1010287235725412"
+		},
+		"comments": [{
+			"created_time": "2016-05-01T14:42:26+0000",
+			"message": "\u9999\u6e2f\u8b66\u5bdf\u5c08\u6349\u7f6a\u72af\u3002",
+			"from": {
+				"name": "Yim Wingching",
+				"id": "1595709850747876"
+			},
+			"id": "1083198555101441_1083310558423574",
+			"likes": [{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			},
+			{
+				"id": "1758248651058202",
+				"name": "\u767d\u6731\u8fea"
+			}]
+		},
+		{
+			"created_time": "2016-05-01T15:08:24+0000",
+			"message": "\u53c8\u6bb5\u7ae0\u53d6\u7fa9 !!! \u65b0\u805e\u898b\u5230\u679c\u500b\u7537\u4eba\u6436\u80a5\u4ed4\u679d\u65d7\uff0c\u4f46\u679c\u689d\u80a5\u4ed4\u5c31\u5373\u523b\u6253\u679c\u500b\u4eba\u548b\u558e !!!!!\u4fc2\u689d\u80a5\u4ed4\u51fa\u624b\u6253\u4eba\u5148\uff0c\u4eba\u5730\u9084\u64ca\u597d\u6b63\u5e38\u5416\uff0c\u5c31\u7b97\u6436\u4f60\u679d\u65d7\u90fd\u5514\u99db\u6253\u4eba\u5440??? \u6d3b\u8a72",
+			"from": {
+				"name": "Bobo Chong",
+				"id": "236337550056528"
+			},
+			"id": "1083198555101441_1083326645088632",
+			"likes": [{
+				"id": "569116433265389",
+				"name": "Cat Chung Si Wan"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			},
+			{
+				"id": "218760051821679",
+				"name": "Frankie Wu"
+			}]
+		},
+		{
+			"created_time": "2016-05-01T23:37:30+0000",
+			"message": "\u4f60\u53eb\u9999\u6e2f\u8b66\u5bdf\u505a\u516c\u5b89\uff0c\u4f60\u4fc2\u5927\u9678\u4eba\uff1f",
+			"from": {
+				"name": "So Kam Tam",
+				"id": "218239795206573"
+			},
+			"id": "1083198555101441_1083553795065917",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		}],
+		"likes": [{
+			"id": "10153376782690706",
+			"name": "Johnny Tse"
+		}],
+		"created_time": "2016-05-01T14:13:57+0000",
+		"message": "\u516c\u5b89\u5c31\u4fc2\u516c\u5b89, \u6700\u53fb\u6feb\u6355\u8001\u5c48\u9999\u6e2f\u5e02\u6c11.",
+		"id": "1083198555101441_1083297615091535"
+	},
+	{
+		"created_time": "2016-05-01T14:36:59+0000",
+		"message": "\u7e3d\u77e5\u5927\u5bb6\u5c0f\u5fc3\uff0c\u6252\u624b\u7121\u5206\u570b\u85c9\uff0c\u4ee5\u524d\u5728\u5c16\u6c99\u5480\u505a\u6587\u96c0\u679c\u73ed\u8cd3\u4ed4\u7740\u897f\u88c5\u6253\u5454\u597d\u65af\u6587\uff0c\u624b\u6cd5\u91cd\u597d\u9ad8\u660e\uff0c\u7e3d\u77e5\u505a\u500b\u9192\u76ee\u9999\u6e2f\u4eba\uff0c\u653e\u5047\u90fd\u73a9\u5f97\u958b\u5fc3D\uff01",
+		"from": {
+			"name": "Gary Pun",
+			"id": "10154112698984241"
+		},
+		"id": "1083198555101441_1083308868423743",
+		"likes": [{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		},
+		{
+			"id": "10156814951550224",
+			"name": "Tracy Tsang"
+		},
+		{
+			"id": "1595709850747876",
+			"name": "Yim Wingching"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T14:39:01+0000",
+		"message": "https://m.facebook.com/story.php?story_fbid=1060606537311147&id=100000854324302\n\n\u5c0f\u5f1f\u4eca\u65e5\u540c\u5440\u4ed4\u98df\u5b8clunch, \u4fc2\u5143\u6717\u898b\u5230\u4e00\u540d\u5927\u9678\u5047\u548c\u5c1a\u56db\u8655\u884c\u4e5e,\u6211\u5011\u8ddf\u96a8\u7260\u548c\u62cd\u7247\u7d0420\u5206\u9418,\u6700\u5f8c\u5831\u8b66\uff0c\u53ef\u60dc\u8b66\u5bdf\u53ea\u8b66\u544a\u4e86\u7260\uff0d\u4f1a\u5c31\u653e\u4eba\uff0c\u96e3\u602a\u9999\u6e2f\u6cbb\u5b89\u5481\u5dee\uff01\u4ffe\u57cb\u8b49\u64da\u90fd\u5514\u62c9\u4eba\uff01",
+		"from": {
+			"name": "Ringo Kan",
+			"id": "1058807697491031"
+		},
+		"id": "1083198555101441_1083309435090353",
+		"comments": [{
+			"created_time": "2016-05-01T14:43:57+0000",
+			"message": "20\u842c\u9ec3\u87f2\u9738\u8def\u9084\u6709\u4e00\u6392\u5148\u62c9\u3002",
+			"from": {
+				"name": "Yim Wingching",
+				"id": "1595709850747876"
+			},
+			"id": "1083198555101441_1083311135090183",
+			"likes": [{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			},
+			{
+				"id": "1698305130443867",
+				"name": "Catcat Chan"
+			},
+			{
+				"id": "10156814951550224",
+				"name": "Tracy Tsang"
+			}]
+		},
+		{
+			"created_time": "2016-05-01T23:40:45+0000",
+			"message": "\u4e00\u570b\u5169\u5236\u561b\u3002\u8981\u544a\u4f62\u4e5c\u91ce\u7f6a\u540d\uff1f\u4f54\u4e2d\u66b4\u4e82\u6253\u8b66\u5bdf\u5920\u8b49\u64da\u78ba\u947f\uff0c\u6709\u5e7e\u591a\u500b\u5224\u91cd\u5211\uff1f",
+			"from": {
+				"name": "So Kam Tam",
+				"id": "218239795206573"
+			},
+			"id": "1083198555101441_1083554945065802",
+			"likes": [{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T02:30:00+0000",
+			"message": "Yim Wingching \u4f60\u5462\u689d\u4e94\u6bdb\u6587\u4e0d\u5c0d\u984c\uff0c\u6263\u4f60\u4e94\u6bdb",
+			"from": {
+				"name": "Billy Bee",
+				"id": "1153602638013258"
+			},
+			"id": "1083198555101441_1083610541726909"
+		},
+		{
+			"created_time": "2016-05-02T02:58:21+0000",
+			"message": "\u884c\u4e5e\u5b9a\u5316\u7de3\uff0c\u72af\u908a\u689d\u6cd5\u8981\u62c9\u5440\uff1f\u4f60\u53c8\u77e5\u4f62\u4fc2\u771f\u5b9a\u4fc2\u5047\u548c\u5c1a\u5440\uff1f",
+			"from": {
+				"name": "Homy Ho",
+				"id": "1586994371617014"
+			},
+			"id": "1083198555101441_1083621101725853"
+		},
+		{
+			"created_time": "2016-05-02T08:44:05+0000",
+			"message": "\u7121\u77e5\u7684\u4eba\u771f\u53ef\u6190\uff0c\u81ea\u66b4\u5176\u77ed\u9084\u6cbe\u6cbe\u81ea\u559c\uff01",
+			"from": {
+				"name": "Ringo Kan",
+				"id": "1058807697491031"
+			},
+			"id": "1083198555101441_1083748885046408"
+		},
+		{
+			"created_time": "2016-05-02T09:00:01+0000",
+			"message": "\u53c8\u543e\u597d\u5481\u8b1b\u4f60\u81ea\u5df1\uff0c\u505a\u4eba\u53ef\u4ee5\u539a\u9053D\u5605",
+			"from": {
+				"name": "Homy Ho",
+				"id": "1586994371617014"
+			},
+			"id": "1083198555101441_1083753771712586",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T09:04:26+0000",
+			"message": "\u5c0f\u5b78\u96de\u5f0f\u56de\u61c9\uff0c\u5187\u6599\u5230\u7684\u5783\u573e\u4e94\u6bdb",
+			"from": {
+				"name": "Ringo Kan",
+				"id": "1058807697491031"
+			},
+			"id": "1083198555101441_1083754988379131"
+		},
+		{
+			"created_time": "2016-05-02T09:07:38+0000",
+			"message": "\u7b49\u6211\u70b9\u9192\u4f60, \u8ddf\u64da\u9999\u6e2f\u51fa\u5165\u5883\u689d\u4f8b\uff0c\u6301\u65c5\u904a\u7c3d\u8b49\u5165\u5883\u4e0d\u80fd\u5de5\u4f5c\u548c\u884c\u4e5e,\u6709\u6212\u789f\u548c\u61c2\u8ad7\u5927\u60b2\u5492\u7684\u624d\u662f\u771f\u548c\u5c1a",
+			"from": {
+				"name": "Ringo Kan",
+				"id": "1058807697491031"
+			},
+			"id": "1083198555101441_1083758308378799"
+		},
+		{
+			"created_time": "2016-05-02T13:32:43+0000",
+			"message": "\u4e00\u6307\u51fa\u4e8b\u5be6\uff0c\u4e00\u5b9a\u8a71\u4eba\u4fc2\u4e94\u6bdb\uff01\n\u4e94\u6bdb\u9ede\u90fd\u597d\u904e\u4e00\u6bdb\u4e0d\u503c",
+			"from": {
+				"name": "Ritaon Sum",
+				"id": "220997848258952"
+			},
+			"id": "1083198555101441_1083879175033379"
+		},
+		{
+			"created_time": "2016-05-02T15:16:53+0000",
+			"message": "\u4e94\u6bdb\u662f\u975e\u4e0d\u5206\uff01\u6307\u9e7f\u70ba\u99ac\uff01\u70ba\u4e94\u6597\u7c73\u6298\u8170\uff0c\u51fa\u8ce3\u826f\u5fc3\uff0c\u5be6\u5728\u6bd4\u51fa\u8ce3\u8089\u9ad4\u7684\u6027\u5de5\u4f5c\u8005\u66f4\u4f4e\u8ce4\uff01\u53c8\u6253\u58d3\u6cdb\u6c11\u7b49\u6539\u9769\u6d3e\uff01\u5be6\u70ba\u53cd\u9769\u547d\u4efd\u5b50\uff01\u53ef\u6065\uff01",
+			"from": {
+				"name": "Ringo Kan",
+				"id": "1058807697491031"
+			},
+			"id": "1083198555101441_1083923675028929"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T14:46:15+0000",
+		"message": "Willis Luk\u4f60\u54cd\u4e2d\u570b\u51fa\u4e16\u67b6\uff0c\u9999\u6e2f\u5514\u4fc2\u53eb\u516c\u5b89\uff0c\u4e2d\u570b\u8b66\u5bdf\u624d\u7a31\u516c\u5b89\uff0c\u9999\u6e2f\u53ea\u6709\u8b66\u5bdf\uff0c\u9999\u6e2f\u4eba\u7a31\u547c\u8b66\u5bdf\u505a\u4e9eSir\uff0c\u5973\u53ebMadam,\u5c0f\u670b\u53cb\u53eb\u8b66\u5bdf\u54e5\u54e5\u6216\u8b66\u5bdf\u53d4\u53d4,\u5973\u7684\u53eb\u8b66\u5bdf\u59d0\u59d0\u6216\u8b66\u5bdf\u59e8\u59e8,\u660e\u767d\u55ce?\u8a18\u4f4fla!",
+		"from": {
+			"name": "Gary Pun",
+			"id": "10154112698984241"
+		},
+		"id": "1083198555101441_1083312001756763",
+		"likes": [{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		},
+		{
+			"id": "220997848258952",
+			"name": "Ritaon Sum"
+		},
+		{
+			"id": "236337550056528",
+			"name": "Bobo Chong"
+		},
+		{
+			"id": "10156814951550224",
+			"name": "Tracy Tsang"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T14:51:17+0000",
+		"message": "\u4e0a\u6c34\u4eca\u65e5\u4e00\u73ed\u9ed1\u793e\u6703\u9a37\u64fe\u79c1\u4eba\u5e97\u8216\uff0c\u8b66\u5bdf\u9ede\u89e3\u5514\u62c9\u4eba@@\u2026\u2026!!!",
+		"from": {
+			"name": "\u767d\u6731\u8fea",
+			"id": "1758248651058202"
+		},
+		"id": "1083198555101441_1083315625089734",
+		"likes": [{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T15:25:46+0000",
+		"message": "",
+		"from": {
+			"name": "Shui Oi Woo",
+			"id": "10208228197854825"
+		},
+		"id": "1083198555101441_1083336768420953",
+		"likes": [{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T16:38:16+0000",
+		"message": "\u9999\u6e2f\u8b66\u5bdf\u5011\u8f9b\u82e6\u5566..\u5047\u65e5\u5de5\u4f5c .\u52aa\u529b .\u52a0\u6cb9 .\ud83d\udc4d",
+		"from": {
+			"name": "Donna Man Ching Cheung",
+			"id": "1725422627676374"
+		},
+		"id": "1083198555101441_1083369921750971",
+		"likes": [{
+			"id": "220997848258952",
+			"name": "Ritaon Sum"
+		},
+		{
+			"id": "145499765851160",
+			"name": "\u694a\u8c9d\u8389"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T16:43:57+0000",
+		"message": "\u8b1d\u8b1d\uff01\ud83d\ude0a\ud83d\udc4c",
+		"from": {
+			"name": "Stephen Yeung",
+			"id": "1294326150582543"
+		},
+		"id": "1083198555101441_1083371975084099",
+		"likes": [{
+			"id": "220997848258952",
+			"name": "Ritaon Sum"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		}]
+	},
+	{
+		"created_time": "2016-05-01T17:20:00+0000",
+		"message": "\u64fa\u660e\u8eca\u99ac\uff0c\u9999\u6e2f\u516c\u5b89\u5df2\u7d93\u6210\u70ba\u7576\u6b0a\u8005\u53ca\u4fdd\u7687\u9ee8\u7684\u89aa\u5175\uff0c\u518d\u4e0d\u662f\u4ee5\u7dad\u6301\u6cbb\u5b89\u9664\u66b4\u5b89\u826f\u670d\u52d9\u5e02\u6c11\u70ba\u8077\u8cac\u3002\n\n//\u5de5\u806f\u6703\u904a\u884c\u671f\u9593\uff0c\u6709\u5718\u9ad4\u65bc\u904a\u884c\u8def\u7dda\u5929\u6a4b\u6b04\u6746\u639b\u4e0a\u5beb\u6709\u300c\u9999\u6e2f\u5de5\u8cca\u806f\u5408\u6703 \u8ce3\u52de\u5de5 \u5bb3\u57fa\u5c64 \u6490\u5546\u754c \u70ba\u653f\u6b0a\u300d\u5de8\u578b\u6a6b\u984d\uff0c\u85c9\u6b64\u8af7\u523a\u5de5\u806f\u6703\uff0c\u4f46\u88ab\u8b66\u65b9\u963b\u6b62\u3002//\nhttp://bit.ly/24eM2Oo",
+		"from": {
+			"name": "Kit Wang",
+			"id": "1040507949357457"
+		},
+		"id": "1083198555101441_1083388098415820",
+		"comments": [{
+			"created_time": "2016-05-01T18:32:41+0000",
+			"message": "\u963b\u904e\u6fc0\u53cd\u793a\u5a01\u884c\u70ba\u556b, \u5514\u4fc2\u9ede\u9632\u96d9\u65b9\u4eba\u7fa4\u706b\u71d2\u8d77\u4f86?",
+			"from": {
+				"name": "\u67ef\u5357\u5149",
+				"id": "257232687952251"
+			},
+			"id": "1083198555101441_1083417825079514",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-01T19:37:35+0000",
+			"message": "\u7576\u6b0a\u7684\u8a71\u4e8b\uff0c\u4eba\u6cbb\u7121\u6cd5\u6cbb\uff1b\u96e3\u602a\u5927\u5bb6\u88ab\u903c\u300c\u68c4\u7956\u5fd8\u5b97\u300d\u61f7\u5ff5\u82f1\u6b96\u6c11\u6642\u4ee3\uff01",
+			"from": {
+				"name": "Kit Wang",
+				"id": "1040507949357457"
+			},
+			"id": "1083198555101441_1083448185076478"
+		},
+		{
+			"created_time": "2016-05-02T03:02:41+0000",
+			"message": "\u8d85\uff0c\u9999\u6e2f\u6709\u5e7e\u591a\u4eba\u61f7\u5ff5\u82f1\u6b96\u6c11\u6642\u4ee3\u5440\uff1f\u53c8\u8b1b\u5927\u5bb6! \u5f97\u55f0\u8001\u9f203\u5e7e\u96bb\u3002\u91cd\u597d\u610f\u601d\u8b1b\u5230\u6cd5\u6cbb? \u8987\u8857\uff0c\u9ce9\u55da\uff0c\u55da\u885d\uff0c\u867e\u8001\u5f31\u5a66\u5b7a\u3002\u3002\u3002\u4f60\u5730\u61c2\u5b88\u6cd5\u54a9\uff1f\u653e\u5c41",
+			"from": {
+				"name": "Homy Ho",
+				"id": "1586994371617014"
+			},
+			"id": "1083198555101441_1083623801725583",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "145499765851160",
+				"name": "\u694a\u8c9d\u8389"
+			}]
+		}]
+	},
+	{
+		"created_time": "2016-05-01T18:10:56+0000",
+		"message": "\u5462D\u5c31\u4fc2\u8b66\u6e23\u6240\u8b02\u5605\u300c\u516c\u5e73\u516c\u6b63\uff0c\u4e0d\u504f\u4e0d\u501a\uff0c\u57f7\u6cd5\u7121\u653f\u6cbb\u8003\u616e\u300d\uff01\n\nhttps://www.facebook.com/resistancelive2014/posts/1696520670612281?pnref=story",
+		"from": {
+			"name": "Kit Wang",
+			"id": "1040507949357457"
+		},
+		"id": "1083198555101441_1083408425080454",
+		"comments": [{
+			"created_time": "2016-05-01T18:35:55+0000",
+			"message": "\u8ab0\u52d5\u624b\u5148?",
+			"from": {
+				"name": "\u67ef\u5357\u5149",
+				"id": "257232687952251"
+			},
+			"id": "1083198555101441_1083418771746086",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-01T19:35:19+0000",
+			"message": "\u53c8\u4fc2\u9ed1\u8b66\u624b\u5247\u300c\u5148\u64a9\u8005\u8ce4\u300d\uff1f",
+			"from": {
+				"name": "Kit Wang",
+				"id": "1040507949357457"
+			},
+			"id": "1083198555101441_1083447395076557"
+		},
+		{
+			"created_time": "2016-05-02T03:03:37+0000",
+			"message": "\u4f01\u5b9a\u5b9a\u88ab\u653b\u64ca\u597d5\u597d\u5440\uff1f\u767d\u75f4",
+			"from": {
+				"name": "Homy Ho",
+				"id": "1586994371617014"
+			},
+			"id": "1083198555101441_1083624318392198",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "145499765851160",
+				"name": "\u694a\u8c9d\u8389"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T03:50:40+0000",
+			"message": "\u4f60\u54cd\u7f8e\u570b\uff0c\u4ffe\u4eba\u6253\u6b7b\u5de6\u5566",
+			"from": {
+				"name": "John King",
+				"id": "1558446984455427"
+			},
+			"id": "1083198555101441_1083638595057437",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T13:38:24+0000",
+			"message": "\u53ea\u6709\u58de\u4eba\uff0c\u72af\u5497\u6cd5\uff0c\u90fd\u6703\u53eb\u8b66\u5bdf\u505a\u9ed1\u8b66\uff01\u5e7e\u6642\u898b\u904e\u7f6a\u72af\u7a31\u8b9a\u8b66\u5bdf\u5440\u3002\n\u826f\u597d\u5e02\u6c11\uff0c\u53ea\u8b58\u611f\u6069\u6709\u8b66\u5bdf\u4fdd\u8b77\u751f\u547d\u8ca1\u7522\u3002",
+			"from": {
+				"name": "Ritaon Sum",
+				"id": "220997848258952"
+			},
+			"id": "1083198555101441_1083880758366554",
+			"likes": [{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		}]
+	},
+	{
+		"from": {
+			"name": "Kit Wang",
+			"id": "1040507949357457"
+		},
+		"message_tags": [{
+			"length": 77,
+			"offset": 0,
+			"id": "1064833616922412",
+			"name": "[BACKUP:\u5e95\u5df2\u8d77]"
+		}],
+		"comments": [{
+			"created_time": "2016-05-01T18:39:15+0000",
+			"message": "\u651e\u652f\u54a9\u65d7\u51fa\u4f86? \u4f3c\u4e4e\u5481\u8d77\u7d1b\u722d.",
+			"from": {
+				"name": "\u67ef\u5357\u5149",
+				"id": "257232687952251"
+			},
+			"id": "1083198555101441_1083421358412494",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1558446984455427",
+				"name": "John King"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-01T19:34:15+0000",
+			"message": "\u6253\u4eba\u7121\u7f6a\uff1f",
+			"from": {
+				"name": "Kit Wang",
+				"id": "1040507949357457"
+			},
+			"id": "1083198555101441_1083447041743259"
+		},
+		{
+			"created_time": "2016-05-01T19:37:35+0000",
+			"message": "\u5206\u88c2\u570b\u5bb6, \u4eba\u4eba\u5f97\u800c\u8a85\u4e4b.",
+			"from": {
+				"name": "Eve Leung",
+				"id": "10209609799547731"
+			},
+			"id": "1083198555101441_1083448175076479",
+			"likes": [{
+				"id": "1558446984455427",
+				"name": "John King"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-01T19:38:35+0000",
+			"message": "\u8981\u8a08\u5c31\u4fc2\u4e2d\u5171\u5224\u570b\u5728\u5148\uff0c\u4eba\u4eba\u5f97\u800c\u8a85\u4e4b\uff01",
+			"from": {
+				"name": "Kit Wang",
+				"id": "1040507949357457"
+			},
+			"id": "1083198555101441_1083448611743102"
+		},
+		{
+			"created_time": "2016-05-02T03:04:09+0000",
+			"message": "\u5206\u88c2\u570b\u5bb6, \u4eba\u4eba\u5f97\u800c\u8a85\u4e4b.x2",
+			"from": {
+				"name": "Homy Ho",
+				"id": "1586994371617014"
+			},
+			"id": "1083198555101441_1083624511725512",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T03:49:45+0000",
+			"message": "\u53db\u570b\u53db\u5f92",
+			"from": {
+				"name": "John King",
+				"id": "1558446984455427"
+			},
+			"id": "1083198555101441_1083638331724130",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T03:54:52+0000",
+			"message": "\u8001\u5be6\u8b1b, \u6211\u898b\u652f\u9f8d\u7345\u65d7. \u90fd\u8981X\u4f62\u96bb\u72d7\u573e.",
+			"from": {
+				"name": "\u67ef\u5357\u5149",
+				"id": "257232687952251"
+			},
+			"id": "1083198555101441_1083639878390642",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		}],
+		"created_time": "2016-05-01T18:17:04+0000",
+		"message": "https://www.facebook.com/supporthkpf/videos/1064833616922412/?hc_location=ufi",
+		"id": "1083198555101441_1083410548413575"
+	},
+	{
+		"from": {
+			"name": "Ricky Pang",
+			"id": "10208895180757508"
+		},
+		"comments": [{
+			"created_time": "2016-05-01T19:36:18+0000",
+			"message": "\u4fc2\u9ed1\u91d1\u8ce3\u570b\u8cca!",
+			"from": {
+				"name": "Eve Leung",
+				"id": "10209609799547731"
+			},
+			"id": "1083198555101441_1083447668409863",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-01T19:43:53+0000",
+			"message": "\u9ed1\u91d1\u5f97\u904e689\u540c\u4e2d\u5171\u5806\u8caa\u5b98\u532a\u9996\uff01",
+			"from": {
+				"name": "Kit Wang",
+				"id": "1040507949357457"
+			},
+			"id": "1083198555101441_1083451248409505"
+		},
+		{
+			"created_time": "2016-05-01T23:53:38+0000",
+			"message": "Kit Wang\u3001Ricky Pang\n\u8b66\u65b9\u57f7\u6cd5\u4e0d\u516c\u3001\u9078\u64c7\u6027\u57f7\u6cd5\u4e5f\u4e0d\u662f\u7b2c\u4e00\u6b21\n\u81ea\u5f9e\u975e\u6cd5\u4f54\u9818\u958b\u59cb\u4fbf\u4e00\u76f4\u6709\u6b64\u73fe\u8c61\n\u6bcf\u6b21\u4e00\u5927\u7fa4\u4e8b\u5148\u5f35\u63da\u3001\u9ad8\u8abf\u9055\u6cd5\u8005\u4e0d\u65b7\u7528\u884c\u52d5\u6311\u91c1\u8b66\u65b9\u53ca\u5e02\u6c11\n\u8b66\u65b9\u5c0d\u9ad8\u8abf\u9055\u6cd5\u8005\u4e0d\u6562\u99ac\u4e0a\u57f7\u6cd5\u5236\u6b62\n\u5230\u7d42\u65bc\u6709\u5e02\u6c11\u5fcd\u4e0d\u4f4f\u51fa\u624b\u5236\u6b62\u6642\n\u4fbf\u88ab\u9ad8\u8abf\u9055\u6cd5\u8005\u6307\u63a7\u975e\u79ae\u3001\u6bc6\u6253\n\u9ad8\u8abf\u9055\u6cd5\u8005\u53ca\u5176\u652f\u6301\u8005\u518d\u5927\u8086\u6307\u7a31\u9ed1\u8b66\u4e0d\u57f7\u6cd5\n\u53c8\u6709\u85c9\u53e3\u717d\u52d5\u66f4\u591a\u4eba\u9055\u6cd5\u652a\u4e8b",
+			"from": {
+				"name": "Tabasco Tan",
+				"id": "212654599106790"
+			},
+			"id": "1083198555101441_1083558741732089",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "145499765851160",
+				"name": "\u694a\u8c9d\u8389"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-01T23:59:06+0000",
+			"message": "\u6240\u4ee5\u5176\u5be6\u53ea\u8981\u8b66\u65b9\u5728\u9ad8\u8abf\u9055\u6cd5\u8005\u4e00\u6709\u9055\u6cd5\u884c\u70ba\u6642\n\u99ac\u4e0a\u63a1\u53d6\u62d8\u6355\u884c\u52d5\n\u4e26\u76e1\u5feb\u5c07\u6240\u6709\u9055\u6cd5\u8005\u5e36\u4e0a\u6cd5\u5ead\u63a5\u53d7\u5be9\u5224\n\u624d\u662f\u6b63\u78ba\u505a\u6cd5",
+			"from": {
+				"name": "Tabasco Tan",
+				"id": "212654599106790"
+			},
+			"id": "1083198555101441_1083560195065277",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "145499765851160",
+				"name": "\u694a\u8c9d\u8389"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		}],
+		"likes": [{
+			"id": "10154006144363617",
+			"name": "Fung Benjamin"
+		}],
+		"created_time": "2016-05-01T19:04:28+0000",
+		"message": "\u6897\u8f9b\u82e6\uff0c\u53c8\u8981\u540c\u5572\u571f\u5171\u505a\u6232\u3002",
+		"id": "1083198555101441_1083430591744904"
+	},
+	{
+		"created_time": "2016-05-01T23:12:01+0000",
+		"message": "\u53ef\u60dc\u6211\u5462\u5169\u65e5\u90fd\u8981\u958b\u5de5\uff0c\u5404\u4f4d\u8b66\u65b9\u4eba\u54e1\n\u4e00\u9f4a\u52aa\u529b\u52a0\u6cb9\u5594\uff01\n:)",
+		"from": {
+			"name": "\u694a\u5bb6\u8ce2",
+			"id": "10206403202821142"
+		},
+		"id": "1083198555101441_1083545805066716",
+		"likes": [{
+			"id": "145499765851160",
+			"name": "\u694a\u8c9d\u8389"
+		},
+		{
+			"id": "1558446984455427",
+			"name": "John King"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		}]
+	},
+	{
+		"created_time": "2016-05-02T00:37:21+0000",
+		"message": "\u800c\u5bb6\u5468\u8857\u6253\u4eba\uff0c\u4fc2\u5514\u4fc2\u5408\u6cd5\uff1f\n\nhttps://newshongkong.wordpress.com/2016/05/01/%E3%80%9051%E8%97%A5%E6%88%BF%E5%A4%A7%E6%BF%95%E5%B9%B3-%E7%94%B7%E5%AD%90%E5%87%BA%E6%8B%B3%E6%89%93%E4%BA%BA%E3%80%91-1510-resistance-live-media/",
+		"from": {
+			"name": "Johnny Tse",
+			"id": "10153376782690706"
+		},
+		"id": "1083198555101441_1083571745064122"
+	},
+	{
+		"created_time": "2016-05-02T02:41:13+0000",
+		"message": "\u8b1d\u8b1d\u9999\u6e2f\u8b66\u5bdf\uff0c\u5927\u5bb6\u7684\u5e73\u5b89\u6709\u8cf4\u65bc\u4f60\u5011\u7684\u5de5\u4f5c\uff0c\u70ba\u4f60\u5011\u9001\u4e0a\u795d\u798f\ud83c\udf89\ud83d\udc96",
+		"from": {
+			"name": "\u7b71\u7daa",
+			"id": "616887968460167"
+		},
+		"id": "1083198555101441_1083613821726581",
+		"likes": [{
+			"id": "1558446984455427",
+			"name": "John King"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		}]
+	},
+	{
+		"from": {
+			"name": "Tabasco Tan",
+			"id": "212654599106790"
+		},
+		"comments": [{
+			"created_time": "2016-05-02T03:04:54+0000",
+			"message": "\u4f60\u5462\u96bb\u4e94\u6bdb\u771f\u6709\u6548\u7387",
+			"from": {
+				"name": "Billy Bee",
+				"id": "1153602638013258"
+			},
+			"id": "1083198555101441_1083624845058812"
+		},
+		{
+			"created_time": "2016-05-02T03:09:38+0000",
+			"message": "\u9053\u7406\u6b20\u5949\n\u53ea\u6703\u60e1\u6bd2\u5492\u7f75\n\u7528\u8a71\u4eba\u4e94\u6bdb\u4f86\u63a9\u98fe\u81ea\u5df1\u7406\u8667\n\u653f\u68cd\u4f0e\u5006\u800c\u5df2",
+			"from": {
+				"name": "Tabasco Tan",
+				"id": "212654599106790"
+			},
+			"id": "1083198555101441_1083626158392014",
+			"likes": [{
+				"id": "220997848258952",
+				"name": "Ritaon Sum"
+			},
+			{
+				"id": "145499765851160",
+				"name": "\u694a\u8c9d\u8389"
+			},
+			{
+				"id": "1586994371617014",
+				"name": "Homy Ho"
+			}]
+		},
+		{
+			"created_time": "2016-05-02T03:27:10+0000",
+			"message": "",
+			"from": {
+				"name": "Johnny Tse",
+				"id": "10153376782690706"
+			},
+			"id": "1083198555101441_1083631355058161"
+		}],
+		"likes": [{
+			"id": "10153747228133585",
+			"name": "Nicole Simpson"
+		},
+		{
+			"id": "145499765851160",
+			"name": "\u694a\u8c9d\u8389"
+		},
+		{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		}],
+		"created_time": "2016-05-02T02:47:12+0000",
+		"message": "\u6709\u73ed\u66b4\u6c11\u597d\u96e2\u8b5c  \u717d\u52d5\u4ec7\u8b66\u78ba\u8001\u571f\n\u9808\u77e5\u57f7\u6cd5\u8981\u505a\u597d  \u5e02\u6c11\u652f\u6301\u4e0d\u80fd\u7121\n\u8b66\u65b9\u9762\u66f8\u5ee3\u7d0d\u8a00  \u60e1\u610f\u6d17\u677f\u64ad\u6d41\u8a00\n\u61f6\u7406\u4e3b\u984c\u6191\u6b61\u559c  \u8b1b\u569f\u8b1b\u53bb\u4e09\u5e45\u88ab\n\u82e5\u7136\u55ae\u7d14\u8868\u4e0d\u6eff  \u8a00\u8ad6\u81ea\u7531\u7121\u4eba\u7ba1\n\u60e1\u6bd2\u65bd\u5492\u50b7\u5929\u7406  \u6015\u4f60\u62db\u5831\u53d7\u4e0d\u8d77\n\u7a76\u7adf\u4e0d\u5fff\u88ab\u8b66\u62c9  \u5b9a\u4fc2\u6536\u9322\u652a\u7834\u58de\n\u793e\u6703\u4ee3\u50f9\u592a\u9ad8\u6602  \u5c45\u5fc3\u53f5\u6e2c\u8981\u63d0\u9632",
+		"id": "1083198555101441_1083617798392850"
+	},
+	{
+		"created_time": "2016-05-02T03:29:32+0000",
+		"message": "\u5168\u9999\u6e2f\u5f97\u500b\u5514\u5920700 \u4eba\u652f\u6301\uff0c\u6211\u771f\u4fc2\u767b\u4f60\u5730\u53ef\u6190",
+		"from": {
+			"name": "Johnny Tse",
+			"id": "10153376782690706"
+		},
+		"id": "1083198555101441_1083632015058095"
+	},
+	{
+		"created_time": "2016-05-02T03:36:49+0000",
+		"message": "You, too.",
+		"from": {
+			"name": "Teresa Fung",
+			"id": "10206350253542956"
+		},
+		"id": "1083198555101441_1083634301724533"
+	},
+	{
+		"created_time": "2016-05-02T03:48:40+0000",
+		"message": "\u8f9b\u82e6\u4e86",
+		"from": {
+			"name": "John King",
+			"id": "1558446984455427"
+		},
+		"id": "1083198555101441_1083637581724205",
+		"likes": [{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		},
+		{
+			"id": "145499765851160",
+			"name": "\u694a\u8c9d\u8389"
+		}]
+	},
+	{
+		"created_time": "2016-05-02T05:37:15+0000",
+		"message": "\u591a\u8b1d, \u9999\u6e2f\u8b66\u5bdf, \u52a0\u6cb9!",
+		"from": {
+			"name": "\u694a\u8c9d\u8389",
+			"id": "145499765851160"
+		},
+		"id": "1083198555101441_1083678181720145",
+		"likes": [{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		},
+		{
+			"id": "906975636085820",
+			"name": "Che Keung  Chan"
+		}]
+	},
+	{
+		"created_time": "2016-05-02T05:38:29+0000",
+		"message": "\u6211\u5c0d\u7d00\u5f8b\u90e8\u968a\u90fd\u61f7\u771f\u8aa0\u7684\u656c\u610f! \u4f46\u5f04\u4e0d\u660e\u767d\u540c\u4e00\u6027\u8cea\u7684\u60c5\u666f, \u600e\u9ebc\u4eca\u5929\u7684\u8655\u7406\u624b\u6cd5\u820797\u524d\u6709\u90a3\u9ebc\u5927\u7684\u843d\u5dee?",
+		"from": {
+			"name": "Henry Cheung",
+			"id": "1109003459120416"
+		},
+		"id": "1083198555101441_1083678585053438",
+		"likes": [{
+			"id": "906975636085820",
+			"name": "Che Keung  Chan"
+		}]
+	},
+	{
+		"created_time": "2016-05-02T12:02:49+0000",
+		"message": "http://hk.apple.nextmedia.com/realtime/breaking/20160502/55054860",
+		"from": {
+			"name": "Evan Li",
+			"id": "10156844153905181"
+		},
+		"id": "1083198555101441_1083844148370215"
+	},
+	{
+		"created_time": "2016-05-02T13:35:53+0000",
+		"message": "\u9999\u6e2f\u8b66\u5bdf\u52a0\u6cb9\uff01",
+		"from": {
+			"name": "Elle Yu",
+			"id": "1170135973029060"
+		},
+		"id": "1083198555101441_1083880088366621",
+		"likes": [{
+			"id": "1586994371617014",
+			"name": "Homy Ho"
+		}]
+	},
+	{
+		"created_time": "2016-05-02T14:46:36+0000",
+		"message": "",
+		"from": {
+			"name": "Hoi Ying Chow",
+			"id": "513599238825416"
+		},
+		"id": "1083198555101441_1083911475030149"
+	},
+	{
+		"created_time": "2016-05-02T15:14:53+0000",
+		"message": "\u8d77\u4f86\uff0c\u98e2\u5bd2\u4ea4\u8feb\u7684\u5974\u96b8\u3002\n\u88ab\u8b70\u54e1\uff0c\u5831\u7d19\u4f6c\uff0c\u9ad8\u767b\u4ed4\uff0c\u5ee2\u9752\uff0c\u66b4\u5f92\u58d3\u8feb\u5605\u5974\u96b8\uff0c\u8d77\u4f86\u5427\uff0c\u6210\u7acb\u5de5\u6703\uff0c\u70ba\u81ea\u5df1\u722d\u53d6\u6b0a\u76ca\u5566\uff01",
+		"from": {
+			"name": "\u6881\u570b\u96c4",
+			"id": "116849555385451"
+		},
+		"id": "1083198555101441_1083922945029002",
+		"comments": [{
+			"created_time": "2016-05-02T16:27:56+0000",
+			"message": "\u6b63\u8a00\u82e5\u53cd\u6b7b\u4e94\u6bdb\uff0c\u5febd\u4ec6\u8857\u6b7b\u5566\u4f60",
+			"from": {
+				"name": "Billy Bee",
+				"id": "1153602638013258"
+			},
+			"id": "1083198555101441_1083978541690109"
+		}]
+	},
+	{
+		"created_time": "2016-05-02T15:43:42+0000",
+		"message": "\u652f\u6301\u9999\u6e2f\u8b66\u968a\uff0c\u9664\u60e1\u5b89\u5c45 !",
+		"from": {
+			"name": "Winzia Chan",
+			"id": "1167190626639156"
+		},
+		"id": "1083198555101441_1083959028358727"
+	}]
+}]

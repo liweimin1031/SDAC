@@ -1,0 +1,268 @@
+<html style="height: 100%" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link rel="stylesheet" href="../jslib/bootstrap/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="../css/demo.css" type="text/css" />
+  <meta charset="utf-8" />
+
+  <title>Linkage Demo</title>
+</head>
+
+<body style="height: 100%; width:100%; margin: 0">
+  <div class='row'>
+    <div class='col-sm-8'>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Linkage Graph
+        </div>
+        <button id="bt_force" type="button" class="btn btn-default">Force</button>
+        <button id="bt_circular" type="button" class="btn btn-default">Circular</button>
+        <div class="panel-body" style="height: 1000px; width:1000px; margin: 0" id="graph"></div>
+      </div>
+    </div>
+
+    <div class='col-sm-4'>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          User Profile
+        </div>
+
+        <div class="panel-body" id="profile">
+        
+          <div class="row">
+            <div id="user_img" class="col-sm-4"></div>
+            <div id="user_info" class="col-sm-8"></div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="container" style="height: 100%; width:100%"></div><script type="text/javascript" src="../jslib/echarts/echarts.min.js">
+</script><script type="text/javascript" src="../jslib/jquery-1.11.3.js">
+</script><script type="text/javascript">
+//<![CDATA[
+       
+  var dom = document.getElementById("graph");
+  var myChart = echarts.init(dom);
+  var app = {};
+    
+    //input params
+  var source_db='discuss_news3'
+  var result_id='58453d8ca11e7677c354c2b9'
+  var option ={}
+/*
+  option = null;
+  myChart.showLoading();
+  $.get('data/linkage_data.json', function (example) {
+    myChart.hideLoading();
+    var num_nodes=example.nodes.length;
+    var num_links=example.links.length;
+    option = {
+        title: {
+            subtext: 'nodes: ' +num_nodes+'\t'+ 'links: '+num_links,
+            top: 'top',
+            left: 'center'
+        },
+        tooltip: {
+            formatter: function(params,ticket,callback){
+              return params.name;
+            
+            }
+        
+        },
+        series: [{
+            type: 'graph',
+            layout: 'force',
+            animation: false,
+            roam: true,
+            label: {
+                normal: {
+                    position: 'right',
+                    formatter: '{b}'
+                }
+            },
+            draggable: true,
+            data: example.nodes,
+            symbolSize:function(value,params){  
+            
+            return value/10;
+            },
+            
+            edgeSymbol:['none','arrow'],
+            edgeSymbolSize:[1,5],
+            force: {
+                // initLayout: 'circular'
+                // gravity: 0
+                // repulsion: 20,
+                edgeLength: 100,
+                repulsion: 10
+            },
+            links: example.links
+        }]
+    };
+
+    myChart.setOption(option);
+  });;
+  myChart.on('click',function(params){
+  var name=params.data.name;
+  if (name){
+    var html='<p>'+name+'<\/p>'
+    $('#profile').html(html);
+    }
+  console.log(name);
+
+  });
+  if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+  }
+  */
+  var LinkageDemo={
+          gui:{
+                  initGuiForLinkage: function(){
+                          LinkageDemo.api.getLinkageResult(result_id,function(data){
+                                LinkageDemo.gui.generateLinkageGraph(data)
+                                $('#bt_force').click(function(event){
+                                  option.series[0].layout='force';
+                                  myChart.setOption(option);
+                                });
+                                $('#bt_circular').click(function(event){
+                                  option.series[0].layout='circular';
+                                  myChart.setOption(option);
+                                });                                
+                            });
+                  },
+                  
+                  generateLinkageGraph: function(linkage_result){
+                          var num_nodes=linkage_result.nodes.length;
+                          var num_links=linkage_result.links.length;
+                          option = {
+                              title: {
+                                  subtext: 'nodes: ' +num_nodes+'\t'+ 'links: '+num_links,
+                                  top: 'top',
+                                  left: 'center'
+                              },
+                              tooltip: {
+                                  formatter: function(params,ticket,callback){
+                                    return params.name;
+                                  
+                                  }
+                              
+                              },
+                              series: [{
+                                  type: 'graph',
+                                  layout: 'circular',
+                                  animation: false,
+                                  roam: true,
+                                  label: {
+                                      normal: {
+                                          position: 'right',
+                                          formatter: '{b}'
+                                      }
+                                  },
+                                  draggable: true,
+                                  data: linkage_result.nodes,
+                                  symbolSize:function(value,params){  
+                                  
+                                  //return value/10;
+                                  return Math.log(value*200+1)*10;
+                                  },
+                                  
+                                  //edgeSymbol:['none','arrow'],
+                                  //edgeSymbolSize:[1,5],
+                                  force: {
+                                      // initLayout: 'circular'
+                                      // gravity: 0
+                                      // repulsion: 20,
+                                      edgeLength: 100,
+                                      repulsion: 10
+                                  },
+                                  links: linkage_result.links
+                              }]
+                          };
+                          myChart.setOption(option);
+                          myChart.on('click',function(params){
+                                  var name=params.data.name;
+                                  console.log(name);
+                                  if (name){
+                                    
+                                    LinkageDemo.api.getUserProfile(name,function(data){
+                                        LinkageDemo.gui.generateUserProfile(data);
+                                    });
+
+                                    }
+                                  //console.log(params); 
+
+                          });
+                  },
+                  
+                  generateUserProfile: function(user_profile){
+
+                                  var html_img='<img src='+user_profile.img+' class="img-thumbnail" alt="User Icon" width="304" height="236">';
+                                  $('#user_img').html(html_img);
+
+                                  var html_info='<table class="table">'
+                                  html_info+='<tr>'+'<th> User ID: </th>'+'<td>'+user_profile.userid+'</td>'+'</tr>'
+                                  html_info+='<tr>'+'<th> User Name: </th>'+'<td>'+user_profile.name+'</td>'+'</tr>'
+                                  html_info+='<tr>'+'<th> Register Time: </th>'+'<td>'+user_profile.register_time+'</td>'+'</tr>'
+                                  html_info+='</table>'
+                                  $('#user_info').html(html_info);
+                  },
+                  
+
+          },
+          api:{
+                  getLinkageResult: function(result_id,callback){
+                          var url = "../linkage.php/getLinkageResult"; // the script where you handle the form input.
+                          $.ajax({
+                              type: "POST",
+                              url: url,
+                              dataType: 'json',
+                              data: {
+                                  _id: result_id
+                              },
+                              success: function(data) {
+                                  if (data.success) {
+
+                                      callback(data.data);
+                                  } else {
+                                      console.log(data.error)//show error
+                                  }
+                              },
+                              error:function(data){
+                                console.log(data);  
+                              }
+                          });
+                  },
+                  getUserProfile: function(username, callback){
+                          var url = "../linkage.php/getUserProfile"; // the script where you handle the form input.
+                          $.ajax({
+                              type: "POST",
+                              url: url,
+                              dataType: 'json',
+                              data: {
+                                  username: username
+                              },
+                              success: function(data) {
+                                  if (data.success) {
+
+                                      callback(data.data);
+                                  } else {
+                                      console.log(data.error)//show error
+                                  }
+                              },
+                              error:function(data){
+                                console.log(data);  
+                              }
+                          });
+                  }  
+          }
+  };
+  $(document).ready(function() {
+      LinkageDemo.gui.initGuiForLinkage();
+
+  });  
+  //]]>
+  </script>
+</body>
+</html>

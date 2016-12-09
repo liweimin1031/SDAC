@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+    <link rel="stylesheet" href="../jslib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/demo.css" />
+       <meta charset="utf-8">
+       
+   </head>
+   <body style="height: 100%; width:100%; margin: 0">
+
+       
+       
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="panel panel-default ">
+           <div class="panel-heading">Topic Select</div>
+             <div class="panel-body" id="topic_number">
+             </div>
+          </div></div>
+          <div class="col-sm-4">
+              <div class="panel panel-default">
+                     <div class="panel-heading">Topic Words</div>
+                     <div class="panel-body" style="width: 500px;height:500px;" id="topic_words">
+                     </div>
+              </div></div>
+              <div class="col-sm-6">
+              <div class="panel panel-default">
+                     <div class="panel-heading">Posts List</div>
+                     <div class="panel-body" id="posts">
+                     </div>
+              </div></div>
+      <!-- <div class="col-sm-4" id="lda_topics"></div>
+      <div class="col-sm-4" id="lda_docs"></div>
+      <div class="col-sm-4" id="lda_comments"></div> -->
+				  </div>
+       <script type="text/javascript" src="../jslib/jquery-1.11.3.js"></script>
+       <script type="text/javascript" src="../jslib/echarts/echarts.min.js"></script>
+       <script type="text/javascript" src="../jslib/echarts/echarts-wordcloud.min.js"></script>
+       <script type="text/javascript" src="../jslib/bootstrap/js/bootstrap.min.js"></script>
+
+       <script type="text/javascript">
+       
+var topic_words = document.getElementById("topic_words");
+var myChart = echarts.init(topic_words);
+var app = {};
+  
+var TopicDemo={
+  gui:{
+  
+      initGuiForTopic: function(){
+        	
+        	TopicDemo.api.getTopicResult(function(data){
+                TopicDemo.gui.generateTopicNumber(data)
+            });
+        },
+  
+      generateTopicNumber: function(topic_result){
+              var html=  '<div class="btn-group-vertical">'
+              $.each(topic_result, function(index, item){
+                   html+= '<button type="button" class="btn btn-primary" value= ' + index+'>'+index;
+                   html+='</button>';
+              });
+              html+='</div>'
+              $('#topic_number').html(html);
+              
+              $('#topic_number button').click(function(event){
+                   event.preventDefault();
+                   if($(this).hasClass('active')){
+                       return;
+                   }
+                   $('#topic_number button').removeClass('active');
+                   var index = $(this).val();
+                   $(this).addClass('active');
+                   //$('#topic_words')    loading
+                   var topic_word=topic_result[index].topic_word;
+                   TopicDemo.gui.generateTopicWord(topic_word);
+                   
+                   $('#posts').html('Loading');
+                   var doc_ids = topic_result[index].doc_ids;
+                   var ids=[]
+                   
+                   for( i in doc_ids){
+                      ids.push(doc_ids[i].id);
+                      //if (i==500){  break ;}  //1000 max 
+                   };
+                   TopicDemo.api.getRelatedDocuments(ids, function(data){
+                       TopicDemo.gui.generateRelatedDocument(data);
+                   });
+                   
+              });
+              
+          },
+  
+      generateTopicWord: function(topic_word){
+          data=[]
+          for (i in topic_word){
+              data.push( {'name':topic_word[i].word,'value':topic_word[i].value } )
+          }
+
+              var option = {
+
+                    series: [ {
+                        type: 'wordCloud',
+                        gridSize: 2,
+                        sizeRange: [12, 50],
+                        rotationRange: [0, 0],
+                        shape: 'circle',
+                        width: 600,
+                        height: 400,
+                        textStyle: {
+                            normal: {
+                                color: function () {
+                                    return 'rgb(' + [
+                                        Math.round(Math.random() * 160),
+                                        Math.round(Math.random() * 160),
+                                        Math.round(Math.random() * 160)
+                                    ].join(',') + ')';
+                                }
+                            },
+                            emphasis: {
+                                shadowBlur: 10,
+                                shadowColor: '#333'
+                            }
+                        },
+                        data:data
+                    } ]
+              };
+              myChart.setOption(option);
+          },
+      
+      generateRelatedDocument: function(docs){
+              var html = '<div class="list-group">';
+              $.each(docs, function(index, item){
+                   html += '<a class="list-group-item" data-index="'+index+'">';
+                   if (item.title.length == 0) {
+                       html += 'Video...'
+                   } else {
+                       html += item.title;
+                   }
+
+                   html +='</a>'
+                   
+              });
+              html +='</div>';
+              $('#posts').html(html);
+              /*
+              $('#lda_docs a').click(function(event){
+                  event.preventDefault();
+                  if($(this).hasClass('active')){
+                      return;
+                  }
+                  $('#lda_docs a').removeClass('active');
+                  var index = $(this).attr('data-index');
+                  $(this).addClass('active');
+                  TopicDemo.gui.generateRelatedComments(docs[index].comments);
+                  
+             });
+              */
+          },
+  },
+  
+  api: {
+
+                getTopicResult: function(callback) {
+
+                    var url = "../topic.php/getTopicResult"; // the script where you handle the form input.
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        dataType: 'json',
+
+                        success: function(data) {
+                            if (data.success) {
+
+                                callback(data.data);
+                            } else {
+                                //TopicDemo.gui.showError(data.error);
+                                console.log(data.error)//show error
+                            }
+                        },
+                        error:function(data){
+                          console.log(data);  
+                        }
+                    });
+                },
+                getRelatedDocuments: function(doc_ids, callback) {
+                    var url = "../topic.php/getRelatedDocuments"; // the script where you handle the form input.
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        dataType: 'json',
+                        data: {
+                            docs: doc_ids
+                        },
+                        success: function(data) {
+                            if (data.success) {
+                                
+                                callback(data.data);
+                            } else {
+                                //TopicDemo.gui.showError(data.error);
+                                console.log(data.error)//show error
+                            }
+                        },
+                        error:function(data){
+                          console.log(data);  
+                        }
+                    });
+                },
+
+            }
+};
+$(document).ready(function() {
+    TopicDemo.gui.initGuiForTopic();
+
+});
+
+       </script>
+   </body>
+</html>

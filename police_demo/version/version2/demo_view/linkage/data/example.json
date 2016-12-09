@@ -1,0 +1,50 @@
+{
+	"nodes": [{
+		"name": "node1",
+		"value": 8
+	},
+	{
+		"name": "node2",
+		"value": 5
+	},
+	{
+		"name": "node3",
+		"value": 5
+	},
+	{
+		"name": "node4",
+		"value": 7
+	},
+	{
+		"name": "node5",
+		"value": 4
+	}],
+	"links": [{
+		"source": "node1",
+		"target": "node2"
+	},
+	{
+		"source": "node1",
+		"target": "node3"
+	},
+	{
+		"source": "node1",
+		"target": "node4"
+	},
+	{
+		"source": "node2",
+		"target": "node1"
+	},
+	{
+		"source": "node2",
+		"target": "node5"
+	},
+	{
+		"source": "node4",
+		"target": "node3"
+	},
+	{
+		"source": "node5",
+		"target": "node4"
+	}]
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+    <link rel="stylesheet" href="../jslib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/demo.css" />
+       <meta charset="utf-8">
+       
+   </head>
+   <body style="height: 100%; width:100%; margin: 0">
+   
+  <div id="analyse">
+    <button type="submit" id="submit" class="btn btn-default">Submit</button>
+    <p id="show">id</p>
+  </div>
+  
+       <script type="text/javascript" src="../jslib/jquery-1.11.3.js"></script>
+       <script type="text/javascript" src="../jslib/echarts/echarts.min.js"></script>
+       <script type="text/javascript" src="../jslib/echarts/echarts-wordcloud.min.js"></script>
+       <script type="text/javascript" src="../jslib/bootstrap/js/bootstrap.min.js"></script>
+
+       <script type="text/javascript">
+       
+
+
+//input params
+var source_db='discuss_news3'
+var result_db='discuss_result'
+var start='2016-10-1'
+var end='2016-10-31'
+var TopicDemo={
+  gui:{
+  
+      initGuiForTopic: function(){
+
+          $('#submit').click( function(){
+                    TopicDemo.api.getAnalyse(start,end,source_db,function(data){
+                                        TopicDemo.gui.generateID(data)   })
+                              })
+            
+      },
+      generateID: function(id){
+
+          $('#show').text(id)
+      
+      }
+      
+  },
+  
+  api: {
+  
+                getAnalyse: function(start, end, collection_name,callback) {
+
+                    var url = "../analyse.php/getAnalyse"; // the script where you handle the form input.
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        dataType: 'json',
+                        data: {
+                            start: start,
+                            end: end,
+                            collection: collection_name
+                        },
+                        success: function(data) {
+                            if (data.success) {
+
+                                callback(data.data);
+                            } else {
+                                //TopicDemo.gui.showError(data.error);
+                                console.log(data.error)//show error
+                            }
+                        },
+                        error:function(data){
+                          console.log(data);  
+                        }
+                    });
+                }
+            }
+};
+$(document).ready(function() {
+    TopicDemo.gui.initGuiForTopic();
+
+});
+
+       </script>
+   </body>
+</html>

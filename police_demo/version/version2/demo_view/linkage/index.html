@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <link rel="stylesheet" href="../jslib/bootstrap/css/bootstrap.min.css" />
+       <link rel="stylesheet" href="../css/demo.css" />
+       <meta charset="utf-8">
+   </head>
+   <body style="height: 100%; width:100%; margin: 0">
+   <title >Linkage Demo</title>
+    <div class='row'>
+      
+      <div class='col-sm-8'>
+      <div class="panel panel-default ">
+      <div class="panel-heading">Linkage Graph</div>
+             <div class="panel-body" style="height: 1000px; width:1000px; margin: 0"  id="graph">
+             </div>
+      </div></div>
+    <div class='col-sm-4'>
+    <div class="panel panel-default ">
+      <div class="panel-heading">User Profile</div>
+             <div class="panel-body" id="profile">
+             </div>
+      </div></div>
+    </div>
+
+   
+       <div id="container" style="height: 100%; width:100%"></div>
+       <script type="text/javascript" src="../jslib/echarts/echarts.min.js"></script>
+        <script type="text/javascript" src="../jslib/jquery-1.11.3.js"></script>
+       <script type="text/javascript">
+       
+var dom = document.getElementById("graph");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+myChart.showLoading();
+$.get('data/linkage_data.json', function (example) {
+    myChart.hideLoading();
+    var num_nodes=example.nodes.length;
+    var num_links=example.links.length;
+    option = {
+        title: {
+            subtext: 'nodes: ' +num_nodes+'\t'+ 'links: '+num_links,
+            top: 'top',
+            left: 'center'
+        },
+        tooltip: {
+            formatter: function(params,ticket,callback){
+              return params.name;
+            
+            }
+        
+        },
+        series: [{
+            type: 'graph',
+            layout: 'force',
+            animation: false,
+            roam: true,
+            label: {
+                normal: {
+                    position: 'right',
+                    formatter: '{b}'
+                }
+            },
+            draggable: true,
+            data: example.nodes,
+            symbolSize:function(value,params){  
+            
+            return value/10;
+            },
+            
+            edgeSymbol:['none','arrow'],
+            edgeSymbolSize:[1,5],
+            force: {
+                // initLayout: 'circular'
+                // gravity: 0
+                // repulsion: 20,
+                edgeLength: 100,
+                repulsion: 10
+            },
+            links: example.links
+        }]
+    };
+
+    myChart.setOption(option);
+});;
+myChart.on('click',function(params){
+  var name=params.data.name;
+  if (name){
+    var html='<p>'+name+'</p>'
+    $('#profile').html(html);
+    }
+  console.log(name);
+
+});
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+   </body>
+</html>

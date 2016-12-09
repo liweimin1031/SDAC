@@ -1,0 +1,80 @@
+{
+	"lda": [{
+		"topic_word": [{
+			"word": "word1",
+			"value": 10
+		},
+		{
+			"word": "word2",
+			"value": 9
+		},
+		{
+			"word": "word10",
+			"value": 8
+		}],
+		"doc_ids": [{
+			"id": "123456",
+			"value": 0.222
+		},
+		{
+			"id": "123456",
+			"value": 0.222
+		},
+		{
+			"id": "123456",
+			"value": 0.222
+		}]
+	},
+	{
+		"topic_word": [{
+			"word": "word1",
+			"value": 10
+		},
+		{
+			"word": "word2",
+			"value": 9
+		},
+		{
+			"word": "word10",
+			"value": 8
+		}],
+		"doc_ids": [{
+			"id": "123456",
+			"value": 0.222
+		},
+		{
+			"id": "123456",
+			"value": 0.222
+		},
+		{
+			"id": "123456",
+			"value": 0.222
+		}]
+	},
+	{
+		"topic_word": [{
+			"word": "word1",
+			"value": 10
+		},
+		{
+			"word": "word2",
+			"value": 9
+		},
+		{
+			"word": "word10",
+			"value": 8
+		}],
+		"doc_ids": [{
+			"id": "123456",
+			"value": 0.222
+		},
+		{
+			"id": "123456",
+			"value": 0.222
+		},
+		{
+			"id": "123456",
+			"value": 0.222
+		}]
+	}]
+}

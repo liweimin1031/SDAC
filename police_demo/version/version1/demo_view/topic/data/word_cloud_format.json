@@ -1,0 +1,28 @@
+[{
+	"name": "SamSClub",
+	"value": 10000,
+	"textStyle": {
+		"normal": {
+			"color": "black"
+		},
+		"emphasis": {
+			"color": "red"
+		}
+	}
+},
+{
+	"name": "Macys",
+	"value": 6181
+},
+{
+	"name": "AmySchumer",
+	"value": 4386
+},
+{
+	"name": "JurassicWorld",
+	"value": 4055
+},
+{
+	"name": "CharterCommunications",
+	"value": 2467
+}]
